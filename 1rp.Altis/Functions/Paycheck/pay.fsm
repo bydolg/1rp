@@ -1,0 +1,85 @@
+/*%FSM<COMPILE "D:\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Paycheck FSM">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Main_Init",0,250,-40.348839,-141.279068,49.651161,-91.279068,0.000000,"Main Init"};
+item1[] = {"true",8,218,-39.994308,-65.712906,50.005692,-15.712896,0.000000,"true"};
+item2[] = {"Split",2,250,-39.994308,10.874098,50.005707,60.874100,0.000000,"Split"};
+item3[] = {"Time_to_pay_",4,4314,-168.727005,-14.470595,-78.726974,35.529457,0.000000,"Time to pay?"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {3,2};
+globals[] = {0.000000,0,0,0,0,640,480,1,26,6316128,1,-176.830154,78.694977,308.867096,-451.685822,297,884,1};
+window[] = {2,-1,-1,-1,-1,896,78,1518,78,3,315};
+*//*%FSM</HEAD>*/
+class FSM
+{
+        fsmName = "Paycheck FSM";
+        class States
+        {
+                /*%FSM<STATE "Main_Init">*/
+                class Main_Init
+                {
+                        name = "Main_Init";
+                        itemno = 0;
+                        init = /*%FSM<STATEINIT""">*/"private [""_lastcheck"",""_food"",""_water"",""_lastsync""];" \n
+                         "_lastcheck = time;" \n
+                         "_food = time;" \n
+                         "_water = time;" \n
+                         "_lastsync = time;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 1;
+                                        priority = 0.000000;
+                                        to="Split";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Split">*/
+                class Split
+                {
+                        name = "Split";
+                        itemno = 2;
+                        init = /*%FSM<STATEINIT""">*/"systemChat format [""Вы получите денежное пособие через %1 минут."",(getNumber(missionConfigFile >> ""CfgSettings"" >> ""paycheck_period""))];"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Time_to_pay_">*/
+                                class Time_to_pay_
+                                {
+                                        itemno = 3;
+                                        priority = 0.000000;
+                                        to="Split";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(time - _lastcheck) > ((getNumber(missionConfigFile >> ""CfgSettings"" >> ""paycheck_period"")) * 60)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"if (!alive player) then {" \n
+                                         "    systemChat ""Вы пропустили выплату пособия за невыполнения условий."";" \n
+                                         "} else {" \n
+                                         "	private _pay = round ((call ULP_Paycheck) + ([""Paychecks""] call ULP_fnc_getLegislation));" \n
+                                         "	[_pay, true, ""Paycheck""] call ULP_fnc_addMoney;" \n
+                                         "	systemChat format [""Вы получили пособие $%1."",[_pay] call ULP_fnc_numberText];" \n
+                                         "};" \n
+                                         "" \n
+                                         "_lastcheck = time;" \n
+                                         ""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+        };
+        initState="Main_Init";
+        finalStates[] =
+        {
+        };
+};
+/*%FSM</COMPILE>*/

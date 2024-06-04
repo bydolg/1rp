@@ -1,0 +1,115 @@
+overviewText = "A roleplaying gamemode developed by [bydolg] based by Scarso and Lewis!";
+disableRandomization[]= { "All" };
+
+joinUnassigned = 1;
+saving = 0;
+unsafeCVL = 1;
+enableDebugConsole[] = { "76561198014976108" };
+
+onPauseScript[]={ "ULP_fnc_onPause" };
+disableChannels[] = {{0,true,true}, {1,true,true}, {2,true,true}, {6,false,true}};
+showHUD[] = {
+	1, // Scripted HUD (same as showHUD command)
+	1, // Vehicle and unit info
+	0, // Vehicle radar
+	0, // Vehicle compass
+	1, // Tank direction indicator
+	0, // Commanding menu
+	0, // Group info bar
+	1, // HUD weapon cursors
+	1, // Vehicle display panels
+	1, // "x killed by y" systemChat messages
+	1  // force show drawIcon3D icons
+};
+
+class Header {
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 130;
+};
+
+class CfgWorlds {
+	class Any {
+		author = "bydolg";
+		description = "OneRP https://discord.gg/8mbpEBEp3j";
+		pictureMap = "";
+		pictureShot = "\dataM\load.paa";
+		loadingTexts[] = { 
+			
+		};
+	};
+};
+
+#include "CfgDebriefing.hpp"
+#include "CfgDisabledCommands.hpp"
+#include "CfgFunctions.hpp"
+#include "CfgNotifications.hpp"
+#include "CfgRemoteExec.hpp"
+#include "CfgSFX.hpp"
+#include "CfgSounds.hpp"
+
+#include "UI\Includes.hpp"
+#include "UI\RscTitles.hpp"
+
+#define true 1
+#define false 0
+
+#include "Configuration\CfgSettings.hpp"
+
+//#include "configs\safezones_config.hpp"
+
+#include "Functions\Admin\CfgAdmin.hpp"
+#include "Functions\Archaeology\CfgArchaeology.hpp"
+#include "Functions\Bases\CfgBases.hpp"
+#include "Functions\Camera\CfgCameras.hpp"
+#include "Functions\Capture\CfgCapture.hpp"
+#include "Functions\Cartels\CfgCartels.hpp"
+#include "Functions\Chat\CfgChat.hpp"
+#include "Functions\Clothing\CfgClothing.hpp"
+#include "Functions\Crafting\CfgBlueprints.hpp"
+#include "Functions\Crimes\CfgCrimes.hpp"
+#include "Functions\Faction\CfgFactions.hpp"
+#include "Functions\Gathering\CfgGathering.hpp"
+#include "Functions\Goals\CfgGoals.hpp"
+#include "Functions\Government\CfgGovernment.hpp"
+#include "Functions\Group\CfgGroups.hpp"
+#include "Functions\Housing\CfgHousing.hpp"
+#include "Functions\HUD\CfgStatusIcons.hpp"
+#include "Functions\Indicators\CfgIndicators.hpp"
+#include "Functions\Interactions\CfgInteractions.hpp"
+#include "Functions\Items\CfgItems.hpp"
+#include "Functions\Items\CfgVirtualItems.hpp"
+#include "Functions\Leveling\CfgProgression.hpp"
+#include "Functions\Licenses\CfgLicenses.hpp"
+#include "Functions\Licenses\CfgLicenseStores.hpp"
+#include "Functions\LootTable\CfgLoot.hpp"
+#include "Functions\Map\CfgMaps.hpp"
+#include "Functions\Medical\CfgMedical.hpp"
+#include "Functions\Messaging\CfgMessages.hpp"
+#include "Functions\Missions\CfgMissions.hpp"
+#include "Functions\Moves\CfgMoves.hpp"
+#include "Functions\Options\CfgOptions.hpp"
+#include "Functions\Perks\CfgPerks.hpp"
+#include "Functions\Placeables\CfgPlaceables.hpp"
+#include "Functions\PlayerTags\CfgTags.hpp"
+#include "Functions\PNC\CfgWarrants.hpp"
+#include "Functions\Prison\CfgPrison.hpp"
+#include "Functions\Processing\CfgProcessing.hpp"
+#include "Functions\Processing\CfgProcessingStores.hpp"
+#include "Functions\RandomEvents\CfgRandomEvents.hpp"
+#include "Functions\Reputation\CfgReputation.hpp"
+#include "Functions\Rewards\CfgRewards.hpp"
+#include "Functions\Robberies\CfgRobberies.hpp"
+#include "Functions\Spawn\CfgSpawns.hpp"
+#include "Functions\Stores\CfgStores.hpp"
+#include "Functions\Tablet\CfgTablet.hpp"
+#include "Functions\Titles\CfgTitles.hpp"
+#include "Functions\Vehicle\CfgVehicles.hpp"
+#include "Functions\VehicleStore\CfgVehicleStores.hpp"
+
+class CfgServer {
+    DatabaseName = "altislife";
+    DebugMode = 1;
+    HeadlessSupport = 0;
+};
+

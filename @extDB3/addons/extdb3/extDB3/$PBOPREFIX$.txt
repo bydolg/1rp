@@ -1,0 +1,5 @@
+//<'extdb3.pbo' properties via Mikero's dos tools, dll version 8.35>
+prefix=extDB3;
+Mikero=DePbo.dll.6.09;
+//PboType=Arma Addon;
+//</properties>
