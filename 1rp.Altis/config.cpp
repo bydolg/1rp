@@ -1,7 +1,7 @@
 class CfgPatches {
     class ULPClient {
-        requiredVersion = 2.02;
-        requiredAddons[] = {};
+        requiredVersion = 2.16;
+        requiredAddons[] = {"belas"};
         units[] = {};
         weapons[] = {};
     };

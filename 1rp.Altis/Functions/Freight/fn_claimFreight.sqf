@@ -32,7 +32,7 @@ if (_near isEqualTo []) exitWith {
 [(findDisplay getNumber(configFile >> "RscDisplayMission" >> "idd")), (_near apply { 
     ([typeOf _x] call ULP_fnc_vehicleCfg) params [  "", "", "_picture", "_name" ]; 
     [_picture, _name, _x call BIS_fnc_netId, 0];
-}), ["Заполнить", "Отмена"], [_trader], {
+}), ["Готов", "Отмена"], [_trader], {
     _this params [
         ["_trader", objNull, [objNull]],
         ["_display", displayNull, [displayNull]]

@@ -24,7 +24,7 @@ if (_selectableCarts isEqualTo []) exitWith {
 };
 
 [(findDisplay getNumber(configFile >> "RscDisplayMission" >> "idd")), _selectableCarts, 
-	["Select", "Cancel"], [_savedCarts, _storeCfg, _display], {
+	["Выбор", "Отмена"], [_savedCarts, _storeCfg, _display], {
 	_this params [
 		["_savedCarts", createHashMap, [createHashMap]],
 		["_storeCfg", configNull, [configNull]],

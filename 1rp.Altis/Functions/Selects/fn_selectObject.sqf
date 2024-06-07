@@ -8,7 +8,7 @@ scopeName "fn_selectVehicles";
 _this params [
 	["_parent", displayNull, [displayNull]],
 	["_objects", [], [[]]],
-	["_buttons", ["Select", "Cancel"], [[]]],
+	["_buttons", ["Выбор", "Отмена"], [[]]],
 	["_params", [], [[]]],
 	["_onSelect", {}, [{}]],
 	["_tablet", true, [false]]
