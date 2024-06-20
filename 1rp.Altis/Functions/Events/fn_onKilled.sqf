@@ -25,6 +25,7 @@ if ([] call ULP_fnc_isEscorting) then {
     ULP_Escort = nil;
 };
 
+[true] call ULP_fnc_saveGear;
 // Удаление оружия...
 _unit removeWeapon (primaryWeapon _unit);
 _unit removeWeapon (handgunWeapon _unit);
@@ -34,9 +35,10 @@ _unit removeWeapon (secondaryWeapon _unit);
 [getPos _unit, getDir _unit] call ULP_fnc_createBodyBag;
 [getPos _unit] call ULP_fnc_dropMoney;
 
-ULP_Inventory = createHashMap; // Очистка инвентаря...
-ULP_CarryInfo set [0, 0];
-[] call ULP_fnc_saveGear;
+
+//ULP_Inventory = createHashMap; // Очистка инвентаря...
+//ULP_CarryInfo set [0, 0];
+//[] call ULP_fnc_saveGear;
 
 // Закрытие скрипта отбирания...
 if !(isNil { uiNamespace getVariable "_fnc_bleedout" }) then {

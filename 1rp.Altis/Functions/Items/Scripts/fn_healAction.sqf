@@ -13,7 +13,7 @@ private _hasMedkit = ((["MediKit"] call ULP_fnc_hasItem) > 0);
 private _time = 15;
 if (_hasMedkit) then { _time = 8; };
 
-if !([format["Healing %1", name _target], _time, [_target, _hasMedkit], { [(_this select 0)] call ULP_fnc_canHeal }, {
+if !([format["Лечим %1", name _target], _time, [_target, _hasMedkit], { [(_this select 0)] call ULP_fnc_canHeal }, {
 	_this params [ "_target", "_hasMedkit" ];
 
 	if !([_target] call ULP_fnc_canHeal) exitWith {};
