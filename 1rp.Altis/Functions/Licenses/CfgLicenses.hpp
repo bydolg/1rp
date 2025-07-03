@@ -51,7 +51,7 @@ class CfgLicenses {
         displayName = "Водитель такси";
         description = "Одобрено для работы таксистом.";
         buyPrice = 35000;
-        onBought = "[""Трудоустройство""] call ULP_fnc_achieve;";
+        onBought = "[""Employment""] call ULP_fnc_achieve;";
         class Settings : Settings {};
         conditions = "[""CompletedCV""] call ULP_fnc_hasPerk";
     };

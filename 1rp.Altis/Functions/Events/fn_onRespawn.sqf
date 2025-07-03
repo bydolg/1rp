@@ -26,4 +26,6 @@ ULP_Respawned = true;
 player playMove "AmovPercMstpSnonWnonDnon";
 
 [] call ULP_fnc_setLoadout;
+if ((count ULP_Gear_Safe)!= 0) then {[ULP_Gear_Safe] call ULP_fnc_loadGear;} else {[ULP_Gear] call ULP_fnc_loadGear;};     
+diag_log format ["[RESPAWN LOAD_GEAR] Applying: %1", ULP_Gear];
 [] call ULP_fnc_syncPlayerInfo;

@@ -496,8 +496,8 @@ class PanicButton : Pickaxe {
 	class Events { onUse = "[] call ULP_fnc_panic;"; };
 };
 class Ziptie : Pickaxe {
-	displayName = "Зип-перчатки";
-	description = "Инструмент, используемый для удержания других лиц.";
+	displayName = "Наручники";
+	description = "Инструмент, используемый для обездвиживания";
 	icon = "\dataM\Icons\ziptie.paa";
 	buyPrice = 13500;
 	sellPrice = 6750;
@@ -505,8 +505,8 @@ class Ziptie : Pickaxe {
 	class Settings : Settings {};
 };
 class Blindfold : Pickaxe { // TODO
-	displayName = "Глазная повязка";
-	description = "Инструмент, используемый для закрывания глаз других.";
+	displayName = "Повязка на глаза";
+	description = "Инструмент, используемый для завязывания глаз.";
 	icon = "\dataM\Icons\blindfold.paa";
 	buyPrice = 17000;
 	sellPrice = 8500;
@@ -908,7 +908,7 @@ class CropSeeds : FertileSoil { // TODO
 };
 // Компоненты для компьютеров (TODO - какой-то магазин для всего этого)
 class MiningRig { // TODO (изготовление)
-	displayName = "Майнинг-риг";
+	displayName = "Майнинг-ферма";
 	description = "Собранный риг для майнинга криптовалюты в специализированных складах.";
 	icon = "\dataM\Icons\miningRig.paa";
 	buyPrice = -1;
@@ -1397,7 +1397,7 @@ class UraniumBar : ProcessedWeed {
     description = "Чрезвычайно опасный минерал, полученный из радиационной зоны.";
     icon = "\dataM\Icons\ingot.paa";
     buyPrice = -1;
-    sellPrice = 28650;
+    sellPrice = 286500;
     weight = 6;
     class Settings : Settings {};
 };
@@ -1452,6 +1452,37 @@ class PurifiedMoonshine : PurifiedWeed {
     class Settings : Settings {};
 };
 
+// Мясо
+
+class Rabbit_F_Raw {
+    displayName = "Сырой кролик";
+    description = "Дичь, которую можно продать или приготовить.";
+    icon = "dataM\Icons\steak.paa";
+    buyPrice = -1;
+    sellPrice = 150;
+    weight = 2;
+    class Settings {
+        onMarket = false;
+        isIllegal = false;
+        isSavable = false;
+        isScripted = false;
+        isSystemItem = false;
+    };
+    conditions = "true";
+};
+class Goat_random_F_Raw : Rabbit_F_Raw {
+    displayName = "Сырая козлятина";
+    sellPrice = 1000;
+    class Settings : Settings {};
+};
+
+class Sheep_random_F_Raw : Rabbit_F_Raw {
+    displayName = "Сырая баранина";
+    sellPrice = 660;
+    class Settings : Settings {};
+};
+
+
 // Сырая рыба
 class Salema_F_Raw {
     displayName = "Сырая салема";
@@ -1494,7 +1525,7 @@ class CatShark_F_Raw : Salema_F_Raw {
     sellPrice = 1237;
     class Settings : Settings {};
 };
-class Turtle : Salema_F_Raw {
+class Turtle_F_Raw : Salema_F_Raw {
     displayName = "Черепаха";
     icon = "\dataM\Icons\turtle.paa";
     sellPrice = 65000;

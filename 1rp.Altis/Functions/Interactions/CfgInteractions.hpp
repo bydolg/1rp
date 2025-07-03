@@ -209,6 +209,12 @@ class EquipmentBox {
         onClick = "[] call ULP_fnc_setLoadout;";
         condition = "[[player] call ULP_fnc_getFaction] call ULP_fnc_canResetLoadout;";
     };
+    class RestoreLoadout {
+        title = "Вернуть сохраненное снаряжение";
+        factions[] = { "Police", "Medic", "Hato" };
+        onClick = "[ULP_Gear_Safe] call ULP_fnc_LoadGear;";
+        condition = "[[player] call ULP_fnc_getFaction] call ULP_fnc_canResetLoadout;";
+    };
 };
 
 class Vault {

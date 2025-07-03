@@ -9,7 +9,7 @@ class CfgRobberies {
 		reward[] = { 30000, 65000 };
 		leveling[] = { { 5, 15 }, "Ограбление Заправки", 100 };
 		condition = "[[""Police""]] call ULP_fnc_onlineFaction >= 1";
-		onFail = "[""Для ограбления этой локации должно быть онлайн как минимум <t color='#B92DE0'>3 офицера</t>!"" ] call ULP_fnc_hint;";
+		onFail = "[""Для ограбления этой локации должно быть онлайн как минимум <t color='#B92DE0'>1 офицер</t>!"" ] call ULP_fnc_hint;";
 	};
 
 	class Supermarket {
@@ -20,7 +20,7 @@ class CfgRobberies {
 		reward[] = { 50000, 95000 };
 		leveling[] = { { 5, 15 }, "Ограбление Супермаркета", 100 };
 		condition = "[[""Police""]] call ULP_fnc_onlineFaction >= 2";
-		onFail = "[""Для ограбления этой локации должно быть онлайн как минимум <t color='#B92DE0'>4 офицера</t>!"" ] call ULP_fnc_hint;";
+		onFail = "[""Для ограбления этой локации должно быть онлайн как минимум <t color='#B92DE0'>2 офицера</t>!"" ] call ULP_fnc_hint;";
 	};
 
 	class Jewellery {
@@ -30,8 +30,8 @@ class CfgRobberies {
 		factions[] = { "Civilian" };
 		reward[] = { 95000, 220000 };
 		leveling[] = { { 5, 15 }, "Ограбление Ювелирного магазина", 100 };
-		condition = "[[""Police""]] call ULP_fnc_onlineFaction >= 2";
-		onFail = "[""Для ограбления этой локации должно быть онлайн как минимум <t color='#B92DE0'>4 офицера</t>!"" ] call ULP_fnc_hint;";
+		condition = "[[""Police""]] call ULP_fnc_onlineFaction >= 3";
+		onFail = "[""Для ограбления этой локации должно быть онлайн как минимум <t color='#B92DE0'>3 офицера</t>!"" ] call ULP_fnc_hint;";
 	};
 
 	class RegionalBank {
@@ -41,7 +41,7 @@ class CfgRobberies {
 		factions[] = { "Civilian" };
 		reward[] = { 140000, 460000 };
 		leveling[] = { { 5, 15 }, "Ограбление Регионального банка", 100 };
-		condition = "[[""Police""]] call ULP_fnc_onlineFaction >= 3";
+		condition = "[[""Police""]] call ULP_fnc_onlineFaction >= 4";
 		onFail = "[""Для ограбления этой локации должно быть онлайн как минимум <t color='#B92DE0'>5 офицеров</t>!"" ] call ULP_fnc_hint;";
 	};
 };

@@ -102,6 +102,11 @@ if (isClass (missionConfigFile >> "CfgFactions" >> [player] call ULP_fnc_getFact
 	};
 } forEach ("isClass (_x >> ""Spawn"")" configClasses (missionConfigFile >> "CfgBases"));
 
+		if ((count ULP_Pos_Safe) >0) then { 
+    _item = _list lbAdd "Последий привал!";
+		_list lbSetValue [_item, 2];
+		_list lbSetData [_item, ULP_Pos_Safe];};
+
 _list lbSetCurSel 0;
 [_list, 0, 0] call ULP_fnc_changeSpawn;
 _list ctrlSetEventHandler ["LBSelChanged", "_this call ULP_fnc_changeSpawn;"];

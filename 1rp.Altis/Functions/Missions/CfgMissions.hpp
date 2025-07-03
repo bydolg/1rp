@@ -104,10 +104,15 @@ class CfgMissions {
 		onFinished = "";
 		class Locations {
 			// Города, городки и ключевые места
-			class KavalaSquare {
+			class MerkezSquare {
+				pos = "civ_spawn_kavala";
+				name = "Площадь Меркез";
+			};
+ 			class KavalaSquare {
 				pos = "civ_spawn_kavala";
 				name = "Площадь Кавала";
 			};
+
 			class CentralAthira {
 				pos = "car_dealership_athira_01";
 				name = "Центр Афиры";

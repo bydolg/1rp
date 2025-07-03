@@ -28,18 +28,27 @@ private _object = ([cursorObject, ULP_Escort] select ([] call ULP_fnc_isEscortin
 
 if (isNull _object) then {
 	switch (true) do {
-		case (surfaceIsWater (visiblePositionASL player)): {
+    case (surfaceIsWater (visiblePositionASL player)): {
 			private _fish = nearestObjects [player, getArray (missionConfigFile >> "CfgGathering" >> "fish"), 3] param [0, objNull];
 			if !(isNull _fish && { alive _fish }) then {
-
+        [_fish] call ULP_fnc_catchFish;
+        deleteVehicle _fish;
 			};
 		};
-		default {
+    default {
 			private _zone = [] call ULP_fnc_getGatherZone;
-
 			if !(isNull _zone) then {
 				[_zone] call ULP_fnc_gather;
+			} else {
+			private _prey = nearestObjects [player, getArray (missionConfigFile >> "CfgGathering" >> "prey"), 3] param [0, objNull];
+			if !(isNull _prey && { alive _prey }) then {
+        player switchAction "PlayerCrouch";
+        [_prey] call ULP_fnc_catchPrey;
+        deleteVehicle _prey;
+        player switchAction "PutDown";
 			};
+      };
+      
 		};
 	};
 } else {

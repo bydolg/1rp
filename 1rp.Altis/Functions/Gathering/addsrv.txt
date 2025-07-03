@@ -1,0 +1,19 @@
+this animate ['Door_1',1];
+[
+ this,
+ "Взломать автодобытчик",
+ "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
+ "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
+ "(_this distance _target < 3) && ((cursorObject animationPhase 'Door_1') == 0)",
+ "_caller distance _target < 3",
+ {_caller setpos (_target modeltoworld (_target selectionPosition "door_1_in")); _caller setdir (_caller getDir _target); _caller switchMove "Acts_Accessing_Computer_Loop"; [] call ULP_fnc_gather_auto;
+},
+ {},
+ {_caller switchMove "";},
+ {_caller switchMove "";},
+ [],
+ 3,
+ 0,
+ false,
+ false
+] call BIS_fnc_holdActionAdd;

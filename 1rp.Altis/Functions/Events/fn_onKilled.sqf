@@ -25,20 +25,33 @@ if ([] call ULP_fnc_isEscorting) then {
     ULP_Escort = nil;
 };
 
-[true] call ULP_fnc_saveGear;
+
+ULP_Gear_Safe = [
+    (getUnitLoadout _unit),
+    [],
+    [
+        [ULP_UniformTexture, ""] select ((uniform _unit) isEqualTo ""),
+        [ULP_BackpackTexture, ""] select ((backpack _unit) isEqualTo "")
+    ]
+]; 
+
 // Удаление оружия...
 _unit removeWeapon (primaryWeapon _unit);
 _unit removeWeapon (handgunWeapon _unit);
 _unit removeWeapon (secondaryWeapon _unit);
 { deleteVehicle _x; } forEach (nearestObjects [_unit, ["WeaponHolderSimulated"], 5]);
 
-[getPos _unit, getDir _unit] call ULP_fnc_createBodyBag;
-[getPos _unit] call ULP_fnc_dropMoney;
+//[getPos _unit, getDir _unit] call ULP_fnc_createBodyBag;
+//[_unit getPos [3,getDir _unit]] call ULP_fnc_dropMoney;
+_mpos = (getPosATL _unit); 
+[_mpos, getDir _unit] call ULP_fnc_createBodyBag;
+_mpos set [2,_mpos#2+0.3]; 
+[_mpos] call ULP_fnc_dropMoney;
 
 
-//ULP_Inventory = createHashMap; // Очистка инвентаря...
-//ULP_CarryInfo set [0, 0];
-//[] call ULP_fnc_saveGear;
+ULP_Inventory = createHashMap; // Очистка инвентаря...
+ULP_CarryInfo set [0, 0];
+[] call ULP_fnc_saveGear;
 
 // Закрытие скрипта отбирания...
 if !(isNil { uiNamespace getVariable "_fnc_bleedout" }) then {

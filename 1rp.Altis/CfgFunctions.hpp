@@ -1,5 +1,15 @@
 class CfgFunctions {
 //#include "CSWRandomizr\THY_CSWR_functions.hpp"
+	class zeusopsradiation {
+		tag = "ZOR";
+		class functions {
+			file = "functionsRadiation";
+			class handleGasmasks {description = "";};
+			class handleRadiation {description = "";};
+			class protectiveGear {description = "";};
+			class spawnRadiation {description = "";};
+		};
+	};
 	class ULP_Functions {
 		tag = "ULP";
 
@@ -148,6 +158,9 @@ class CfgFunctions {
 			file = "Functions\Player";
 			class loadGear {};
 			class saveGear {};
+      class safeLoadout{};
+
+
 			class isRestrained {};
 			class isSurrendered {};
 			class isEscorted {};
@@ -277,8 +290,10 @@ class CfgFunctions {
 		class Gathering {
 			file = "Functions\Gathering";
 			class gather {};
+      class gather_auto {};
 			class getGatherZone {};
 			class catchFish {};
+			class catchPrey {};
 			class initGathering {};
 		};
 

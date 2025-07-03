@@ -21,7 +21,7 @@ if (_vehicle in ULP_Keys) exitWith {
 private _time = ["SpeedyLocksmith", round (40 + (random 25))] call ULP_fnc_activatePerk;
 
 if ([] call ULP_fnc_isGroup) then {
-	private _buff = [group player, "Отмычка"] call ULP_fnc_groupBuff;
+	private _buff = [group player, "Lockpick"] call ULP_fnc_groupBuff;
 	if (_buff > 0) then { _time = _time - (_time * _buff); };
 };
 
@@ -39,7 +39,7 @@ if ([] call ULP_fnc_isGroup) then {
 		["У вас уже есть ключи от этого транспортного средства"] call ULP_fnc_hint;
 	};
 
-	if (["Отмычка", 1, true] call ULP_fnc_handleItem) then {
+	if (["Lockpick", 1, true] call ULP_fnc_handleItem) then {
 		if (0.7 <= (random 1)) then {
 			[getPlayerUID player, "Theft", "Section12", 
 				format [

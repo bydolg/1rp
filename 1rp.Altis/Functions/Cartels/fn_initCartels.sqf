@@ -36,7 +36,7 @@ if !(hasInterface) exitWith {};
       "this && { (vehicle player) in thisList }", 
       format ["[""%1"", ""create""] call ULP_fnc_cartelHud;
       _arrayUnitsADS = [""I_C_Soldier_Bandit_8_F"",""I_C_Soldier_Bandit_5_F"",""I_C_Soldier_Bandit_4_F"",""I_C_Soldier_Bandit_1_F""]; 
-      null = [west,_arrayUnitsADS,[3,false],[""MRK_Cartel_%1"", ""MRK_Cartel_%1_safe""],10,80] execVM ""ADS_system\functions\launchADS.sqf"";", configName _x], 
+      null = [east,_arrayUnitsADS,[6,true],[""MRK_Cartel_%1"", ""MRK_Cartel_%1_safe""],3,120] execVM ""ADS_system\functions\launchADS.sqf"";", configName _x], 
       format ["[""%1"", ""remove""] call ULP_fnc_cartelHud; StopAttacksADS = 1; publicVariable ""StopAttacksADS""; { deleteVehicle _x } forEach allDeadMen;", configName _x]
       ];
 

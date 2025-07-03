@@ -190,7 +190,7 @@ class CfgFactions {
 		};
 		
 		class Loadout {
-			canRestLoadout = false;
+			canRestLoadout = true;
 			class Uniforms {
 				class U_C_Poor_1 {};
 				class U_C_Poloshirt_blue {};

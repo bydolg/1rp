@@ -546,7 +546,7 @@ class Fulton {
 
 class Freddie {
     icon = "\dataM\UI\Perks\muscleman.paa";
-    displayName = "Deboner Цыпленка";
+    displayName = "Обвалка курицы";
     description = "Вы стали свидетелем последствий обвалки Фредди цыпленка.";
     onUnlocked = "[""Freddie""] call ULP_fnc_unlockTitle;";
     leveling[] = { 1000, "Достижение разблокировано", 100 };

@@ -1,6 +1,6 @@
 class CfgHousing {
 	nameLength = 32;
-	houseLimit = 2;
+	houseLimit = 4;
 	
 	class Houses {
 		// GARAGES
@@ -183,12 +183,12 @@ class CfgHousing {
 			icon = "\dataM\UI\Spawns\dmt.paa";
 			price = 34896000;
 			breakIn = 20 * 60;
-			spawnPos[] = {15171.1,15339,12.8876};
+			spawnPos[] = {-3.71045,4.51025,2};
 			condition = "[] call ULP_fnc_isGroup && { [""DMT""] call ULP_fnc_hasGroupPerk } && { [] call ULP_fnc_isGroupOwner }";
 			
 			class Storage {
 				object = "CargoNet_01_box_F";
-				position[] = {{15171.1,15338,12.8852}, 0};
+				position[] = {{-3.20898,-3.64893,2.4}, 0};
 			};
 		};
 		class Land_Cargo_Tower_V2_F : Land_Cargo_Tower_V1_F {};
@@ -198,22 +198,22 @@ class CfgHousing {
 			icon = "\dataM\UI\Spawns\office.paa";
 			price = 83350000;
 			breakIn = 15 * 60;
-			spawnPos[] = {15177.2,15386.7,3.29152};
+			spawnPos[] = {16.0898,5.45117,-2.58822};
 			condition = "[] call ULP_fnc_isGroup && { [""MilitaryOffices""] call ULP_fnc_hasGroupPerk } && { [] call ULP_fnc_isGroupOwner }";
 			
 			class Storage {
 				object = "Land_Cargo20_grey_F";
-				position[] = {{15193.8,15391.7,3.28908}, 0};
+				position[] = {{-2.91992,2.83301,-3.02753}, 0};
 			};
 		};
 		class Land_Offices_01_V1_F : Land_MilOffices_V1_F {
 			price = 41455000;
 			breakIn = 5 * 60;
-			spawnPos[] = {15177.2,15461.1,7.97687};
+			spawnPos[] = {5.79956,-7.08472,-8.49478};
 			condition = "[] call ULP_fnc_isGroup && { [""OfficeBuilding""] call ULP_fnc_hasGroupPerk } && { [] call ULP_fnc_isGroupOwner }";
 			class Storage {
 				object = "C_IDAP_supplyCrate_F";
-				position[] = {{15183.3,15467.3,7.97443}, 0};
+				position[] = {{5.54395,-4.86206,-8.327}, 0};
 			};
 		};
 	};

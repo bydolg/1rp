@@ -8,12 +8,12 @@ class CfgRandomEvents {
 	InitialDelay = 3 * 60;
 	
 	class Airdrop {
-		SpawnCondition = "(count ([""Civilian""] call ULP_fnc_allMembers)) >= 20";
+		SpawnCondition = "(count ([""Civilian""] call ULP_fnc_allMembers)) >= 1";
 		NotifyDelay = 10 * 60;
 		Cooldown = 40 * 60;
 		RandomAddition = 20 * 60;
 		class BaseWars {
-			SpawnCondition = "(count ([""Civilian""] call ULP_fnc_allMembers)) >= 10";
+			SpawnCondition = "(count ([""Civilian""] call ULP_fnc_allMembers)) >= 1";
 			NotifyDelay = 5 * 60;
 			Cooldown = 20 * 60;
 			RandomAddition = 5 * 60;

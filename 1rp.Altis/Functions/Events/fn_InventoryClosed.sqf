@@ -16,3 +16,5 @@ _this params [
 		[_x] remoteExecCall ["ULP_SRV_fnc_saveStorage", RSERV];
 	};
 } forEach [_container, _secondaryContainer];
+
+[] call ULP_fnc_syncPlayerInfo;

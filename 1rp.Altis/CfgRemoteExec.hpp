@@ -17,7 +17,13 @@ class CfgRemoteExec {
         class ULP_fnc_setFuel {};
         class ULP_fnc_lock {};
         class ULP_fnc_say3D {};
-
+        
+        class ULP_fnc_loadGear{};
+        class ULP_fnc_saveGear{};
+        class ULP_fnc_safeLoadout{};
+        class ULP_fnc_stripGear{};
+        class BIS_fnc_setUnitLoadout {};
+        
         class ULP_fnc_chatMessage {};
         class ULP_fnc_restrain {};
         class ULP_fnc_onKnocked {};

@@ -40,6 +40,6 @@ if !(isClass _actions) exitWith { _interactions };
 	if (_object call compile getText (_x >> "condition") && { [player, getArray(_x >> "factions")] call ULP_fnc_isFaction }) then {
 		_interactions pushBack [getText(_x >> "title"), getText(_x >> "onClick")];
 	};
-} forEach ("isClass _x" configClasses _actions);
+} forEach ("True" configClasses _actions);
 
 _interactions

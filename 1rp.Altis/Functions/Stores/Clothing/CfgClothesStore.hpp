@@ -371,6 +371,13 @@ class CfgClothesStore {
 			class U_NikosAgedBody {};
 			class U_C_FormalSuit_01_tshirt_black_F {};
 			class U_C_FormalSuit_01_black_F {};
+      class VX_Uniform_CIV {};
+      class VX_Uniform_All {};
+      class VX_Uniform_All1 {};
+      class VX_Uniform_All2 {};
+      class VX_Uniform_All3 {};
+      class VX_Uniform_All4 {};
+      class VX_Uniform_All5 {};
 		};
 
 		class Headgear {
@@ -401,6 +408,7 @@ class CfgClothesStore {
 			class V_LegStrapBag_black_F {};
 			class V_Pocketed_black_F {};
 			class V_Safety_yellow_F {};
+      class VX_Leona_Hidden_Vest {};      
 		};
 
 		class Backpacks {
@@ -1020,6 +1028,7 @@ class CfgClothesStore {
 			class B_ViperLightHarness_blk_F {};
 			class B_ViperHarness_blk_F {};
 			class B_Parachute {};
+      class B_SCBA_01_F {};
 		};
 	};
 

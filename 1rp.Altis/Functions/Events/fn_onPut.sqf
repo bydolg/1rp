@@ -14,3 +14,4 @@ _this params [
 if (isNull _unit || { _item isEqualTo "" }) exitWith { true };
 
 [] call ULP_fnc_maxCarry;
+[] call ULP_fnc_syncPlayerInfo;

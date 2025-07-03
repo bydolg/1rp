@@ -18,7 +18,7 @@ private _stageCfg = _cfg >> "Stages" >> _stage;
 if !(isClass _cfg || { isClass _stageCfg }) exitWith { false };
 
 if !([player, getArray (_cfg >> "factions")] call ULP_fnc_isFaction) exitWith {
-	["Your faction can't do this crime..."] call ULP_fnc_hint;
+	["Вашей фракции нельзя делать это..."] call ULP_fnc_hint;
 	false
 };
 

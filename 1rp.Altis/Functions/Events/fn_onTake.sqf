@@ -27,3 +27,4 @@ if !(_backpack isEqualTo "") then {
 };
 
 [] call ULP_fnc_maxCarry;
+[] call ULP_fnc_syncPlayerInfo;

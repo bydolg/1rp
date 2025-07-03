@@ -6,9 +6,10 @@ class CfgSettings {
     total_maxWeight = 5;
 
     sync_delay = 5 * 60;
+    
     abort_delay = 10;
 
-    starting_bank = 100000;
+    starting_bank = 300000;
     paycheck_period = 15;
 
     buffedSellIncrease = 1.5;
@@ -38,7 +39,7 @@ class CfgSettings {
             condition = "true";
         };
         class Forums : Hello {
-            items[] = {"""Пресоединяйтесь к нам:""", """https://discord.gg/8mbpEBEp3j"""};
+            items[] = {"""Пресоединяйтесь к нам в Discord:""", """https://discord.gg/8mbpEBEp3j"""};
         };
         class Development : Hello {
             items[] = {"""Разработчики""", """OneRP"""};
@@ -59,7 +60,7 @@ class CfgSettings {
 
     class NLR {
         nlrTimer = 15 * 60;
-        nlrDistance = 1500;
+        nlrDistance = 50;
     };
     
     class Police {

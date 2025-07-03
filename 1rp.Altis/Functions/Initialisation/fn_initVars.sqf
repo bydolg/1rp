@@ -21,6 +21,10 @@ ULP_FadeSound = false;
 /* Player Variables */
 ULP_Paycheck = {0};
 ULP_Gear = [];
+
+ULP_Gear_Safe = [];
+ULP_Pos_Safe = "";
+
 ULP_Holsted = "";
 ULP_Licenses = [];
 ULP_Houses = [];

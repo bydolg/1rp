@@ -125,7 +125,7 @@ class CfgVirtualStores {
 			class LumberAxe {};
             class Extractor {};
 			class Shovel {};
-			class FishingNet {};
+			//class FishingNet {};
 			class FuelCan {};
 			class Lighter {};
 			class Lockpick {};
@@ -297,6 +297,9 @@ class Fish {
 		class CookedMullet {};
 		class CatShark_F_Raw {};
 		class CookedCatshark {};
+    class Rabbit_F_Raw {};
+    class Goat_random_F_Raw {};
+    class Sheep_random_F_Raw {};
 	};
 };
 
@@ -304,7 +307,7 @@ class Turtle {
 	storeName = "Торговец черепахами";
 	conditions = "true";
 	class Items {
-		class Turtle {};
+		class Turtle_F_Raw {};
 	};
 };
 

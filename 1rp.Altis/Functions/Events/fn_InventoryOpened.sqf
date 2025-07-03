@@ -38,3 +38,5 @@ if (_container isKindOf "Man" && { !alive _container }) exitWith {
     ["Вам запрещено обыскивать тела мертвых."] call ULP_fnc_hint;
     true
 };
+
+[] call ULP_fnc_syncPlayerInfo;
