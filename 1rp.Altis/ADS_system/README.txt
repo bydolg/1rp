@@ -14,7 +14,7 @@ First official issue
 
 
 ## Description
-Area Defending System (ADS) is a simple, stable and powerfull script that allows mission makers to generate a cycle of random infantry attacks 
+Area Defending System (ADS) is a simple, stable and powerful script that allows mission makers to generate a cycle of random infantry attacks 
 on area positioned on map from editor.
 You can specify the number of attacks and the time between each one.
 It is sufficient to define two concentric areas from editor. The enemies will be created between the two areas in such way that the internal 
