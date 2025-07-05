@@ -1,0 +1,37 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a//dev/null b/.github/workflows/lint.yml
+index 0000000000000000000000000000000000000000..8d52e51c5d396f1d993f626879e98dccb8a252a9 100644
+--- a//dev/null
++++ b/.github/workflows/lint.yml
+@@ -0,0 +1,28 @@
++name: SQF Lint
++
++on:
++  push:
++    paths:
++      - '**/*.sqf'
++      - '.github/workflows/lint.yml'
++      - 'Makefile'
++      - 'requirements.txt'
++  pull_request:
++    paths:
++      - '**/*.sqf'
++      - '.github/workflows/lint.yml'
++      - 'Makefile'
++      - 'requirements.txt'
++
++jobs:
++  sqflint:
++    runs-on: ubuntu-latest
++    steps:
++      - uses: actions/checkout@v3
++      - uses: actions/setup-python@v4
++        with:
++          python-version: '3.x'
++      - name: Install dependencies
++        run: pip install -r requirements.txt
++      - name: Run lint
++        run: make lint
+ 
+EOF
+)
