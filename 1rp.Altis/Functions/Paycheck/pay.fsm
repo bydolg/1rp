@@ -62,11 +62,11 @@ class FSM
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"(time - _lastcheck) > ((getNumber(missionConfigFile >> ""CfgSettings"" >> ""paycheck_period"")) * 60)"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/"if (!alive player) then {" \n
-                                         "    ["Вы пропустили выплату пособия за невыполнения условий.", "", "info"] call ULP_fnc_hint;" \n
+                                         "    [""Вы пропустили выплату пособия за невыполнения условий."", "", "info"] call ULP_fnc_hint;" \n
                                          "} else {" \n
                                          "	private _pay = round ((call ULP_Paycheck) + ([""Paychecks""] call ULP_fnc_getLegislation));" \n
                                          "	[_pay, true, ""Paycheck""] call ULP_fnc_addMoney;" \n
-                                         "	[format ["Вы получили пособие $%1.",[_pay] call ULP_fnc_numberText], "", "info"] call ULP_fnc_hint;" \n
+                                         "	[format [""Вы получили пособие $%1.""",[_pay] call ULP_fnc_numberText], "", "info"] call ULP_fnc_hint;" \n
                                          "};" \n
                                          "" \n
                                          "_lastcheck = time;" \n
