@@ -14,3 +14,14 @@ Players: 130
 www.bydolg.by
 
 Required Mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2966646490
+
+## Development
+
+To lint SQF scripts install the requirements and run:
+
+```bash
+pip install -r requirements.txt
+make lint
+```
+
+A GitHub Actions workflow runs the same check for pull requests.
