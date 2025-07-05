@@ -8,7 +8,7 @@ scopeName "fn_saveCart";
 private _display = _this param [0, displayNull, [displayNull]];
 private _name = _this param [1, _display getVariable ["saved_cart", ""], [""]];
 
-if (isNull _display || { _name isEqualTo "" }  || { isNil "_name" }) exitWith { systemChat "Произошла ошибка при сохранении корзины"; };
+if (isNull _display || { _name isEqualTo "" }  || { isNil "_name" }) exitWith { ["Произошла ошибка при сохранении корзины", "", "error"] call ULP_fnc_hint; };
 
 private _storeCfgName = format["%1%2", configName (_display getVariable "storeCfg"), configName (_display getVariable "curStore")];
 private _allSavedCarts = + (profileNamespace getVariable ["ULP_SavedCarts", createHashMap]);

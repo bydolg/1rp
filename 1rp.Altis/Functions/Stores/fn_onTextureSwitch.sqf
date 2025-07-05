@@ -12,7 +12,7 @@ _this params [
 private _display = ctrlParent _ctrl;
 private _storeCfg = _display getVariable ["curStore", configNull];
 
-if (!(isClass (_storeCfg)) || { isNull _display }) exitWith { systemChat "Ошибка текстуры" };
+if (!(isClass (_storeCfg)) || { isNull _display }) exitWith { ["Ошибка текстуры", "", "error"] call ULP_fnc_hint };
 
 // Смена картинки...
 private _texture = _ctrl lbData _index;
