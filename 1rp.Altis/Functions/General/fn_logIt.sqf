@@ -17,5 +17,5 @@ private _message = format["[ULP][v%1]%2 %3", LIFE_SETTINGS(getText,"framework_ve
 diag_log _message;
 
 if (hasInterface && { IS_DEBUG_MODE }) then {
-	systemChat _message;
+        [_message, "", "info"] call ULP_fnc_hint;
 };

@@ -1798,12 +1798,20 @@ class ULP_Notification : Life_RscControlsGroupNoScrollbars {
             w = 11 * GUI_GRID_CENTER_W;
             h = 0.75 * GUI_GRID_CENTER_H;
         };
+        class Icon: Life_RscPictureKeepAspect {
+            idc = 103;
+            y = 0.75 * GUI_GRID_CENTER_H;
+            w = 1 * GUI_GRID_CENTER_W;
+            h = 1 * GUI_GRID_CENTER_H;
+        };
         class Body : Header {
             idc = 102;
             style = "0x10";
             text = "This is a notification";
             colorBackground[] = {0.1, 0.1, 0.1, 0.8};
+            x = 1 * GUI_GRID_CENTER_W;
             y = 0.75 * GUI_GRID_CENTER_H;
+            w = 10 * GUI_GRID_CENTER_W;
             h = 1 * GUI_GRID_CENTER_H;
         };
     };
@@ -1813,12 +1821,18 @@ class ULP_NotificationNoHeader : ULP_Notification {
     h = 1 * GUI_GRID_CENTER_H;
 
     class Controls {
+        class Icon: Life_RscPictureKeepAspect {
+            idc = 103;
+            w = 1 * GUI_GRID_CENTER_W;
+            h = 1 * GUI_GRID_CENTER_H;
+        };
         class Body : Life_RscStructuredText {
             idc = 102;
             style = "0x10";
             text = "This is a notification";
             colorBackground[] = {0.1, 0.1, 0.1, 0.8};
-            w = 11 * GUI_GRID_CENTER_W;
+            x = 1 * GUI_GRID_CENTER_W;
+            w = 10 * GUI_GRID_CENTER_W;
             h = 1 * GUI_GRID_CENTER_H;
         };
     };

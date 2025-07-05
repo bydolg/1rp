@@ -10,8 +10,10 @@ if (canSuspend) exitWith {
 };
 
 _this params [
-	["_text", "", [""]],
-	["_header", "", [""]]
+        ["_text", "", [""]],
+        ["_header", "", [""]],
+        ["_type", "info", [""]],
+        ["_icon", "", [""]]
 ];
 
 private _display = ["RscHints"] call ULP_UI_fnc_getLayer;
@@ -26,8 +28,19 @@ if (count (ULP_eachFrameEvents select { (_x # 0) isEqualTo (["RscHints"] call UL
 };
 
 private _message = _display ctrlCreate [(["ULP_Notification", "ULP_NotificationNoHeader"] select (_header isEqualTo "")), -1];
+private _styleCfg = missionConfigFile >> "CfgNotificationStyles" >> _type;
+private _colour = getArray(_styleCfg >> "color");
+private _iconPath = _icon;
+if (_iconPath isEqualTo "") then {
+    _iconPath = getText(_styleCfg >> "icon");
+};
 private _ctrlText = _message controlsGroupCtrl 102;
 _ctrlText ctrlSetStructuredText parseText _text;
+_ctrlText ctrlSetBackgroundColor _colour;
+(_message controlsGroupCtrl 103) ctrlSetText _iconPath;
+if !(_header isEqualTo "") then {
+    (_message controlsGroupCtrl 101) ctrlSetBackgroundColor _colour;
+};
 
 private _height = ctrlTextHeight _ctrlText;
 

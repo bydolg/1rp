@@ -12,7 +12,7 @@ _this params [
 private _display = ctrlParent _ctrl;
 private _storeCfg = _display getVariable ["curStore", configNull];
 
-if (!(isClass (_storeCfg)) || { isNull _display }) exitWith { systemChat "Ошибка выбора категории" };
+if (!(isClass (_storeCfg)) || { isNull _display }) exitWith { ["Ошибка выбора категории", "", "error"] call ULP_fnc_hint };
 
 private _itemList = _display displayCtrl 3103;
 lbClear _itemList;

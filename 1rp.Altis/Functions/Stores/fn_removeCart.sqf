@@ -10,7 +10,7 @@ _this params [
 ];
 
 private _display = ctrlParent _ctrl;
-if (isNull _display) exitWith { systemChat "Ошибка элемента управления корзиной" };
+if (isNull _display) exitWith { ["Ошибка элемента управления корзиной", "", "error"] call ULP_fnc_hint };
 
 // Обновление информации в списке, так как это вызвано с кнопки...
 if (_index isEqualTo -1) then {
