@@ -31,7 +31,7 @@ class DisplaySelectNumber {
 		class Header : Life_RscText {
 			idc = 3201;
 			colorBackground[] = HEADER_COLOUR;
-			text = "Выберите сумму";
+			text = "Выберите количество";
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
