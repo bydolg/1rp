@@ -14,17 +14,17 @@ _this params [
 
 private _display = findDisplay _idd;
 
-if (isNull _display) exitWith { ["Cart Failure", "", "error"] call ULP_fnc_hint };
+if (isNull _display) exitWith { ["Ошибка корзины", "", "error"] call ULP_fnc_hint };
 
 private _itemList = _display displayCtrl _itemIdc;
 private _cartList = _display displayCtrl _cartIdc;
 private _textList = _display displayCtrl _textIdc;
-if (isNull _itemList || { isNull _cartList } || { isNull _textList }) exitWith { ["Cart Ctrl Failure", "", "error"] call ULP_fnc_hint };
+if (isNull _itemList || { isNull _cartList } || { isNull _textList }) exitWith { ["Ошибка элемента управления корзиной", "", "error"] call ULP_fnc_hint };
 
 private _curItem = lbCurSel _itemList;
 
 if (_curItem isEqualTo -1) exitWith {
-	["You must select an item to add to your cart!"] call ULP_fnc_hint;
+        ["Вы должны выбрать предмет, чтобы добавить его в корзину!"] call ULP_fnc_hint;
 };
 
 private _data = _itemList lbData _curItem;

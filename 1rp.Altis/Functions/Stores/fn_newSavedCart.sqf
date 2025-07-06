@@ -13,7 +13,7 @@ private _display = ctrlParent _ctrl;
 if (isNull _display) exitWith {};
 
 [
-	(findDisplay getNumber(configFile >> "RscDisplayMission" >> "idd")), "Введите имя корзины", ["Save", "Cancel"], "Введите имя здесь...", [_display],
+        (findDisplay getNumber(configFile >> "RscDisplayMission" >> "idd")), "Введите имя корзины", ["Сохранить", "Отмена"], "Введите имя здесь...", [_display],
 	{	
 		_this params [
 			["_display", displayNull, [displayNull]],
