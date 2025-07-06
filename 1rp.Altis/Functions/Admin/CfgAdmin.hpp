@@ -3,7 +3,7 @@ class CfgAdmin {
 		// SUPPORT (L1)
 		// MODERATOR (L2)
 		class Suit {
-			message = "You must be in the Events Team or a Moderator to use this ability...";
+                        message = "Необходимо состоять в команде ивентов или быть модератором, чтобы использовать эту возможность...";
 			condition = "((call ULP_Staff) > 1) || { ((call ULP_Event) > 0) }";
 		};
 		class Camera : Suit {};
@@ -12,7 +12,7 @@ class CfgAdmin {
 
 		// ADMINISTRATOR (L3)
 		class Teleport {
-			message = "You must be the Events Team Lead or an Administrator to use this ability...";
+                        message = "Требуется быть руководителем ивент-команды или администратором для использования этой возможности...";
 			condition = "((call ULP_Staff) > 2) || { ((call ULP_Event) > 1) }";
 		};
 		class Compensate : Teleport {};

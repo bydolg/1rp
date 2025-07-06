@@ -21,7 +21,7 @@ if (isNull _container || { !alive _container } || { !([_container, _force] call 
 
 // Access Checks...
 if (!(_force) && { (_type in ["Car", "Helicopter", "Plane", "Ship"] && !(_container in ULP_Keys) ) || _container getVariable ["locked", false] || !(_container getVariable ["drilled", true]) }) exitWith {
-	["You don't have access to this container..."] call ULP_fnc_hint;
+        ["У вас нет доступа к этому контейнеру..."] call ULP_fnc_hint;
 	false
 };
 
@@ -84,7 +84,7 @@ if (createDialog "DialogInventory") exitWith {
 		};
 
 		if ((_container distance player) > 10) exitWith {
-			["You're too far from the container to access it!"] call ULP_fnc_hint;
+                        ["Вы слишком далеко от контейнера, чтобы получить к нему доступ!"] call ULP_fnc_hint;
 			closeDialog 0;
 
 			[_container, player] remoteExecCall ["ULP_SRV_fnc_unregisterCargoUser", RSERV];

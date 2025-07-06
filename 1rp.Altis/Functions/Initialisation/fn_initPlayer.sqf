@@ -32,7 +32,7 @@ if (_addActions) then {
 			if (isNull _spike) exitWith {};
 			
 			if (["Stinger", 1, false, true] call ULP_fnc_handleItem) then {
-				["You have packed up a stinger..."] call ULP_fnc_hint;
+                                ["Вы убрали шипы..."] call ULP_fnc_hint;
 				deleteVehicle _spike;
 			};
 		}, nil, 10, false, false, "", "isNull (objectParent player) && { !([] call ULP_UI_fnc_isProgress) } && { private _spike = (nearestObjects [player, [""Land_Razorwire_F""], 5] select { !((_x getVariable [""object_owner"", []]) isEqualTo []) }) param [0, objNull]; (!(isNull _spike) && { (damage _spike) isEqualTo 1 })}"]);
