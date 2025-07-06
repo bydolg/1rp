@@ -25,7 +25,7 @@ if !(_type in ULP_Missions) exitWith {
 ];
 
 if ((player distance (taskDestination _task)) > 10) exitWith {
-	["You're not close enough to complete this task!"] call ULP_fnc_hint;
+        ["Вы находитесь слишком далеко, чтобы завершить это задание!"] call ULP_fnc_hint;
 };
 
 private _onFinished = getText (_typeCfg >> "onFinished");

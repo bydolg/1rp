@@ -119,12 +119,12 @@ switch (_mode) do {
 		if !(["Teleport"] call ULP_fnc_checkPower) exitWith {};
 
 		if (time < (player getVariable ["admin_action_cooldown", 0])) exitWith {
-			["You've recently used a command, please wait before trying again..."] call ULP_fnc_hint;
+                        ["Вы недавно использовали команду, пожалуйста, подождите перед повторной попыткой..."] call ULP_fnc_hint;
 			false
 		};
 
 		private _focus = ["GetCameraTarget"] call ULP_fnc_adminCamera;
-		if (isNull _focus) exitWith { ["You need to select someone to preform this action on..."] call ULP_fnc_hint; };
+                if (isNull _focus) exitWith { ["Вам нужно выбрать цель для выполнения этого действия..."] call ULP_fnc_hint; };
 
 		player setVariable ["admin_action_cooldown", time + 2];
 
@@ -135,18 +135,18 @@ switch (_mode) do {
 				[getPlayerUID player, "Admin", ["AdminEjectVehicle", serverTime, [name _focus, getPlayerUID _focus, getPos _focus]]] remoteExecCall ["ULP_SRV_fnc_logPlayerEvent", RSERV];
 			};
 
-			if (_focus isEqualTo player) exitWith { ["You can't perform these actions on yourself..."] call ULP_fnc_hint; };
-			if !(isNull (objectParent player)) exitWith { ["You need to leave the vehicle you're in before you can do this..."] call ULP_fnc_hint; };
+                        if (_focus isEqualTo player) exitWith { ["Нельзя выполнить это действие на себе..."] call ULP_fnc_hint; };
+                        if !(isNull (objectParent player)) exitWith { ["Вам нужно выйти из транспортного средства, прежде чем сделать это..."] call ULP_fnc_hint; };
 
 			case "To": {	
 				player setPos (getPos _focus);
-				[format ["You have teleported to <t color='#B92DE0'>%1</t>", name _focus]] call ULP_fnc_hint;
+                                [format ["Вы телепортировались к <t color='#B92DE0'>%1</t>", name _focus]] call ULP_fnc_hint;
 				[getPlayerUID player, "Admin", ["AdminTeleportTo", serverTime, [name _focus, getPlayerUID _focus, getPos _focus]]] remoteExecCall ["ULP_SRV_fnc_logPlayerEvent", RSERV];
 			};
 
 			case "Here": {
 				_focus setPos (getPos player);
-				[format ["You have teleported <t color='#B92DE0'>%1</t> to you", name _focus]] call ULP_fnc_hint;
+                                [format ["Вы телепортировали <t color='#B92DE0'>%1</t> к себе", name _focus]] call ULP_fnc_hint;
 				[getPlayerUID player, "Admin", ["AdminTeleportHere", serverTime, [name _focus, getPlayerUID _focus, getPos _focus]]] remoteExecCall ["ULP_SRV_fnc_logPlayerEvent", RSERV];
 			};
 			
@@ -496,7 +496,7 @@ switch (_mode) do {
 		private _focus = ["GetCameraTarget"] call ULP_fnc_adminCamera;
 
 		if (isNull _focus && { _index isEqualTo 1 }) exitWith {
-			["You must target someone to spectate first..."] call ULP_fnc_hint;
+                        ["Сначала необходимо выбрать цель для наблюдения..."] call ULP_fnc_hint;
 			_ctrl lbSetCurSel 0;
 		};
 
