@@ -49,7 +49,8 @@ class FSM
                 {
                         name = "Split";
                         itemno = 2;
-                        init = /*%FSM<STATEINIT""">*/"systemChat format [""Вы получите денежное пособие через %1 минут."",(getNumber(missionConfigFile >> ""CfgSettings"" >> ""paycheck_period""))];"/*%FSM</STATEINIT""">*/;
+                        init = /*%FSM<STATEINIT""">*/"[format [""Вы получите денежное пособие через %1 минут."",(getNumber(missionConfigFile >> ""CfgSettings"" >> ""paycheck_period""))], """", ""info""] call ULP_fnc_hint;"/*%FSM</STATEINIT""">*/;
+                        
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -62,11 +63,11 @@ class FSM
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"(time - _lastcheck) > ((getNumber(missionConfigFile >> ""CfgSettings"" >> ""paycheck_period"")) * 60)"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/"if (!alive player) then {" \n
-                                         "    systemChat ""Вы пропустили выплату пособия за невыполнения условий."";" \n
+                                         "    [""Вы пропустили выплату пособия за невыполнения условий."", """", ""info""] call ULP_fnc_hint;" \n
                                          "} else {" \n
                                          "	private _pay = round ((call ULP_Paycheck) + ([""Paychecks""] call ULP_fnc_getLegislation));" \n
                                          "	[_pay, true, ""Paycheck""] call ULP_fnc_addMoney;" \n
-                                         "	systemChat format [""Вы получили пособие $%1."",[_pay] call ULP_fnc_numberText];" \n
+                                         "	[format [""Вы получили пособие $%1."",[_pay] call ULP_fnc_numberText], """", ""info""] call ULP_fnc_hint;" \n
                                          "};" \n
                                          "" \n
                                          "_lastcheck = time;" \n

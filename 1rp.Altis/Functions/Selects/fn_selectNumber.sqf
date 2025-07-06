@@ -34,11 +34,12 @@ _display setVariable ["format", _format];
 private _minMaxText = _display displayCtrl 3204;
 private _slider = _display displayCtrl 3205;
 private _button = _display displayCtrl 3206;
+ctrlSetFocus _button;
 private _input = _display displayCtrl 3209;
 _input ctrlEnable _allowManual;
 
 _slider sliderSetRange _boundaries;
-_slider sliderSetPosition 1;
+_slider sliderSetPosition _max;
 _slider sliderSetSpeed [1, 1, 1];
 
 _minMaxText ctrlSetStructuredText parseText format["<t align='left'>%1</t><t align='right'>%2</t>",
@@ -46,7 +47,7 @@ _minMaxText ctrlSetStructuredText parseText format["<t align='left'>%1</t><t ali
 	[_boundaries select 1] call ULP_fnc_numberText
 ];
 
-_input ctrlSetText ([_boundaries select 0] call ULP_fnc_numberText);
+_input ctrlSetText ([_boundaries select 1] call ULP_fnc_numberText);
 
 _input ctrlAddEventHandler ["KeyUp", {
 	_this params [ "_ctrl" ];
@@ -64,7 +65,9 @@ _slider ctrlAddEventHandler ["SliderPosChanged", {
 	private _display = ctrlParent _ctrl;
 	private _input = _display displayCtrl 3209;
 	_input ctrlSetText (_val call compile (_display getVariable ["format", "[_this] call ULP_fnc_numberText"]));
-}];
+}];  
+
+
 
 _display setVariable ["params", _params];
 _display setVariable ["onSelect", _onSelect];

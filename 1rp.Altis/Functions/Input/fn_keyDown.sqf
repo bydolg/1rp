@@ -183,12 +183,12 @@ if (isDowned(player)) then {
                                 _veh setVariable [format ["bis_disabled_Door_%1",_door], 1, true];
                                 _veh animate [format["door_%1_rot",_door],0];
 
-                                systemChat "Вы заперли эту дверь.";
+                                ["Вы заперли эту дверь.", "", "info"] call ULP_fnc_hint;
                             } else {
                                 _veh setVariable [format ["bis_disabled_Door_%1", _door], 0, true];
                                 _veh animate [format["door_%1_rot", _door], 1];
 
-                                systemChat "Вы разблокировали эту дверь.";
+                                ["Вы разблокировали эту дверь.", "", "info"] call ULP_fnc_hint;
                             };
                         };
 
@@ -198,12 +198,12 @@ if (isDowned(player)) then {
                             [_veh, 0] remoteExecCall ["ULP_fnc_lock", _veh];
                             [_veh, "unlockCarSound", 50, 1] remoteExecCall ["ULP_fnc_say3D"];
 
-                            systemChat "Вы разблокировали это транспортное средство.";
+                            ["Вы разблокировали это транспортное средство.", "", "info"] call ULP_fnc_hint;
                         } else {
                             [_veh, 2] remoteExecCall ["ULP_fnc_lock", _veh];
                             [_veh, "lockCarSound", 50, 1] remoteExecCall ["ULP_fnc_say3D"];
 
-                            systemChat "Вы заблокировали это транспортное средство.";
+                            ["Вы заблокировали это транспортное средство.", "", "info"] call ULP_fnc_hint;
                         };
 
                         _handled = true;

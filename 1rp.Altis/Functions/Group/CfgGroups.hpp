@@ -141,9 +141,9 @@ class CfgGroups {
 				};
 
 				class PollRigging {
-					displayName = "Poll Rigging";
-					icon = "\dataM\UI\GroupPerks\pollRigging.paa";
-					description = "Your members have the ability to rig polling boothes.";
+                                        displayName = "Фальсификация выборов";
+                                        icon = "\dataM\UI\GroupPerks\pollRigging.paa";
+                                        description = "Члены вашей группы могут фальсифицировать результаты голосования.";
 					level = 5;
 				};
 			};
