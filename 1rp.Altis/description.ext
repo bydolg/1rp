@@ -1,3 +1,6 @@
+class CfgPatches { class _1rp { units[] = {}; weapons[] = {}; requiredVersion = 1.0; requiredAddons[] = {}; }; };
+class CfgLanguages { class English; class Russian; };
+
 overviewText = "A roleplaying gamemode developed by [bydolg] based by Scarso and Lewis!";
 disableRandomization[]= { "All" };
 joinUnassigned = 1;

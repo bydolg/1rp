@@ -1,55 +1,55 @@
 class CfgChat {
 	class Messages {
-		class Injured {
-			message = "%1 был серьезно ранен";
-			params = 1;
+                class Injured {
+                        message = "$STR_CHAT_INJURED";
+                        params = 1;
 			condition = "[[""EnableMessagesIncapacitated"", ""Chat""] call ULP_fnc_getOption] call ULP_fnc_bool";
 		};
-		class Bleedout : Injured {
-			message = "%1 истекает кровью...";
-		};
-		class Executed {
-			message = "%1 был казнен %2";
+                class Bleedout : Injured {
+                        message = "$STR_CHAT_BLEEDOUT";
+                };
+                class Executed {
+                        message = "$STR_CHAT_EXECUTED";
 			params = 2;
 			condition = "[[""EnableMessagesBleedout"", ""Chat""] call ULP_fnc_getOption] call ULP_fnc_bool";
 		};
-		class InjuredBy : Executed {
-			message = "%1 был серьезно ранен %2";
-		};
-		class Revived : Executed {
-			message = "%1 был возрожден %2";
-			condition = "[[""EnableMessagesRevived"", ""Chat""] call ULP_fnc_getOption] call ULP_fnc_bool";
-		};
-		class Prisoned {
-			message = "%1 был заключен в тюрьму %2 на %3 минуты";
+                class InjuredBy : Executed {
+                        message = "$STR_CHAT_INJURED_BY";
+                };
+                class Revived : Executed {
+                        message = "$STR_CHAT_REVIVED";
+                        condition = "[[""EnableMessagesRevived"", ""Chat""] call ULP_fnc_getOption] call ULP_fnc_bool";
+                };
+                class Prisoned {
+                        message = "$STR_CHAT_PRISONED";
 			params = 3;
 			condition = "[[""EnableMessagesPrisoned"", ""Chat""] call ULP_fnc_getOption] call ULP_fnc_bool";
 		};
-		class Garaged : Prisoned {
-			message = "%2 %1 был поставлен в гараж %3";
-			condition = "[[""EnableMessagesVehicle"", ""Chat""] call ULP_fnc_getOption] call ULP_fnc_bool";
-		};
-		class Crushed : Garaged {
-			message = "%2 владельца %1 был уничтожен %3";
-		};
-		class Impounded : Garaged {
-			message = "%2 владельца %1 был конфискован %3 для %4";
-			params = 4;
-		};
-		class IssuedFine : Prisoned {
-			message = "%1 выписал %2 штраф в размере %3";
+                class Garaged : Prisoned {
+                        message = "$STR_CHAT_GARAGED";
+                        condition = "[[""EnableMessagesVehicle"", ""Chat""] call ULP_fnc_getOption] call ULP_fnc_bool";
+                };
+                class Crushed : Garaged {
+                        message = "$STR_CHAT_CRUSHED";
+                };
+                class Impounded : Garaged {
+                        message = "$STR_CHAT_IMPOUNDED";
+                        params = 4;
+                };
+                class IssuedFine : Prisoned {
+                        message = "$STR_CHAT_ISSUEDFINE";
 			condition = "[[""EnableMessagesTicket"", ""Chat""] call ULP_fnc_getOption] call ULP_fnc_bool";
 		};
-		class FinePaid : IssuedFine {
-			message = "%1 заплатил штраф в размере %2";
-			params = 2;
-		};
-		class FineRefused : FinePaid {
-			message = "%1 отказался от штрафа в размере %2";
-		};
-		class FinePoor : FinePaid {
-			message = "%1 не может позволить себе штраф в размере %2";
-		};
+                class FinePaid : IssuedFine {
+                        message = "$STR_CHAT_FINEPAID";
+                        params = 2;
+                };
+                class FineRefused : FinePaid {
+                        message = "$STR_CHAT_FINEREFUSED";
+                };
+                class FinePoor : FinePaid {
+                        message = "$STR_CHAT_FINEPOOR";
+                };
 	};
 	class Commands {
 		class Players {

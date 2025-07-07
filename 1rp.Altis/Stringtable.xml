@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="1rp">
+    <Package name="1rp">
+        <Key ID="STR_IMPOUND_ONLY_POLICE">
+            <Original>Только полиция и ХАТО могут изъять транспортные средства</Original>
+            <English>Only Police and HATO can impound vehicles</English>
+        </Key>
+        <Key ID="STR_IMPOUND_NOBODY">
+            <Original>Никто не может находиться в транспортном средстве при его изъятии!</Original>
+            <English>Nobody can be inside the vehicle when impounding!</English>
+        </Key>
+        <Key ID="STR_IMPOUND_RENTAL">
+            <Original>Арендованные транспортные средства не могут быть изъяты!</Original>
+            <English>Rental vehicles cannot be impounded!</English>
+        </Key>
+        <Key ID="STR_IMPOUND_FAILED">
+            <Original>Вы не смогли изъять это транспортное средство, так как в нем кто-то находился, или оно уже было удалено!</Original>
+            <English>You failed to impound this vehicle because someone was inside or it was already removed!</English>
+        </Key>
+        <Key ID="STR_IMPOUND_REQUEST">
+            <Original>Вы запросили изъятие &lt;t color='#B92DE0'&gt;%1&lt;/t&gt; за плату в &lt;t color='#B92DE0'&gt;%2%3&lt;/t&gt;.</Original>
+            <English>You requested the impounding of &lt;t color='#B92DE0'&gt;%1&lt;/t&gt; for a fee of &lt;t color='#B92DE0'&gt;%2%3&lt;/t&gt;.</English>
+        </Key>
+        <Key ID="STR_IMPOUND_DONE_TITLE">
+            <Original>Транспортное средство изъято</Original>
+            <English>Vehicle impounded</English>
+        </Key>
+        <Key ID="STR_IMPOUND_DONE_HINT">
+            <Original>Транспортное средство изъято.</Original>
+            <English>Vehicle impounded.</English>
+        </Key>
+        <Key ID="STR_IMPOUND_BUSY">
+            <Original>Вы не можете изъять транспортное средство, выполняя другое действие!</Original>
+            <English>You cannot impound a vehicle while performing another action!</English>
+        </Key>
+        <Key ID="STR_IMPOUND_PROGRESS">
+            <Original>Изъятие %1</Original>
+            <English>Impounding %1</English>
+        </Key>
+        <Key ID="STR_CHAT_IMPOUNDED_NOTIFY">
+            <Original>Изъято</Original>
+            <English>Impounded</English>
+        </Key>
+        <Key ID="STR_CHAT_INJURED">
+            <Original>%1 был серьезно ранен</Original>
+            <English>%1 was seriously injured</English>
+        </Key>
+        <Key ID="STR_CHAT_BLEEDOUT">
+            <Original>%1 истекает кровью...</Original>
+            <English>%1 is bleeding out...</English>
+        </Key>
+        <Key ID="STR_CHAT_EXECUTED">
+            <Original>%1 был казнен %2</Original>
+            <English>%1 was executed by %2</English>
+        </Key>
+        <Key ID="STR_CHAT_INJURED_BY">
+            <Original>%1 был серьезно ранен %2</Original>
+            <English>%1 was seriously injured by %2</English>
+        </Key>
+        <Key ID="STR_CHAT_REVIVED">
+            <Original>%1 был возрожден %2</Original>
+            <English>%1 was revived by %2</English>
+        </Key>
+        <Key ID="STR_CHAT_PRISONED">
+            <Original>%1 был заключен в тюрьму %2 на %3 минуты</Original>
+            <English>%1 was jailed by %2 for %3 minutes</English>
+        </Key>
+        <Key ID="STR_CHAT_GARAGED">
+            <Original>%2 %1 был поставлен в гараж %3</Original>
+            <English>%2 %1 was garaged by %3</English>
+        </Key>
+        <Key ID="STR_CHAT_CRUSHED">
+            <Original>%2 владельца %1 был уничтожен %3</Original>
+            <English>%2 belonging to %1 was destroyed by %3</English>
+        </Key>
+        <Key ID="STR_CHAT_IMPOUNDED">
+            <Original>%2 владельца %1 был конфискован %3 для %4</Original>
+            <English>%2 belonging to %1 was impounded by %3 for %4</English>
+        </Key>
+        <Key ID="STR_CHAT_ISSUEDFINE">
+            <Original>%1 выписал %2 штраф в размере %3</Original>
+            <English>%1 issued %2 a fine of %3</English>
+        </Key>
+        <Key ID="STR_CHAT_FINEPAID">
+            <Original>%1 заплатил штраф в размере %2</Original>
+            <English>%1 paid a fine of %2</English>
+        </Key>
+        <Key ID="STR_CHAT_FINEREFUSED">
+            <Original>%1 отказался от штрафа в размере %2</Original>
+            <English>%1 refused a fine of %2</English>
+        </Key>
+        <Key ID="STR_CHAT_FINEPOOR">
+            <Original>%1 не может позволить себе штраф в размере %2</Original>
+            <English>%1 cannot afford a fine of %2</English>
+        </Key>
+    </Package>
+</Project>
