@@ -22,3 +22,4 @@
 #define FETCH_CONST(var) (call var)
 
 #define LIFE_SETTINGS(TYPE,SETTING) TYPE(missionConfigFile >> "CfgSettings" >> SETTING)
+#define LSTRING(var) (localize format["STR_%1", var])
