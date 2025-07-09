@@ -50,7 +50,7 @@ if !([format["Уничтожение %1", _name], _time, [_vehicle, _name, _fee]
 	["FirstCrush"] call ULP_fnc_achieve;
 
 	["Транспортное средство было уничтожено!"] call ULP_fnc_hint;
-	["Уничтожено", [_owner param [0, "Кто-то"], _name, [player, true] call ULP_fnc_getName]] remoteExecCall ["ULP_fnc_chatMessage", RCLIENT];
+        ["Crushed", [_owner param [0, "Кто-то"], _name, [player, true] call ULP_fnc_getName]] remoteExecCall ["ULP_fnc_chatMessage", RCLIENT];
 }, {}] call ULP_UI_fnc_startProgress) exitWith {
 	["Вы не можете уничтожать транспортное средство, выполняя другое действие!"] call ULP_fnc_hint;
 };

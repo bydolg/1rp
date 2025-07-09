@@ -48,7 +48,7 @@ if !([format["Хранение %1", _name], _time, [_vehicle, _name], {
 		["Транспортное средство сохранено."] call ULP_fnc_hint;
 	};
 
-	["Гараж", [_owner param [0, "Кто-то"], _name, [player, true] call ULP_fnc_getName]] remoteExecCall ["ULP_fnc_chatMessage", RCLIENT];
+        ["Garaged", [_owner param [0, "Кто-то"], _name, [player, true] call ULP_fnc_getName]] remoteExecCall ["ULP_fnc_chatMessage", RCLIENT];
 }, {}] call ULP_UI_fnc_startProgress) exitWith {
 	["Вы не можете поместить транспортное средство в гараж, выполняя другое действие!"] call ULP_fnc_hint;
 };

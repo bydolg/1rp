@@ -20,7 +20,7 @@ if ([_medic] call ULP_fnc_onDuty) then {
 };
 
 if !(player isEqualTo _medic) then {
-	["Оживил", [name player, [[_medic, true] call ULP_fnc_getName, "администратор"] select ([_medic] call ULP_fnc_onDuty)]] remoteExecCall ["ULP_fnc_chatMessage", RCLIENT];
+        ["Revived", [name player, [[_medic, true] call ULP_fnc_getName, "администратор"] select ([_medic] call ULP_fnc_onDuty)]] remoteExecCall ["ULP_fnc_chatMessage", RCLIENT];
 
 	// У нас высокая репутация, поэтому человек, который вас оживил, получит репутацию в ответ
 	if (ULP_Reputation >= 500) then {

@@ -65,7 +65,7 @@ if ((_vehicle getVariable ["vehicle_id", -1]) < 0) exitWith {
                         [LSTRING(IMPOUND_DONE_TITLE), { hint LSTRING(IMPOUND_DONE_HINT); }, true] call ULP_fnc_addEventHandler;
 			[_vehicle, _fee] remoteExecCall ["ULP_SRV_fnc_storeVehicle", RSERV];
 
-                        [LSTRING(CHAT_IMPOUNDED_NOTIFY), [_owner param [0, "Кто-то"], _name, [player,true] call ULP_fnc_getName, format ["%1%2", "$", [_fee] call ULP_fnc_numberText]]] remoteExecCall ["ULP_fnc_chatMessage", RCLIENT];
+                        ["Impounded", [_owner param [0, "Кто-то"], _name, [player,true] call ULP_fnc_getName, format ["%1%2", "$", [_fee] call ULP_fnc_numberText]]] remoteExecCall ["ULP_fnc_chatMessage", RCLIENT];
 		}, {}] call ULP_UI_fnc_startProgress) exitWith {
                         [LSTRING(IMPOUND_BUSY)] call ULP_fnc_hint;
 		};
