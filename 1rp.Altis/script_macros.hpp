@@ -22,4 +22,9 @@
 #define FETCH_CONST(var) (call var)
 
 #define LIFE_SETTINGS(TYPE,SETTING) TYPE(missionConfigFile >> "CfgSettings" >> SETTING)
-#define LSTRING(var) (localize format["STR_%1", var])
+
+#define DO_EXPAND(var) STR_##var
+#define EXPAND(var) DO_EXPAND(var)
+#define QUOTE(var) #var
+#define GSTRING(var) QUOTE(EXPAND(var))
+#define LSTRING(var) localize GSTRING(var)

@@ -42,7 +42,7 @@ if ((_vehicle getVariable ["vehicle_id", -1]) < 0) exitWith {
 			["_fee", 1, [0]] 
 		];
 
-		if !([format[localize LSTRING(IMPOUND_PROGRESS), _name], _time, [_vehicle, _name, _fee], {
+		if !([format[LSTRING(IMPOUND_PROGRESS), _name], _time, [_vehicle, _name, _fee], {
 			!(isNull (_this select 0)) && { alive (_this select 0) } && { (player distance (_this select 0)) <= 5 }
 		}, {
 			_this params [ "_vehicle", "_name", "_fee" ];
@@ -61,8 +61,8 @@ if ((_vehicle getVariable ["vehicle_id", -1]) < 0) exitWith {
 
 			["Первое изъятие"] call ULP_fnc_achieve;
 
-                        [format[localize LSTRING(IMPOUND_REQUEST), _name, "$", [_fee] call ULP_fnc_numberText]] call ULP_fnc_hint;
-                        [LSTRING(IMPOUND_DONE_TITLE), { hint localize LSTRING(IMPOUND_DONE_HINT); }, true] call ULP_fnc_addEventHandler;
+                        [format[LSTRING(IMPOUND_REQUEST), _name, "$", [_fee] call ULP_fnc_numberText]] call ULP_fnc_hint;
+                        [LSTRING(IMPOUND_DONE_TITLE), { hint LSTRING(IMPOUND_DONE_HINT); }, true] call ULP_fnc_addEventHandler;
 			[_vehicle, _fee] remoteExecCall ["ULP_SRV_fnc_storeVehicle", RSERV];
 
                         [LSTRING(CHAT_IMPOUNDED_NOTIFY), [_owner param [0, "Кто-то"], _name, [player,true] call ULP_fnc_getName, format ["%1%2", "$", [_fee] call ULP_fnc_numberText]]] remoteExecCall ["ULP_fnc_chatMessage", RCLIENT];

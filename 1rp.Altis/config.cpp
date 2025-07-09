@@ -7,6 +7,7 @@ class CfgPatches {
     };
 };
 
+class CfgLanguages { class English; class Russian; };
 delete RscDisplayFunctionsViewer;
 delete RscDisplayDebugPublic;
 delete RscDisplayDebug;
