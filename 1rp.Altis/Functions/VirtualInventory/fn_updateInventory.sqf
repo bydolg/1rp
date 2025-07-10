@@ -65,8 +65,8 @@ private _addItem = {
 if (_type isEqualTo 0) then {
 	ULP_CarryInfo params ["_carryWeight", "_maxWeight"];
 
-    private _personalTitle = _display displayCtrl 4202;
-    _personalTitle ctrlSetStructuredText parseText format["%1<t align='right'>%2/%3</t>", localize "STR_UI_PERSONAL_INVENTORY", _carryWeight, _maxWeight];
+	private _personalTitle = _display displayCtrl 4202;
+	_personalTitle ctrlSetStructuredText parseText format["Личный Инвентарь<t align='right'>%1/%2</t>", _carryWeight, _maxWeight];
 
 	private _list = _display displayCtrl 4204;
 	lnbClear _list;
@@ -79,8 +79,8 @@ if (_type isEqualTo 0) then {
 
 	(_display displayCtrl 4205) ctrlEnable (((lbSize _list) > 0) && { [_container] call ULP_fnc_isCargoUser });
 } else {
-    private _containerTitle = _display displayCtrl 4206;
-    _containerTitle ctrlSetStructuredText parseText format["%1<t align='right'>%2/%3</t>", localize "STR_UI_CONTAINER_INVENTORY", [_container] call ULP_fnc_currentLoad, [_container] call ULP_fnc_maxLoad];
+	private _containerTitle = _display displayCtrl 4206;
+	_containerTitle ctrlSetStructuredText parseText format["Инвентарь Контейнера<t align='right'>%1/%2</t>", [_container] call ULP_fnc_currentLoad, [_container] call ULP_fnc_maxLoad];
 
 	private _list = _display displayCtrl 4208;
 	lnbClear _list;

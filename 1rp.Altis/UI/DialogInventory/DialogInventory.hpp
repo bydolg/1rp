@@ -16,7 +16,7 @@ class DialogInventory {
 		class Header : Life_RscStructuredText {
 			idc = 4201;
 			colorBackground[] = HEADER_COLOUR;
-                        text = $STR_UI_CONTAINER_INVENTORY;
+			text = "Инвентарь контейнера";
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - BUTTON_H);
 			SAFEZONE_W(UI_WIDTH);
@@ -98,7 +98,7 @@ class DialogInventory {
 
 		class Personal : Life_RscStructuredText {
 			idc = 4202;
-                        text = $STR_UI_PERSONAL_INVENTORY;
+			text = "Персональный инвентарь<t align='right'>0/0</t>";
 			SAFEZONE_X(UI_X + MARGIN_X);
 			SAFEZONE_Y(BODY_CONTENT_LIST_Y);
 			SAFEZONE_W((((UI_WIDTH - (MARGIN_X * 2)) / 2) - (MARGIN_X / 2)));
@@ -122,11 +122,11 @@ class DialogInventory {
 
 			class Items {
 				class DisplayName {
-                                        text = $STR_UI_ITEM;
+					text = "Предмет";
 					value = 0;
 				};
 				class Count {
-                                        text = $STR_UI_TOTAL;
+					text = "Всего";
 					value = -1;
 					data = "data";
 				};
@@ -151,7 +151,7 @@ class DialogInventory {
 		class ToInventory : ULP_RscButtonIconNoAnim {
 			idc = 4205;
 			text = "\A3\Ui_f\data\GUI\RscCommon\RscHTML\arrow_right_ca.paa";
-                        tooltip = $STR_UI_TOOLTIP_TO_CONTAINER;
+			tooltip = "Передать в контейнер";
 			colorBackground[] = {0,0,0,1};
             colorFocused[] = {0.09,0.09,0.09,1};
             colorBackgroundActive[] = {0.03,0.03,0.03,1};
@@ -173,7 +173,7 @@ class DialogInventory {
 
 		class Container : Personal {
 			idc = 4206;
-                        text = $STR_UI_CONTAINER_INVENTORY;
+			text = "Инвентарь контейнера<t align='right'>0/0</t>";
 			SAFEZONE_X(CONTAINER_X);
 		};
 
@@ -190,7 +190,7 @@ class DialogInventory {
 		class ToPersonal : ToInventory {
 			idc = 4209;
 			text = "\A3\Ui_f\data\GUI\RscCommon\RscHTML\arrow_left_ca.paa";
-                        tooltip = $STR_UI_TOOLTIP_TO_PERSONAL;
+			tooltip = "Передать себе";
 			onButtonClick = "_this call ULP_fnc_takeFromCargo;";
 			SAFEZONE_X(CONTAINER_X);
 		};
