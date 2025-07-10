@@ -14,7 +14,7 @@ class DialogGarage {
 		class Header : Life_RscText {
             idc = -1;
             colorBackground[] = HEADER_COLOUR;
-            text = "Гараж";
+            text = $STR_UI_GARAGE;
             SAFEZONE_X(UI_X);
             SAFEZONE_Y(0.269);
 			SAFEZONE_W(UI_WIDTH);
@@ -86,7 +86,7 @@ class DialogGarage {
 
 		class RetrieveButton : Life_RscButtonCenter {
             idc = 3505;
-            text = "<t align = 'center'>Получить</t>";
+            text = $STR_UI_RETRIEVE;
 			onButtonClick = "_this call ULP_fnc_retrieveGarage;";
             SAFEZONE_X(0.64265625);
             SAFEZONE_Y(0.698 + BUTTON_MARGIN_Y);
@@ -96,7 +96,7 @@ class DialogGarage {
 
 		class DestroyButton : Life_RscButtonCenter {
             idc = 3506;
-            text = "<t align = 'center'>Уничтожить</t>";
+            text = $STR_UI_DESTROY;
 			onButtonClick = "_this call ULP_fnc_destroyGarage;";
             SAFEZONE_X(0.64265625 - (0.0584375) - MARGIN_X);
             SAFEZONE_Y(0.698 + BUTTON_MARGIN_Y);
@@ -106,7 +106,7 @@ class DialogGarage {
 
 		class TransferButton : Life_RscButtonCenter {
             idc = 3507;
-            text = "<t align = 'center'>Передать</t>";
+            text = $STR_UI_TRANSFER;
 			onButtonClick = "_this call ULP_fnc_transferGarage;";
             SAFEZONE_X(0.64265625 - (0.0584375 * 2) - (MARGIN_X * 2));
             SAFEZONE_Y(0.698 + BUTTON_MARGIN_Y);
