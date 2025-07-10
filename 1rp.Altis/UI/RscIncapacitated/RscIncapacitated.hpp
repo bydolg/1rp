@@ -29,7 +29,7 @@ class RscIncapacitated {
 
         class SubText : Life_RscStructuredText {
             idc = 9002;
-            text = $STR_UI_WAIT_REVIVE;
+            text = "<t align='left' size='1'>Ожидание возрождения...</t><t align='right' size='1'>Ближайший медик: ##м</t>";
             x = 0.376251 * safezoneW + safezoneX;
             y = 0.764 * safezoneH + safezoneY;
             w = 0.2475 * safezoneW;
@@ -56,7 +56,7 @@ class RscIncapacitated {
 
         class ProgressText : Life_RscStructuredText {
             idc = 9003;
-            text = $STR_UI_BLEEDING;
+            text = "<t align='center' size='1'>Вы кровоточите...</t>";
             x = 0.376251 * safezoneW + safezoneX;
             y = 0.729 * safezoneH + safezoneY;
             w = 0.2475 * safezoneW;
@@ -65,7 +65,7 @@ class RscIncapacitated {
 
         class RequestMedic : Life_RscStructuredText {
             idc = 9005;
-            text = $STR_UI_REQUEST_MEDIC;
+            text = "<t align='center' size='1'>Нажмите <t color='#8A2BE2'>Пробел</t> для вызова медика</t>";
             x = 0.29375 * safezoneW + safezoneX;
             y = 0.792 * safezoneH + safezoneY;
             w = 0.4125 * safezoneW;
