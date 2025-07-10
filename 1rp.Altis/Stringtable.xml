@@ -93,5 +93,165 @@
             <Original>%1 не может позволить себе штраф в размере %2</Original>
             <English>%1 cannot afford a fine of %2</English>
         </Key>
+        <Key ID="STR_PNC_SELECT_WARRANT">
+            <Original>Вы должны выбрать ордер, который вы хотите удалить...</Original>
+            <English>You must select a warrant you wish to clear...</English>
+        </Key>
+        <Key ID="STR_PNC_CLEAR_CONFIRM">
+            <Original>Вы уверены, что хотите очистить ордера для %1...</Original>
+            <English>Are you sure you want to clear the warrants for %1...</English>
+        </Key>
+        <Key ID="STR_PNC_CLEARED">
+            <Original>Вы очистили ордера для &lt;t color='#B92DE0'&gt;%1&lt;/t&gt;</Original>
+            <English>You cleared the warrants for &lt;t color='#B92DE0'&gt;%1&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_ADMIN_COOLDOWN">
+            <Original>Вы недавно использовали команду, пожалуйста, подождите перед повторной попыткой...</Original>
+            <English>You recently used this command, please wait before trying again...</English>
+        </Key>
+        <Key ID="STR_ADMIN_NEED_TARGET">
+            <Original>Вам нужно выбрать цель для выполнения этого действия...</Original>
+            <English>You need to select a target to perform this action...</English>
+        </Key>
+        <Key ID="STR_ADMIN_TARGET_SELF">
+            <Original>Нельзя выполнить это действие на себе...</Original>
+            <English>You cannot perform this action on yourself...</English>
+        </Key>
+        <Key ID="STR_ADMIN_EXIT_VEHICLE">
+            <Original>Вам нужно выйти из транспортного средства, прежде чем сделать это...</Original>
+            <English>You need to exit the vehicle before doing this...</English>
+        </Key>
+        <Key ID="STR_ADMIN_TELEPORT_TO">
+            <Original>Вы телепортировались к &lt;t color='#B92DE0'&gt;%1&lt;/t&gt;</Original>
+            <English>You teleported to &lt;t color='#B92DE0'&gt;%1&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_ADMIN_TELEPORT_HERE">
+            <Original>Вы телепортировали &lt;t color='#B92DE0'&gt;%1&lt;/t&gt; к себе</Original>
+            <English>You teleported &lt;t color='#B92DE0'&gt;%1&lt;/t&gt; to yourself</English>
+        </Key>
+        <Key ID="STR_SPAWN_KAVALA_HQ">
+            <Original>Штаб-квартира Кавалы</Original>
+            <English>Kavala Headquarters</English>
+        </Key>
+        <Key ID="STR_SPAWN_NCA_FRONTLINE">
+            <Original>Штаб-квартира НСА на передовой</Original>
+            <English>NCA Frontline Headquarters</English>
+        </Key>
+        <Key ID="STR_SPAWN_ATHIRA_POST">
+            <Original>Пост Афиры</Original>
+            <English>Athira Outpost</English>
+        </Key>
+        <Key ID="STR_SPAWN_PYRGOS_POST">
+            <Original>Пост Пироса</Original>
+            <English>Pyrgos Outpost</English>
+        </Key>
+        <Key ID="STR_SPAWN_AGIOS_POST">
+            <Original>Пост Агиоса</Original>
+            <English>Agios Outpost</English>
+        </Key>
+        <Key ID="STR_SPAWN_UNDERCOVER_HQ">
+            <Original>Скрытая штаб-квартира НСА</Original>
+            <English>Undercover NCA HQ</English>
+        </Key>
+        <Key ID="STR_SPAWN_KAVALA_HOSPITAL">
+            <Original>Госпиталь Кавалы</Original>
+            <English>Kavala Hospital</English>
+        </Key>
+        <Key ID="STR_SPAWN_ATHIRA_CLINIC">
+            <Original>Клиника Афиры</Original>
+            <English>Athira Clinic</English>
+        </Key>
+        <Key ID="STR_SPAWN_PYRGOS_CLINIC">
+            <Original>Клиника Пироса</Original>
+            <English>Pyrgos Clinic</English>
+        </Key>
+        <Key ID="STR_SPAWN_AIR_AMBULANCE">
+            <Original>Станция Воздушной скорой помощи</Original>
+            <English>Air Ambulance Station</English>
+        </Key>
+        <Key ID="STR_SPAWN_MARINE_BASE">
+            <Original>Морская база</Original>
+            <English>Marine Base</English>
+        </Key>
+        <Key ID="STR_SPAWN_HATO_KAVALA">
+            <Original>Объект Кавалы</Original>
+            <English>HATO Kavala Compound</English>
+        </Key>
+        <Key ID="STR_SPAWN_HATO_AGIOS">
+            <Original>Объект Агиоса</Original>
+            <English>HATO Agios Compound</English>
+        </Key>
+        <Key ID="STR_SPAWN_GOV_RESIDENCE">
+            <Original>10 улица Кавалы</Original>
+            <English>10 Kavala Street</English>
+        </Key>
+        <Key ID="STR_SPAWN_GOV_OFFICES">
+            <Original>Правительственные офисы</Original>
+            <English>Government Offices</English>
+        </Key>
+        <Key ID="STR_SPAWN_KAVALA_SAFEHOUSE">
+            <Original>Тайник Кавалы</Original>
+            <English>Kavala Safehouse</English>
+        </Key>
+        <Key ID="STR_SPAWN_PYRGOS_SAFEHOUSE">
+            <Original>Тайник Пироса</Original>
+            <English>Pyrgos Safehouse</English>
+        </Key>
+        <Key ID="STR_SPAWN_CIV_KAVALA">
+            <Original>Кавала</Original>
+            <English>Kavala</English>
+        </Key>
+        <Key ID="STR_SPAWN_CIV_ATHIRA">
+            <Original>Афира</Original>
+            <English>Athira</English>
+        </Key>
+        <Key ID="STR_SPAWN_CIV_PYRGOS">
+            <Original>Пирогос</Original>
+            <English>Pyrgos</English>
+        </Key>
+        <Key ID="STR_SPAWN_CIV_SOFIA">
+            <Original>София</Original>
+            <English>Sofia</English>
+        </Key>
+        <Key ID="STR_SPAWN_CIV_AGIOS">
+            <Original>Агиос</Original>
+            <English>Agios</English>
+        </Key>
+        <Key ID="STR_SPAWN_CIV_NEOCHORI">
+            <Original>Неохори</Original>
+            <English>Neochori</English>
+        </Key>
+        <Key ID="STR_SPAWN_TAXI">
+            <Original>Такси на Алтисе</Original>
+            <English>Altis Taxi</English>
+        </Key>
+        <Key ID="STR_SPAWN_SOLICITOR">
+            <Original>Адвокаты Алтиса</Original>
+            <English>Altis Solicitors</English>
+        </Key>
+        <Key ID="STR_SPAWN_NEWS">
+            <Original>AAN World News</Original>
+            <English>AAN World News</English>
+        </Key>
+        <Key ID="STR_SPAWN_REBEL_OUTPOST">
+            <Original>Аутпост повстанцев</Original>
+            <English>Rebel Outpost</English>
+        </Key>
+        <Key ID="STR_SPAWN_LA_TRINITE_CONSTAB">
+            <Original>Констабулярия Ла Тринитэ</Original>
+            <English>La Trinite Constabulary</English>
+        </Key>
+        <Key ID="STR_SPAWN_LA_TRINITE_OTHER">
+            <Original>Другой вариант</Original>
+            <English>Alternative Option</English>
+        </Key>
+        <Key ID="STR_SPAWN_LA_TRINITE_HOSPITAL">
+            <Original>Главное управление Ла Тринитэ</Original>
+            <English>La Trinite Headquarters</English>
+        </Key>
+        <Key ID="STR_SPAWN_LA_TRINITE">
+            <Original>Ла Тринитэ</Original>
+            <English>La Trinite</English>
+        </Key>
     </Package>
 </Project>

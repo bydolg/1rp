@@ -28,34 +28,34 @@ class CfgSpawns {
     class Altis {
         // Altis Police Service
         class KavalaStation : Police {
-            displayName = "Штаб-квартира Кавалы";
+            displayName = $STR_SPAWN_KAVALA_HQ;
             marker = "apc_spawn_kavala";
             icon = "\dataM\UI\Spawns\kavala.paa";
         };
         class KavalaStationNCA : Civilian {
-            displayName = "Штаб-квартира НСА на передовой";
+            displayName = $STR_SPAWN_NCA_FRONTLINE;
             marker = "apc_spawn_nca";
             icon = "\dataM\UI\Spawns\kavala.paa";
             radius = 1;
             conditions = "[] call ULP_fnc_isUndercover";
         };
         class AthiraStation : Police {
-            displayName = "Пост Афиры";
+            displayName = $STR_SPAWN_ATHIRA_POST;
             marker = "apc_spawn_athira";
             icon = "\dataM\UI\Spawns\athira.paa";
         };
         class PyrgosStation : Police {
-            displayName = "Пост Пироса";
+            displayName = $STR_SPAWN_PYRGOS_POST;
             marker = "apc_spawn_pyrgos";
             icon = "\dataM\UI\Spawns\pyrgos.paa";
         };
         class AgiosStation : Police {
-            displayName = "Пост Агиоса";
+            displayName = $STR_SPAWN_AGIOS_POST;
             marker = "apc_spawn_agios";
             icon = "\dataM\UI\Spawns\agios.paa";
         };
         class UndercoverHeadquarters : BaseSpawn {
-            displayName = "Скрытая штаб-квартира НСА";
+            displayName = $STR_SPAWN_UNDERCOVER_HQ;
             marker = "apc_spawn_uc";
             icon = "\dataM\UI\Spawns\neochori.paa";
             radius = 1;
@@ -64,22 +64,22 @@ class CfgSpawns {
 
         // Altis Ambulance Service
         class KavalaHospital : Medic {
-            displayName = "Госпиталь Кавалы";
+            displayName = $STR_SPAWN_KAVALA_HOSPITAL;
             marker = "nhs_spawn_kavala";
             icon = "\dataM\UI\Spawns\kavala.paa";
         };
         class AthiraClinic : Medic {
-            displayName = "Клиника Афиры";
+            displayName = $STR_SPAWN_ATHIRA_CLINIC;
             marker = "nhs_spawn_athira";
             icon = "\dataM\UI\Spawns\athira.paa";
         };
         class PyrgosClinic : Medic {
-            displayName = "Клиника Пироса";
+            displayName = $STR_SPAWN_PYRGOS_CLINIC;
             marker = "nhs_spawn_pyrgos";
             icon = "\dataM\UI\Spawns\pyrgos.paa";
         };
         class AirAmbulance : Medic {
-            displayName = "Станция Воздушной скорой помощи";
+            displayName = $STR_SPAWN_AIR_AMBULANCE;
             marker = "nhs_spawn_aa";
             icon = "\dataM\UI\Spawns\idap.paa";
             conditions = "[""Medic_AA"", 1] call ULP_fnc_hasAccess";
@@ -87,7 +87,7 @@ class CfgSpawns {
 
         // Altis Police Service / Altis Ambulance Service
         class MarineStation : Police {
-            displayName = "Морская база";
+            displayName = $STR_SPAWN_MARINE_BASE;
             factions[] = { "Police", "Medic" };
             marker = "joint_spawn_marine";
             icon = "\dataM\UI\Spawns\marine.paa";
@@ -95,92 +95,92 @@ class CfgSpawns {
 
         // HATO
         class HatoKavala : HATO {
-            displayName = "Объект Кавалы";
+            displayName = $STR_SPAWN_HATO_KAVALA;
             marker = "hato_spawn_kavala";
             icon = "\dataM\UI\Spawns\kavala.paa";
         };
         class HatoAgios : HATO {
-            displayName = "Объект Агиоса";
+            displayName = $STR_SPAWN_HATO_AGIOS;
             marker = "hato_spawn_agios";
             icon = "\dataM\UI\Spawns\agios.paa";
         };
 
         // Government
         class GovernorResidence : BaseSpawn {
-            displayName = "10 улица Кавалы";
+            displayName = $STR_SPAWN_GOV_RESIDENCE;
             marker = "civ_spawn_residence";
             icon = "\dataM\UI\Spawns\government.paa";
             conditions = "[] call ULP_fnc_isGovernor || { [] call ULP_fnc_isProtection }";
         };
         class GovernmentOffices : GovernorResidence {
-            displayName = "Правительственные офисы";
+            displayName = $STR_SPAWN_GOV_OFFICES;
             marker = "civ_spawn_government";
         };
         class KavalaSafehouse : GovernorResidence {
-            displayName = "Тайник Кавалы";
+            displayName = $STR_SPAWN_KAVALA_SAFEHOUSE;
             marker = "civ_spawn_kavSafehouse";
             conditions = "[] call ULP_fnc_isGovernor || { [] call ULP_fnc_isProtection && { [""GovernmentSafehouses""] call ULP_fnc_hasGroupPerk } }";
         };
         class PyrgosSafehouse : KavalaSafehouse {
-            displayName = "Тайник Пироса";
+            displayName = $STR_SPAWN_PYRGOS_SAFEHOUSE;
             marker = "civ_spawn_pyrSafehouse";
         };
         
         // Civilian
         class Kavala : Civilian {
-            displayName = "Кавала";
+            displayName = $STR_SPAWN_CIV_KAVALA;
             marker = "civ_spawn_kavala";
             icon = "\dataM\UI\Spawns\kavala.paa";
         };
         class Athira : Civilian {
-            displayName = "Афира";
+            displayName = $STR_SPAWN_CIV_ATHIRA;
             marker = "civ_spawn_athira";
             icon = "\dataM\UI\Spawns\athira.paa";
         };
         class Pyrgos : Civilian {
-            displayName = "Пирогос";
+            displayName = $STR_SPAWN_CIV_PYRGOS;
             marker = "civ_spawn_pyrgos";
             icon = "\dataM\UI\Spawns\pyrgos.paa";
         };
         class Sofia : Civilian {
-            displayName = "София";
+            displayName = $STR_SPAWN_CIV_SOFIA;
             marker = "civ_spawn_sofia";
             icon = "\dataM\UI\Spawns\sofia.paa";
             conditions = "[""WideTraveller""] call ULP_fnc_hasPerk";
         };
         class Agios : Civilian {
-            displayName = "Агиос";
+            displayName = $STR_SPAWN_CIV_AGIOS;
             marker = "civ_spawn_agios";
             icon = "\dataM\UI\Spawns\agios.paa";
             conditions = "[""WideTraveller""] call ULP_fnc_hasPerk";
         };
         class Neochori : Civilian {
-            displayName = "Неохори";
+            displayName = $STR_SPAWN_CIV_NEOCHORI;
             marker = "civ_spawn_neochori";
             icon = "\dataM\UI\Spawns\neochori.paa";
             conditions = "[""WideTraveller""] call ULP_fnc_hasPerk";
         };
 
         class Taxi : BaseSpawn {
-            displayName = "Такси на Алтисе";
+            displayName = $STR_SPAWN_TAXI;
             marker = "civ_spawn_taxi";
             icon = "\dataM\UI\Spawns\taxi.paa";
             conditions = "[""Taxi""] call ULP_fnc_hasLicense";
         };
         class Solicitor : BaseSpawn {
-            displayName = "Адвокаты Алтиса";
+            displayName = $STR_SPAWN_SOLICITOR;
             marker = "civ_spawn_solicitor";
             icon = "\dataM\UI\Spawns\solicitor.paa";
             conditions = "[""Solicitor""] call ULP_fnc_hasLicense";
         };
         class News : BaseSpawn {
-            displayName = "AAN World News";
+            displayName = $STR_SPAWN_NEWS;
             marker = "civ_spawn_news";
             icon = "\dataM\UI\Spawns\news.paa";
             conditions = "[""News""] call ULP_fnc_hasLicense";
         };
         class Rebel : BaseSpawn {
-            displayName = "Аутпост повстанцев";
+            displayName = $STR_SPAWN_REBEL_OUTPOST;
             marker = "civ_spawn_rebel";
             icon = "\dataM\UI\Spawns\rebel.paa";
             conditions = "[""Rebel""] call ULP_fnc_hasLicense && { missionNamespace getVariable [""ULP_SRV_Setting_BaseBidsActive"", false] }";
@@ -189,25 +189,25 @@ class CfgSpawns {
 
     class Malden {
         class LaTriniteConstabulary : Police {
-            displayName = "Констабулярия Ла Тринитэ";
+            displayName = $STR_SPAWN_LA_TRINITE_CONSTAB;
             marker = "cop_spawn_1";
             icon = "\a3\ui_f\data\map\LocationTypes\vegetationBroadleaf_CA.paa";
         };
 
         class test : Police {
-            displayName = "Другой вариант";
+            displayName = $STR_SPAWN_LA_TRINITE_OTHER;
             marker = "cop_spawn_2";
             icon = "\a3\ui_f\data\map\LocationTypes\vegetationBroadleaf_CA.paa";
         };
 
         class LaTriniteHospital : Medic {
-            displayName = "Главное управление Ла Тринитэ";
+            displayName = $STR_SPAWN_LA_TRINITE_HOSPITAL;
             marker = "medic_spawn";
             icon = "\a3\ui_f\data\map\VehicleIcons\pictureLogic_ca.paa";
         };
 
         class LaTrinite : BaseSpawn {
-            displayName = "Ла Тринитэ";
+            displayName = $STR_SPAWN_LA_TRINITE;
             marker = "civ_spawn_1";
             icon = "\a3\ui_f\data\map\LocationTypes\vegetationBroadleaf_CA.paa";
         };

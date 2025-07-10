@@ -118,13 +118,13 @@ switch (_mode) do {
 
 		if !(["Teleport"] call ULP_fnc_checkPower) exitWith {};
 
-		if (time < (player getVariable ["admin_action_cooldown", 0])) exitWith {
-                        ["Вы недавно использовали команду, пожалуйста, подождите перед повторной попыткой..."] call ULP_fnc_hint;
-			false
-		};
+                if (time < (player getVariable ["admin_action_cooldown", 0])) exitWith {
+                        [LSTRING(ADMIN_COOLDOWN)] call ULP_fnc_hint;
+                        false
+                };
 
-		private _focus = ["GetCameraTarget"] call ULP_fnc_adminCamera;
-                if (isNull _focus) exitWith { ["Вам нужно выбрать цель для выполнения этого действия..."] call ULP_fnc_hint; };
+                private _focus = ["GetCameraTarget"] call ULP_fnc_adminCamera;
+                if (isNull _focus) exitWith { [LSTRING(ADMIN_NEED_TARGET)] call ULP_fnc_hint; };
 
 		player setVariable ["admin_action_cooldown", time + 2];
 
@@ -135,18 +135,18 @@ switch (_mode) do {
 				[getPlayerUID player, "Admin", ["AdminEjectVehicle", serverTime, [name _focus, getPlayerUID _focus, getPos _focus]]] remoteExecCall ["ULP_SRV_fnc_logPlayerEvent", RSERV];
 			};
 
-                        if (_focus isEqualTo player) exitWith { ["Нельзя выполнить это действие на себе..."] call ULP_fnc_hint; };
-                        if !(isNull (objectParent player)) exitWith { ["Вам нужно выйти из транспортного средства, прежде чем сделать это..."] call ULP_fnc_hint; };
+                        if (_focus isEqualTo player) exitWith { [LSTRING(ADMIN_TARGET_SELF)] call ULP_fnc_hint; };
+                        if !(isNull (objectParent player)) exitWith { [LSTRING(ADMIN_EXIT_VEHICLE)] call ULP_fnc_hint; };
 
 			case "To": {	
-				player setPos (getPos _focus);
-                                [format ["Вы телепортировались к <t color='#B92DE0'>%1</t>", name _focus]] call ULP_fnc_hint;
+                                player setPos (getPos _focus);
+                                [format [LSTRING(ADMIN_TELEPORT_TO), name _focus]] call ULP_fnc_hint;
 				[getPlayerUID player, "Admin", ["AdminTeleportTo", serverTime, [name _focus, getPlayerUID _focus, getPos _focus]]] remoteExecCall ["ULP_SRV_fnc_logPlayerEvent", RSERV];
 			};
 
 			case "Here": {
-				_focus setPos (getPos player);
-                                [format ["Вы телепортировали <t color='#B92DE0'>%1</t> к себе", name _focus]] call ULP_fnc_hint;
+                                _focus setPos (getPos player);
+                                [format [LSTRING(ADMIN_TELEPORT_HERE), name _focus]] call ULP_fnc_hint;
 				[getPlayerUID player, "Admin", ["AdminTeleportHere", serverTime, [name _focus, getPlayerUID _focus, getPos _focus]]] remoteExecCall ["ULP_SRV_fnc_logPlayerEvent", RSERV];
 			};
 			
