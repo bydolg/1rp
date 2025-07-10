@@ -253,5 +253,123 @@
             <Original>Ла Тринитэ</Original>
             <English>La Trinite</English>
         </Key>
+
+        <!-- UI localization -->
+        <Key ID="STR_UI_GARAGE">
+            <Original>Гараж</Original>
+            <English>Garage</English>
+        </Key>
+        <Key ID="STR_UI_RETRIEVE">
+            <Original>&lt;t align='center'&gt;Получить&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Retrieve&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_UI_DESTROY">
+            <Original>&lt;t align='center'&gt;Уничтожить&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Destroy&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_UI_TRANSFER">
+            <Original>&lt;t align='center'&gt;Передать&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Transfer&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_UI_BANK">
+            <Original>Банк</Original>
+            <English>Bank</English>
+        </Key>
+        <Key ID="STR_UI_PERSONAL_TAB">
+            <Original>Личный</Original>
+            <English>Personal</English>
+        </Key>
+        <Key ID="STR_UI_GROUP_TAB">
+            <Original>Группа</Original>
+            <English>Group</English>
+        </Key>
+        <Key ID="STR_UI_TRANSACTION">
+            <Original>Транзакция</Original>
+            <English>Transaction</English>
+        </Key>
+        <Key ID="STR_UI_IN">
+            <Original>Вход</Original>
+            <English>In</English>
+        </Key>
+        <Key ID="STR_UI_OUT">
+            <Original>Выход</Original>
+            <English>Out</English>
+        </Key>
+        <Key ID="STR_UI_WITHDRAW">
+            <Original>&lt;t align='center'&gt;Снять&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Withdraw&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_UI_DEPOSIT">
+            <Original>&lt;t align='center'&gt;Внести&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Deposit&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_UI_TRANSFER_BTN">
+            <Original>&lt;t align='center'&gt;Перевести&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Transfer&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_UI_PERSONAL_INVENTORY">
+            <Original>Персональный инвентарь</Original>
+            <English>Personal Inventory</English>
+        </Key>
+        <Key ID="STR_UI_CONTAINER_INVENTORY">
+            <Original>Инвентарь контейнера</Original>
+            <English>Container Inventory</English>
+        </Key>
+        <Key ID="STR_UI_ITEM">
+            <Original>Предмет</Original>
+            <English>Item</English>
+        </Key>
+        <Key ID="STR_UI_TOTAL">
+            <Original>Всего</Original>
+            <English>Total</English>
+        </Key>
+        <Key ID="STR_UI_BALANCE">
+            <Original>Баланс</Original>
+            <English>Balance</English>
+        </Key>
+        <Key ID="STR_UI_TAX">
+            <Original>Налог</Original>
+            <English>Tax</English>
+        </Key>
+        <Key ID="STR_UI_TOOLTIP_TO_CONTAINER">
+            <Original>Передать в контейнер</Original>
+            <English>Move to container</English>
+        </Key>
+        <Key ID="STR_UI_TOOLTIP_TO_PERSONAL">
+            <Original>Передать себе</Original>
+            <English>Move to self</English>
+        </Key>
+        <Key ID="STR_UI_INVENTORY">
+            <Original>Инвентарь</Original>
+            <English>Inventory</English>
+        </Key>
+        <Key ID="STR_UI_INVENTORY_USER">
+            <Original>Инвентарь &lt;t align='right'&gt;Пользователь: %1&lt;/t&gt;</Original>
+            <English>Inventory &lt;t align='right'&gt;User: %1&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_UI_FAR_FROM_CONTAINER">
+            <Original>Вы слишком далеко от контейнера, чтобы получить к нему доступ!</Original>
+            <English>You are too far from the container to access it!</English>
+        </Key>
+        <Key ID="STR_UI_MUST_BE_IN_GROUP">
+            <Original>Для доступа к этой функции вам нужно находиться в группе!</Original>
+            <English>You need to be in a group to access this function!</English>
+        </Key>
+        <Key ID="STR_UI_SELECT_RECIPIENT">
+            <Original>Вы не выбрали получателя для перевода!</Original>
+            <English>You did not select a recipient for the transfer!</English>
+        </Key>
+        <Key ID="STR_UI_WAIT_REVIVE">
+            <Original>&lt;t align='left' size='1'&gt;Ожидание возрождения...&lt;/t&gt;&lt;t align='right' size='1'&gt;Ближайший медик: ##м&lt;/t&gt;</Original>
+            <English>&lt;t align='left' size='1'&gt;Waiting for revive...&lt;/t&gt;&lt;t align='right' size='1'&gt;Nearest medic: ##m&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_UI_BLEEDING">
+            <Original>&lt;t align='center' size='1'&gt;Вы кровоточите...&lt;/t&gt;</Original>
+            <English>&lt;t align='center' size='1'&gt;You are bleeding...&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_UI_REQUEST_MEDIC">
+            <Original>&lt;t align='center' size='1'&gt;Нажмите &lt;t color='#8A2BE2'&gt;Пробел&lt;/t&gt; для вызова медика&lt;/t&gt;</Original>
+            <English>&lt;t align='center' size='1'&gt;Press &lt;t color='#8A2BE2'&gt;Space&lt;/t&gt; to request a medic&lt;/t&gt;</English>
+        </Key>
     </Package>
 </Project>

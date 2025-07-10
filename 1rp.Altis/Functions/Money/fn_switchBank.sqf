@@ -19,7 +19,7 @@ if (isNull _display) exitWith {};
 private _group = (_index isEqualTo 1);
 
 if (_group && { !([] call ULP_fnc_isGroup) }) exitWith {
-    ["Для доступа к этой функции вам нужно находиться в группе!"] call ULP_fnc_hint;
+    [localize "STR_UI_MUST_BE_IN_GROUP"] call ULP_fnc_hint;
     _ctrl lbSetCurSel 0;
     [_ctrl, 0] call ULP_fnc_switchBank;
 };
@@ -47,8 +47,9 @@ reverse _transactions;
 
 private _balValue = [BANK, [] call ULP_fnc_groupFunds] select (_group);
 
-_balance ctrlSetStructuredText parseText format["<t align='left'>%1</t><t align='right'>%2%3</t><br/><t size='0.9'>Баланс<t align='right'>Налог</t></t>", 
-    ([format["%1%2", "$", [_balValue] call ULP_fnc_numberText], "-"] select (_balValue <= 0)), (([] call ULP_fnc_groupTax) * 100), "%"
+_balance ctrlSetStructuredText parseText format["<t align='left'>%1</t><t align='right'>%2%3</t><br/><t size='0.9'>%4<t align='right'>%5</t></t>",
+    ([format["%1%2", "$", [_balValue] call ULP_fnc_numberText], "-"] select (_balValue <= 0)), (([] call ULP_fnc_groupTax) * 100), "%",
+    localize "STR_UI_BALANCE", localize "STR_UI_TAX"
 ];
 
 (_display displayCtrl 4108) ctrlShow !(_group);

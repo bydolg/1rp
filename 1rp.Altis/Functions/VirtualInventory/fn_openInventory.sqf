@@ -38,8 +38,8 @@ if (createDialog "DialogInventory") exitWith {
 		"", "_missionCfg", "_picture", "_name"
 	];
 	
-	private _title = _display displayCtrl 4201;
-	_title ctrlSetStructuredText parseText "Inventory";
+    private _title = _display displayCtrl 4201;
+    _title ctrlSetStructuredText parseText localize "STR_UI_INVENTORY";
 	_display setVariable ["lastUser", objNull];
 
 	private _filter = _display displayCtrl 23032;
@@ -84,7 +84,7 @@ if (createDialog "DialogInventory") exitWith {
 		};
 
 		if ((_container distance player) > 10) exitWith {
-                        ["Вы слишком далеко от контейнера, чтобы получить к нему доступ!"] call ULP_fnc_hint;
+                        [localize "STR_UI_FAR_FROM_CONTAINER"] call ULP_fnc_hint;
 			closeDialog 0;
 
 			[_container, player] remoteExecCall ["ULP_SRV_fnc_unregisterCargoUser", RSERV];
@@ -100,8 +100,8 @@ if (createDialog "DialogInventory") exitWith {
 
 		private _curUser = _container getVariable ["ULP_VirtualCargo_User", objNull];
 		if !((_display getVariable ["lastUser", objNull]) isEqualTo _curUser) then {
-			private _title = _display displayCtrl 4201;
-			_title ctrlSetStructuredText parseText format["Inventory <t align='right'>User: %1</t>", name _curUser];
+                        private _title = _display displayCtrl 4201;
+                        _title ctrlSetStructuredText parseText format[localize "STR_UI_INVENTORY_USER", name _curUser];
 			_display setVariable ["lastUser", _curUser];
 		};
 	}] call ULP_fnc_addEachFrame)];
