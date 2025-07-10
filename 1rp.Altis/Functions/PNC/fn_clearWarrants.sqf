@@ -22,12 +22,12 @@ private _path = tvCurSel _list;
 
 private _unit = [_list tvData _path] call ULP_fnc_playerByUid;
 if (isNull _unit) exitWith {
-	["Вы должны выбрать ордер, который вы хотите удалить..."] call ULP_fnc_hint;
+        [LSTRING(PNC_SELECT_WARRANT)] call ULP_fnc_hint;
 };
 
 [
 	(findDisplay getNumber(configFile >> "RscDisplayMission" >> "idd")), "Confirmation", ["Clear", "Cancel"],
-	format ["Вы уверены, что хотите очистить ордера для %1...", name _unit], [_unit, _display, _list, _path],
+        format [LSTRING(PNC_CLEAR_CONFIRM), name _unit], [_unit, _display, _list, _path],
 	{	
 		_this params [ "_unit", "_display", "_list", "_path" ];
 		
@@ -39,7 +39,7 @@ if (isNull _unit) exitWith {
 
 		_list tvDelete _path;
 
-		[getPlayerUID _unit] remoteExecCall ["ULP_SRV_fnc_clearWarrants", RSERV];
-		[format ["Вы очистили ордера для <t color='#B92DE0'>%1</t>", name _unit]] call ULP_fnc_hint;
+                [getPlayerUID _unit] remoteExecCall ["ULP_SRV_fnc_clearWarrants", RSERV];
+                [format [LSTRING(PNC_CLEARED), name _unit]] call ULP_fnc_hint;
 	}, {}, false
 ] call ULP_fnc_confirm;
