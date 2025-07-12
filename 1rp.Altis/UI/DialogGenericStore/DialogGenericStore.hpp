@@ -15,7 +15,7 @@ class DialogGenericStore {
 		class Header : Life_RscText {
             idc = 3101;
             colorBackground[] = HEADER_COLOUR;
-            text = LSTRING(UI_STORE_HEADER);
+            text = "Магазин одежды";
             SAFEZONE_X(UI_X);
             SAFEZONE_Y(0.269);
 			SAFEZONE_W(UI_WIDTH);
@@ -142,7 +142,7 @@ class DialogGenericStore {
 
         class AddCartButton : Life_RscButtonCenter {
             idc = 3108;
-            text = format ["<t align = 'center'>%1</t>", LSTRING(UI_ADD_TO_CART)];
+            text = "<t align = 'center'>Добавить в корзину</t>";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X_INNER, CONTENT_W, 1));
             SAFEZONE_Y(((0.291 + MARGIN_Y + BODY_HEIGHT) - (MARGIN_Y * 2)) - BUTTON_H);
 			SAFEZONE_W(CONTENT_W);
@@ -163,7 +163,7 @@ class DialogGenericStore {
 
         class CartButton : Life_RscButtonCenter {
             idc = 3109;
-            text = format ["<t align = 'center'>%1</t>", LSTRING(UI_REMOVE_FROM_CART)];
+            text = "<t align = 'center'>Удалить из корзины</t>";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X_INNER, CONTENT_W, 2));
             SAFEZONE_Y(((0.291 + MARGIN_Y + BODY_HEIGHT) - (MARGIN_Y * 2)) - (BUTTON_H * 2) - BUTTON_MARGIN_Y);
 			SAFEZONE_W(CONTENT_W);
@@ -193,7 +193,7 @@ class DialogGenericStore {
         class SaveNewCartButton: ULP_RscButtonIcon {
             idc = 3115;
             text = "\a3\3den\Data\Displays\Display3DEN\ToolBar\new_ca.paa";
-            tooltip = LSTRING(UI_SAVE_CART_NEW);
+            tooltip = "Сохранить новую корзину";
             onButtonClick = "_this call ULP_fnc_newSavedCart;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X_INNER, CONTENT_W, 2));
             SAFEZONE_Y((CART_LIST_Y + CART_LIST_H) - BUTTON_H);
@@ -208,7 +208,7 @@ class DialogGenericStore {
         class LoadCartButton : SaveNewCartButton {
             idc = 3116;
             text = "\a3\3den\Data\Displays\Display3DEN\ToolBar\open_ca.paa";
-            tooltip = LSTRING(UI_LOAD_CART);
+            tooltip = "Открыть сохраненную корзину";
             onButtonClick = "_this call ULP_fnc_loadSavedCart;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X_INNER, CONTENT_W, 2) + CART_ACTION_W);
         };
@@ -216,7 +216,7 @@ class DialogGenericStore {
         class SaveCartButton : LoadCartButton {
             idc = 3117;
             text = "\a3\3den\Data\Displays\Display3DEN\ToolBar\saveas_ca.paa";
-            tooltip = LSTRING(UI_SAVE_CART);
+            tooltip = "Сохранить текущую корзину";
             onButtonClick = "[ctrlParent (_this select 0)] call ULP_fnc_saveCart;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X_INNER, CONTENT_W, 2) + (CART_ACTION_W * 2));
         };
@@ -224,14 +224,14 @@ class DialogGenericStore {
         class DeleteCartButton : LoadCartButton {
             idc = 3118;
             text = "\a3\3den\Data\Cfg3DEN\History\deleteItems_ca.paa";
-            tooltip = LSTRING(UI_DELETE_CART);
+            tooltip = "Удалить текущую корзину";
             onButtonClick = "[ctrlParent (_this select 0)] call ULP_fnc_deleteSavedCart;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X_INNER, CONTENT_W, 2) + (CART_ACTION_W * 3));
         };
 
         class BuyButton : Life_RscButtonCenter {
             idc = 3110;
-            text = format ["<t align = 'center'>%1</t>", LSTRING(UI_BUY_ITEMS)];
+            text = "<t align = 'center'>Купить предметы</t>";
             SAFEZONE_X((UI_X + UI_WIDTH) - CONTENT_W - MARGIN_X);
             SAFEZONE_Y(0.698 + BUTTON_MARGIN_Y);
 			SAFEZONE_W(CONTENT_W);
