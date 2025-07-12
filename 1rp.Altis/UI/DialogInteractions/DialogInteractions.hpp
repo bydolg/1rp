@@ -12,7 +12,7 @@ class DialogInteractions {
         class Header : Life_RscText {
             idc = 3601;
             colorBackground[] = HEADER_COLOUR;
-            text = "Действуй";
+            text = LSTRING(UI_INTERACTIONS_HEADER);
             SAFEZONE_X(UI_X);
             SAFEZONE_Y(UI_Y - MARGIN_Y);
             SAFEZONE_W(UI_WIDTH);
@@ -23,7 +23,7 @@ class DialogInteractions {
     class Controls {
         class CloseButton : Life_RscButtonCenter {
             idc = 3602;
-            text = "<t align = 'center'>Закрыть</t>";
+            text = format ["<t align = 'center'>%1</t>", LSTRING(UI_CLOSE)];
             onButtonClick = "closeDialog 0;";
             SAFEZONE_X(UI_X);
             SAFEZONE_Y(UI_Y + MARGIN_Y);
