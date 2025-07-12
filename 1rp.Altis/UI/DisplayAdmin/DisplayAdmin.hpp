@@ -69,12 +69,12 @@ class DisplayAdmin {
             columns = 2;
             fade = 0;
             strings[] = {
-                "Camera",
-                "First Person"
+                LSTRING(UI_CAMERA),
+                LSTRING(UI_FIRST_PERSON)
             };
             tooltips[] = {
-                "Camera",
-                "First Person"
+                LSTRING(UI_CAMERA),
+                LSTRING(UI_FIRST_PERSON)
             };
         };
 
@@ -83,7 +83,7 @@ class DisplayAdmin {
 
         class TPToButton : Life_RscButtonCenter {
             idc = 605;
-            text = "<t align = 'center'>Go To</t>";
+            text = format ["<t align = 'center'>%1</t>", LSTRING(UI_GOTO)];
 			onButtonClick = "[""action"", [""To""]] call ULP_fnc_adminCamera;";
             SAFEZONE_X(HORIZONTAL_GRID_X(0.5 - (BUTTON_GROUP_W / 2), BUTTON_W, 0));
 			SAFEZONE_Y(((1 - (BUTTON_H * 2)) - (MARGIN_Y * 2)));
@@ -93,21 +93,21 @@ class DisplayAdmin {
 
         class TPHereButton : TPToButton {
             idc = 606;
-            text = "<t align = 'center'>Bring Here</t>";
+            text = format ["<t align = 'center'>%1</t>", LSTRING(UI_BRING_HERE)];
 			onButtonClick = "[""action"", [""Here""]] call ULP_fnc_adminCamera;";
             SAFEZONE_X(HORIZONTAL_GRID_X(0.5 - (BUTTON_GROUP_W / 2), BUTTON_W, 1));
         };
 
         class VehicleTPButton : TPToButton {
             idc = 607;
-            text = "<t align = 'center'>Join Veh</t>";
+            text = format ["<t align = 'center'>%1</t>", LSTRING(UI_JOIN_VEH)];
 			onButtonClick = "[""action"", [""Vehicle""]] call ULP_fnc_adminCamera;";
             SAFEZONE_X(HORIZONTAL_GRID_X(0.5 - (BUTTON_GROUP_W / 2), BUTTON_W, 2));
         };
 
         class VehicleEjectButton : TPToButton {
             idc = 608;
-            text = "<t align = 'center'>Eject</t>";
+            text = format ["<t align = 'center'>%1</t>", LSTRING(UI_EJECT)];
 			onButtonClick = "[""action"", [""Eject""]] call ULP_fnc_adminCamera;";
             SAFEZONE_X(HORIZONTAL_GRID_X(0.5 - (BUTTON_GROUP_W / 2), BUTTON_W, 3));
         };
