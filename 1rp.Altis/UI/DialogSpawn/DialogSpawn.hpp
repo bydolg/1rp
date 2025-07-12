@@ -23,7 +23,7 @@ class DialogSpawn {
 		class Header : Life_RscText {
             idc = -1;
             colorBackground[] = HEADER_COLOUR;
-            text = LSTRING(UI_SPAWN_HEADER);
+            text = "Меню Возрождения";
             SAFEZONE_X(UI_X);
             SAFEZONE_Y(0.269);
 			SAFEZONE_W(UI_WIDTH);
@@ -63,7 +63,7 @@ class DialogSpawn {
 
 		class SpawnButton : Life_RscButtonCenter {
             idc = 3003;
-            text = format ["<t align = 'center'>%1</t>", LSTRING(UI_SPAWN)];
+            text = "<t align = 'center'>Возродить</t>";
 			onButtonClick = "_this call ULP_fnc_spawn;";
             SAFEZONE_X(UI_X + MARGIN_X);
             SAFEZONE_Y(0.698 + BUTTON_MARGIN_Y);
