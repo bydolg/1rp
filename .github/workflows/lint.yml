@@ -1,0 +1,28 @@
+name: SQF Lint
+
+on:
+  push:
+    paths:
+      - '**/*.sqf'
+      - '.github/workflows/lint.yml'
+      - 'Makefile'
+      - 'requirements.txt'
+  pull_request:
+    paths:
+      - '**/*.sqf'
+      - '.github/workflows/lint.yml'
+      - 'Makefile'
+      - 'requirements.txt'
+
+jobs:
+  sqflint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run lint
+        run: make lint

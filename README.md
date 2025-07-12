@@ -15,7 +15,4 @@ www.bydolg.by
 
 Required Mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2966646490
 
-## Notification hints
-Use `[text, header, type, icon] call ULP_fnc_hint` to display messages to the player.
-`type` controls the background colour and icon (`info`, `warn` or `error`).
-The styles are defined in `CfgNotificationStyles.hpp`.
+
