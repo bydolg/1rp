@@ -3,7 +3,7 @@ Server name: [BY]FreePlay Life Server
 
 Address: 37.252.10.32:2314
 
-Required game version: 2.16.*
+Required game version: 2.20.*
 
 Map: Altis
 
