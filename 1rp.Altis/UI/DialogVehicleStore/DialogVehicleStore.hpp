@@ -13,7 +13,7 @@ class DialogVehicleStore {
 		class Header : Life_RscText {
             idc = 3401;
             colorBackground[] = HEADER_COLOUR;
-            text = "Автомагазин";
+            text = $STR_DIALOGVEHICLESTORE_HEADER;
             SAFEZONE_X(UI_X);
             SAFEZONE_Y(0.269);
 			SAFEZONE_W(UI_WIDTH);
@@ -95,7 +95,7 @@ class DialogVehicleStore {
 
 		class BuyButton : Life_RscButtonCenter {
             idc = 3407;
-            text = "<t align='center'>Купить</t>";
+            text = $STR_DIALOGVEHICLESTORE_BUY;
 			onButtonClick = "_this call ULP_fnc_buyVehicle;";
             SAFEZONE_X(0.64265625);
             SAFEZONE_Y(0.698 + BUTTON_MARGIN_Y);

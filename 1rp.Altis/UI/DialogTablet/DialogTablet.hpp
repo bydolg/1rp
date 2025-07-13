@@ -46,7 +46,7 @@ class DialogTablet {
 
         class Profile : ULP_RscButtonClean {
             idc = 23002;
-            text = "<br/><br/><br/><img image='\a3\ui_f\data\GUI\Rsc\RscDisplayMain\menu_singleplayer_ca.paa' align='center' size='7' color='#808080'/><br/><t align = 'center'>Профиль</t>";
+            text = "<br/><br/><br/><img image='\\a3\\ui_f\\data\\GUI\\Rsc\\RscDisplayMain\\menu_singleplayer_ca.paa' align='center' size='7' color='#808080'/><br/><t align = 'center'>" + localize 'STR_DIALOGTABLET_PROFILE' + "</t>";
             onButtonClick = "[""Profile""] call ULP_fnc_setScreen;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X, TABLET_BUTTON_W, 1));
             SAFEZONE_Y(VERTICAL_GRID_Y(UI_Y, TABLET_BUTTON_H, 0, MARGIN_Y));
@@ -56,7 +56,7 @@ class DialogTablet {
 
         class Inventory : ULP_RscButtonClean {
             idc = 23003;
-            text = "<br/><img image='\a3\ui_f_curator\Data\RscCommon\RscAttributeInventory\filter_10_ca.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>Инвентарь</t>";
+            text = "<br/><img image='\\a3\\ui_f_curator\\Data\\RscCommon\\RscAttributeInventory\\filter_10_ca.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>" + localize 'STR_DIALOGTABLET_INVENTORY' + "</t>";
             onButtonClick = "[""Inventory""] call ULP_fnc_setScreen;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X, TABLET_BUTTON_W, 3));
             SAFEZONE_Y(VERTICAL_GRID_Y(UI_Y, TABLET_BUTTON_H, 0, MARGIN_Y));
@@ -66,7 +66,7 @@ class DialogTablet {
 
         class Messaging : ULP_RscButtonClean {
             idc = 23004;
-            text = "<br/><img image='\a3\3den\data\Cfg3DEN\Comment\texture_ca.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>Сообщения</t>";
+            text = "<br/><img image='\\a3\\3den\\data\\Cfg3DEN\\Comment\\texture_ca.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>" + localize 'STR_DIALOGTABLET_MESSAGES' + "</t>";
             onButtonClick = "[""Messaging""] call ULP_fnc_setScreen;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X, TABLET_BUTTON_W, 3));
             SAFEZONE_Y(VERTICAL_GRID_Y(UI_Y, TABLET_BUTTON_H, 1, MARGIN_Y));
@@ -76,7 +76,7 @@ class DialogTablet {
 
         class Group : ULP_RscButtonClean {
             idc = 23005;
-            text = "<br/><img image='\a3\ui_f\data\GUI\Rsc\RscDisplayMain\menu_multiplayer_ca.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>Группа</t>";
+            text = "<br/><img image='\\a3\\ui_f\\data\\GUI\\Rsc\\RscDisplayMain\\menu_multiplayer_ca.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>" + localize 'STR_DIALOGTABLET_GROUP' + "</t>";
             onButtonClick = "[] call ULP_fnc_openGroup;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X, TABLET_BUTTON_W, 0));
             SAFEZONE_Y(VERTICAL_GRID_Y(UI_Y, TABLET_BUTTON_H, 0, MARGIN_Y));
@@ -86,7 +86,7 @@ class DialogTablet {
 
         class Keys : ULP_RscButtonClean {
             idc = 23006;
-            text = "<br/><img image='\dataM\ui\keys.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>Ключи</t>";
+            text = "<br/><img image='\\dataM\\ui\\keys.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>" + localize 'STR_DIALOGTABLET_KEYS' + "</t>";
             onButtonClick = "[""Keys""] call ULP_fnc_setScreen;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X, TABLET_BUTTON_W, 0));
             SAFEZONE_Y(VERTICAL_GRID_Y(UI_Y, TABLET_BUTTON_H, 1, MARGIN_Y));
@@ -96,7 +96,7 @@ class DialogTablet {
 
         class Dispute : ULP_RscButtonClean {
             idc = 23007;
-            text = "<br/><img image='\dataM\ui\dispute.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>Спор</t>";
+            text = "<br/><img image='\\dataM\\ui\\dispute.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>" + localize 'STR_DIALOGTABLET_DISPUTE' + "</t>";
             onButtonClick = "[""Dispute""] call ULP_fnc_setScreen;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X, TABLET_BUTTON_W, 0));
             SAFEZONE_Y(VERTICAL_GRID_Y(UI_Y, TABLET_BUTTON_H, 2, MARGIN_Y));
@@ -106,7 +106,7 @@ class DialogTablet {
 
         class Market : ULP_RscButtonClean {
             idc = 23008;
-            text = "<br/><img image='\a3\3den\data\Displays\Display3DEN\ToolBar\vert_ATL_ca.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>Рынок</t>";
+            text = "<br/><img image='\\a3\\3den\\data\\Displays\\Display3DEN\\ToolBar\\vert_ATL_ca.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>" + localize 'STR_DIALOGTABLET_MARKET' + "</t>";
             onButtonClick = "[""Market""] call ULP_fnc_setScreen;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X, TABLET_BUTTON_W, 1));
             SAFEZONE_Y(VERTICAL_GRID_Y(UI_Y, TABLET_BUTTON_H, 2, MARGIN_Y));
@@ -116,7 +116,7 @@ class DialogTablet {
 
         class Goals : ULP_RscButtonClean {
             idc = 23009;
-            text = "<br/><br/><img image='\a3\ui_f_curator\Data\CfgMPGameTypes\zsc_ca.paa' align='center' size='3' color='#808080'/><br/><t align = 'center'>Цели сообщества</t>";
+            text = "<br/><br/><img image='\\a3\\ui_f_curator\\Data\\CfgMPGameTypes\\zsc_ca.paa' align='center' size='3' color='#808080'/><br/><t align = 'center'>" + localize 'STR_DIALOGTABLET_GOALS' + "</t>";
             onButtonClick = "[""Goals""] call ULP_fnc_setScreen;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X, TABLET_BUTTON_W, 2));
             SAFEZONE_Y(VERTICAL_GRID_Y(UI_Y, TABLET_BUTTON_H, 2, MARGIN_Y));
@@ -126,7 +126,7 @@ class DialogTablet {
 
         class Perks : ULP_RscButtonClean {
             idc = 23010;
-            text = "<br/><br/><img image='\a3\ui_f_curator\Data\RscCommon\RscAttributePunishmentAnimation\PushupsLegs.paa' align='center' size='3' color='#808080'/><br/><t align = 'center'>Перки</t>";
+            text = "<br/><br/><img image='\\a3\\ui_f_curator\\Data\\RscCommon\\RscAttributePunishmentAnimation\\PushupsLegs.paa' align='center' size='3' color='#808080'/><br/><t align = 'center'>" + localize 'STR_DIALOGTABLET_PERKS' + "</t>";
             onButtonClick = "[""Perks""] call ULP_fnc_setScreen;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X, TABLET_BUTTON_W, 3));
             SAFEZONE_Y(VERTICAL_GRID_Y(UI_Y, TABLET_BUTTON_H, 2, MARGIN_Y));
@@ -136,7 +136,7 @@ class DialogTablet {
 
         class Settings : ULP_RscButtonClean {
             idc = 23011;
-            text = "<br/><img image='\a3\ui_f\data\GUI\Rsc\RscDisplayMain\menu_options_ca.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>Настройки</t>";
+            text = "<br/><img image='\\a3\\ui_f\\data\\GUI\\Rsc\\RscDisplayMain\\menu_options_ca.paa' align='center' size='4' color='#808080'/><br/><t align = 'center'>" + localize 'STR_DIALOGTABLET_SETTINGS' + "</t>";
             onButtonClick = "[""Settings""] call ULP_fnc_setScreen;";
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X, TABLET_BUTTON_W, 4));
             SAFEZONE_Y(VERTICAL_GRID_Y(UI_Y, TABLET_BUTTON_H, 2, MARGIN_Y));

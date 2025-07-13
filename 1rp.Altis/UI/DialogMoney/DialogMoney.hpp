@@ -13,7 +13,7 @@ class DialogMoney {
 		class Header : Life_RscText {
 			idc = -1;
 			colorBackground[] = HEADER_COLOUR;
-			text = "Банк";
+			text = $STR_DIALOGMONEY_HEADER;
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -64,18 +64,18 @@ class DialogMoney {
 			columns = 2;
 			fade = 0;
 			strings[] = {
-				"Личный",
-				"Группа"
+				"$STR_DIALOGMONEY_TYPE_PERSONAL",
+				"$STR_DIALOGMONEY_TYPE_GROUP"
 			};
 			tooltips[] = {
-				"Личный",
-				"Группа"
+				"$STR_DIALOGMONEY_TYPE_PERSONAL",
+				"$STR_DIALOGMONEY_TYPE_GROUP"
 			};
 		};
 
 		class Personal : Life_RscStructuredText {
 			idc = 4102;
-			text = "<t align='left'>$1,000,000</t><t align='right'>1.5%</t><br/><t size='0.9'>Баланс<t align='right'>Налог</t></t>";
+			text = $STR_DIALOGMONEY_BALANCE;
 			colorBackground[] = INNER_BODY_COLOUR;
 			SAFEZONE_X(UI_X + MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) - (0.022 * 2) - MARGIN_Y);
@@ -110,17 +110,17 @@ class DialogMoney {
 
 			class Items {
 				class DisplayName {
-					text = "Транзакция";
+					text = $STR_DIALOGMONEY_TRANSACTION;
 					value = 1;
                     data = "data";
 				};
 				class Weight {
-					text = "Вход";
+					text = $STR_DIALOGMONEY_IN;
 					value = -1;
 					data = "data";
 				};
 				class Legal {
-					text = "Выход";
+					text = $STR_DIALOGMONEY_OUT;
 					value = -1;
 					data = "data";
 				};
@@ -144,7 +144,7 @@ class DialogMoney {
 
 		class Withdraw : Life_RscButtonCenter {
 			idc = 4106;
-			text = "<t align = 'center'>Снять</t>";
+			text = $STR_DIALOGMONEY_WITHDRAW;
 			onButtonClick = "_this call ULP_fnc_withdrawMoney";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);
@@ -154,7 +154,7 @@ class DialogMoney {
 
 		class Deposit : Life_RscButtonCenter {
 			idc = 4107;
-			text = "<t align = 'center'>Внести</t>";
+			text = $STR_DIALOGMONEY_DEPOSIT;
 			onButtonClick = "_this call ULP_fnc_depositMoney";
 			SAFEZONE_X((UI_X + UI_WIDTH - ((UI_WIDTH / 4) * 2)) - (MARGIN_X * 2));
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);
@@ -164,8 +164,8 @@ class DialogMoney {
 
 		class Transfer : Life_RscButtonCenter {
 			idc = 4108;
-			text = "<t align = 'center'>Перевести</t>";
-			onButtonClick = "[(findDisplay getNumber(configFile >> ""RscDisplayMission"" >> ""idd"")), [""Police"", ""Medic"", ""Hato"", ""Civilian""], [], { _this params [[""_display"", displayNull, [displayNull]]]; if (isNull _display) exitWith {}; private _list = _display displayCtrl 3809; private _unit = (_list tvData (tvCurSel _list)) call BIS_fnc_objectFromNetId; if (isNull _unit) exitWith { [""Вы не выбрали получателя для перевода!""] call ULP_fnc_hint; }; [0.01, [_unit], { [_this select 0, true] call ULP_fnc_giveMoney }] call ULP_fnc_waitExecute; }, false, false] call ULP_fnc_selectPlayer;";
+			text = $STR_DIALOGMONEY_TRANSFER;
+			onButtonClick = "[(findDisplay getNumber(configFile >> ""RscDisplayMission"" >> ""idd"")), [""Police"", ""Medic"", ""Hato"", ""Civilian""], [], { _this params [[""_display"", displayNull, [displayNull]]]; if (isNull _display) exitWith {}; private _list = _display displayCtrl 3809; private _unit = (_list tvData (tvCurSel _list)) call BIS_fnc_objectFromNetId; if (isNull _unit) exitWith { [localize 'STR_DIALOGMONEY_NO_RECIPIENT'] call ULP_fnc_hint; }; [0.01, [_unit], { [_this select 0, true] call ULP_fnc_giveMoney }] call ULP_fnc_waitExecute; }, false, false] call ULP_fnc_selectPlayer;";
 			SAFEZONE_X((UI_X + UI_WIDTH - ((UI_WIDTH / 4) * 3)) - (MARGIN_X * 3));
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);
 			SAFEZONE_W((UI_WIDTH / 4));

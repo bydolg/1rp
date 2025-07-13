@@ -29,7 +29,7 @@ class RscProgress {
 
 		class ProgressText: Life_RscStructuredText {
             idc = 38202;
-            text = "Пожалуйста, подождите";
+            text = $STR_RSCPROGRESS_WAIT;
             x = 0.386562 * safezoneW + safezoneX;
             y = 0.845 * safezoneH + safezoneY;
             w = 0.226875 * safezoneW;
@@ -55,7 +55,7 @@ class RscProgress {
 
         class CancelText: Life_RscStructuredText {
             idc = 38204;
-            text = "Нажмите <t color = '#8A2BE2'>[ESCAPE]</t> для отмены";
+            text = $STR_RSCPROGRESS_CANCEL;
             x = 0.386562 * safezoneW + safezoneX;
             y = 0.895 * safezoneH + safezoneY;
             w = 0.226875 * safezoneW;

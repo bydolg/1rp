@@ -11,12 +11,12 @@ class MessageToolbox : Life_RscToolbox {
     columns = 2;
     fade = 0;
     strings[] = {
-        "Контакты",
-        "Входящие"
+        "$STR_TABLETMESSAGES_CONTACTS",
+        "$STR_TABLETMESSAGES_INBOX"
     };
     tooltips[] = {
-        "Контакты",
-        "Входящие"
+        "$STR_TABLETMESSAGES_CONTACTS",
+        "$STR_TABLETMESSAGES_INBOX"
     };
 };
 
@@ -43,7 +43,7 @@ class ReplyBackground: Life_RscText {
 class ReplyPlaceholder : Life_RscText {
     style = "0x10";
     idc = 23042;
-    text = "Введите ваш ответ здесь...";
+    text = $STR_TABLETMESSAGES_REPLY_PH;
     colorText[] = {1, 1, 1, 0.4};
     SAFEZONE_X(UI_X);
     SAFEZONE_Y((UI_Y + (MARGIN_Y * 3)) + (((UI_HEIGHT - (MARGIN_Y * 3)) * 0.7) + (MARGIN_Y / 2)));
@@ -53,7 +53,7 @@ class ReplyPlaceholder : Life_RscText {
 
 class MessagePlaceholder : ReplyPlaceholder {
     idc = 23043;
-    text = "Введите ваше сообщение здесь...";
+    text = $STR_TABLETMESSAGES_MSG_PH;
     SAFEZONE_X(UI_X);
     SAFEZONE_Y(UI_Y + (MARGIN_Y * 3));
     SAFEZONE_W(((UI_WIDTH - (MARGIN_X / 2)) * 0.7) - (MARGIN_X / 2));
@@ -85,7 +85,7 @@ class ContactsList: Life_RscListBox {
 
 class SendMessage : ULP_RscButtonClean {
     idc = 23039;
-    text = "<t align='center'>Отправить сообщение</t>";
+    text = $STR_TABLETMESSAGES_SEND;
     SAFEZONE_X(UI_X + (((UI_WIDTH - (MARGIN_X / 2)) * 0.7) + MARGIN_X));
     SAFEZONE_Y((UI_Y + (MARGIN_Y * 3)) + (UI_HEIGHT - (MARGIN_Y * 3)) - (MARGIN_Y * 2));
     SAFEZONE_W(((UI_WIDTH - (MARGIN_X / 2)) * 0.3) - (MARGIN_X / 2));
@@ -139,17 +139,17 @@ class InboxListHeader: Life_RscListNBox {
 
     class Items {
         class Type {
-            text = "Тип сообщения";
+            text = $STR_TABLETMESSAGES_TYPE;
             value = -1;
             data = "data";
         };
         class Sender {
-            text = "Отправитель";
+            text = $STR_TABLETMESSAGES_SENDER;
             value = -1;
             data = "data";
         };
         class Read {
-            text = "Прочитано";
+            text = $STR_TABLETMESSAGES_READ;
             value = -1;
             data = "data";
         };
@@ -184,7 +184,7 @@ class InboxList : Life_RscListNBox {
 
 class DeleteMessage : ULP_RscButtonClean {
     idc = 23050;
-    text = "<t align='center'>Удалить</t>";
+    text = $STR_TABLETMESSAGES_DELETE;
     onButtonClick = "_this call ULP_fnc_deleteMessage;";
     SAFEZONE_X(UI_X + (((UI_WIDTH - (MARGIN_X / 2)) * 0.5) + MARGIN_X));
     SAFEZONE_Y((UI_Y + (MARGIN_Y * 3)) + (UI_HEIGHT - (MARGIN_Y * 3)) - (MARGIN_Y * 2));

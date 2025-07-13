@@ -25,21 +25,21 @@ class MarketListHeader : Life_RscListNBox {
 
     class Items {
         class DisplayName {
-            text = "Предмет";
+            text = $STR_TABLETMARKET_ITEM;
             value = 0;
         };
         class Weight {
-            text = "Вес";
+            text = $STR_TABLETMARKET_WEIGHT;
             value = -1;
             data = "data";
         };
         class Legal {
-            text = "Легальность";
+            text = $STR_TABLETMARKET_LEGAL;
             value = -1;
             data = "data";
         };
         class SellPrice {
-            text = "Цена продажи";
+            text = $STR_TABLETMARKET_SELLPRICE;
             value = -1;
             data = "data";
         };

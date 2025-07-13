@@ -13,7 +13,7 @@ class DialogMedical {
 		class Header : Life_RscStructuredText {
 			idc = -1;
 			colorBackground[] = HEADER_COLOUR;
-			text = "Показатели состояния пациента";
+                        text = $STR_DIALOGMEDICAL_HEADER;
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -137,7 +137,7 @@ class DialogMedical {
 
 		class PartHeader : Life_RscStructuredText {
 			idc = 4907;
-			text = "Состояние конечностей";
+                        text = $STR_DIALOGMEDICAL_PARTHEADER;
 			colorBackground[] = { 0, 0, 0, 1 };
 			SAFEZONE_X(0.494844);
 			SAFEZONE_Y(0.313);
@@ -163,11 +163,11 @@ class DialogMedical {
 
 			class Items {
 				class DisplayName {
-					text = "Травма";
+                                        text = $STR_DIALOGMEDICAL_TRAUMA;
 					value = 0;
 				};
 				class Count {
-					text = "Количество";
+                                        text = $STR_DIALOGMEDICAL_COUNT;
 					value = 0;
 				};
 			};
@@ -192,7 +192,7 @@ class DialogMedical {
 			idc = 4910;
 			style = ST_KEEP_ASPECT_RATIO  + ST_CENTER + ST_PICTURE;
 			text = "\dataM\Icons\FieldDressing.paa";
-			tooltip = "Нанести перевязку";
+                        tooltip = $STR_DIALOGMEDICAL_BANDAGE_FIELD;
 			onButtonClick = "[_this select 0, ""FieldDressing""] call ULP_fnc_applyBandage";
 			SAFEZONE_X(HORIZONTAL_GRID_X(0.494844, BUTTON_W, 0));
 			SAFEZONE_Y(0.687 - BUTTON_W);
@@ -203,7 +203,7 @@ class DialogMedical {
 		class Packing : FieldDressing {
 			idc = 4911;
 			text = "\dataM\Icons\packingBandage.paa";
-			tooltip = "Нанести компрессионную повязку";
+                        tooltip = $STR_DIALOGMEDICAL_BANDAGE_PACKING;
 			onButtonClick = "[_this select 0, ""Packing""] call ULP_fnc_applyBandage";
 			SAFEZONE_X(HORIZONTAL_GRID_X(0.494844, BUTTON_W, 1));
 		};
@@ -211,7 +211,7 @@ class DialogMedical {
 		class QuickClot : FieldDressing {
 			idc = 4912;
 			text = "\dataM\Icons\quikClot.paa";
-			tooltip = "Нанести кровоостанавливающую повязку";
+                        tooltip = $STR_DIALOGMEDICAL_BANDAGE_QUICKCLOT;
 			onButtonClick = "[_this select 0, ""QuickClot""] call ULP_fnc_applyBandage";
 			SAFEZONE_X(HORIZONTAL_GRID_X(0.494844, BUTTON_W, 2));
 		};
@@ -219,14 +219,14 @@ class DialogMedical {
 		class Elastic : FieldDressing {
 			idc = 4913;
 			text = "\dataM\Icons\elasticBandage.paa";
-			tooltip = "Нанести эластичную повязку";
+                        tooltip = $STR_DIALOGMEDICAL_BANDAGE_ELASTIC;
 			onButtonClick = "[_this select 0, ""Elastic""] call ULP_fnc_applyBandage";
 			SAFEZONE_X(HORIZONTAL_GRID_X(0.494844, BUTTON_W, 3));
 		};
 
 		class Revive : Life_RscButtonCenter {
 			idc = 4914;
-			text = "<t align = 'center'>Оживить</t>";
+                        text = $STR_DIALOGMEDICAL_REVIVE;
 			onButtonClick = "_this call ULP_fnc_revivePatient";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);

@@ -12,7 +12,7 @@ class DialogMoves {
 		class Header : Life_RscText {
 			idc = -1;
 			colorBackground[] = HEADER_COLOUR;
-			text = "Движения";
+                        text = $STR_DIALOGMOVES_HEADER;
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -54,7 +54,7 @@ class DialogMoves {
 
 		class Perform : Life_RscButtonCenter {
 			idc = 4602;
-			text = "<t align = 'center'>Выполнить</t>";
+                        text = $STR_DIALOGMOVES_PERFORM;
 			onButtonClick = "if !(isNull (objectParent player)) exitWith {}; private _list = (ctrlParent (_this select 0)) displayCtrl 4601; player playMove (_list lbData (lbCurSel _list)); closeDialog 0;";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);

@@ -1,6 +1,6 @@
 class BannerText : Life_RscStructuredText {
     idc = 23024;
-    text = "<t size='1.25'>Scarso<br/><t size ='1'>Разработчик</t></t>";
+    text = $STR_TABLETPROFILE_BANNER;
     SAFEZONE_X(UI_X);
     SAFEZONE_Y(UI_Y);
     SAFEZONE_W(UI_WIDTH);
@@ -9,7 +9,7 @@ class BannerText : Life_RscStructuredText {
 
 class PrestigeText : Life_RscStructuredText {
     idc = 23025;
-    text = "<t size ='1' align='center'><t size ='1.25'>10</t><br/>Престиж</t>";
+    text = $STR_TABLETPROFILE_PRESTIGE;
     SAFEZONE_X(UI_X + (UI_WIDTH - ((UI_WIDTH / 8) * 3)));
     SAFEZONE_Y(UI_Y);
     SAFEZONE_W(UI_WIDTH / 8);
@@ -33,7 +33,7 @@ class PrestigeButton : ULP_RscButtonIcon {
 
 class LevelText : Life_RscStructuredText {
     idc = 23026;
-    text = "<t size ='1' align='center'><t size ='1.25'>50</t><br/>Уровень</t>";
+    text = $STR_TABLETPROFILE_LEVEL;
     SAFEZONE_X(UI_X + (UI_WIDTH - ((UI_WIDTH / 8) * 2)));
     SAFEZONE_Y(UI_Y);
     SAFEZONE_W(UI_WIDTH / 8);
@@ -42,7 +42,7 @@ class LevelText : Life_RscStructuredText {
 
 class RepText : Life_RscStructuredText {
     idc = 23027;
-    text = "<t size ='1' align='center'><t size ='1.25'>2000</t><br/>Репутация</t>";
+    text = $STR_TABLETPROFILE_REP;
     SAFEZONE_X(UI_X + (UI_WIDTH - (UI_WIDTH / 8)));
     SAFEZONE_Y(UI_Y);
     SAFEZONE_W(UI_WIDTH / 8);
@@ -62,16 +62,16 @@ class ProfilePages : Life_RscToolbox {
     columns = 4;
     fade = 0;
     strings[] = {
-        "Профессии",
-        "Достижения",
-        "Личные Цели",
-        "Тег Игрока"
+        "$STR_TABLETPROFILE_JOBS",
+        "$STR_TABLETPROFILE_ACHIEVEMENTS",
+        "$STR_TABLETPROFILE_GOALS",
+        "$STR_TABLETPROFILE_TAG"
     };
     tooltips[] = {
-        "Профессии",
-        "Достижения",
-        "Личные Цели",
-        "Тег Игрока"
+        "$STR_TABLETPROFILE_JOBS",
+        "$STR_TABLETPROFILE_ACHIEVEMENTS",
+        "$STR_TABLETPROFILE_GOALS",
+        "$STR_TABLETPROFILE_TAG"
     };
 };
 
@@ -97,7 +97,7 @@ class FullView : Life_RscControlsGroup {
 
 class PreviewText : Life_RscStructuredText {
     idc = 23057;
-    text = "<t align='center' color='#75ffffff'>Просмотр</t>";
+    text = $STR_TABLETPROFILE_PREVIEW;
     SAFEZONE_X((UI_X + UI_WIDTH) - ((UI_WIDTH / 4) + ((UI_WIDTH / 4) / 2)));
     SAFEZONE_Y(UI_Y + (MARGIN_Y * 8));
     SAFEZONE_W((UI_WIDTH / 4));
@@ -115,7 +115,7 @@ class PlayerIcon : Life_RscPictureKeepAspect {
 
 class PlayerName : Life_RscStructuredText {
     idc = 23054;
-    text = "<t align='center'>Имя Игрока</t>";
+    text = $STR_TABLETPROFILE_NAME;
     size = 0.045;
     SAFEZONE_X((UI_X + UI_WIDTH) - ((UI_WIDTH / 4) + ((UI_WIDTH / 4) / 2)));
     SAFEZONE_Y(((UI_Y + (MARGIN_Y * 2)) + (UI_HEIGHT / 2)));
@@ -125,7 +125,7 @@ class PlayerName : Life_RscStructuredText {
 
 class PlayerSubtitle : Life_RscStructuredText {
     idc = 23055;
-    text = "<t align='center'>Подзаголовок</t>";
+    text = $STR_TABLETPROFILE_SUBTITLE;
     size = 0.04;
     SAFEZONE_X((UI_X + UI_WIDTH) - ((UI_WIDTH / 4) + ((UI_WIDTH / 4) / 2)));
     SAFEZONE_Y(((UI_Y + (MARGIN_Y * 2)) + (UI_HEIGHT / 2)) + BUTTON_H);
@@ -135,7 +135,7 @@ class PlayerSubtitle : Life_RscStructuredText {
 
 class PlayerTitle : Life_RscStructuredText {
     idc = 23058;
-    text = "<t align='center'>Заголовок</t>";
+    text = $STR_TABLETPROFILE_TITLE;
     size = 0.04;
     SAFEZONE_X((UI_X + UI_WIDTH) - ((UI_WIDTH / 4) + ((UI_WIDTH / 4) / 2)));
     SAFEZONE_Y(((UI_Y + (MARGIN_Y * 2)) + (UI_HEIGHT / 2)) + (BUTTON_H * 2));
@@ -174,7 +174,7 @@ class TagColourBackground : Life_RscText {
 
 class TagColourHeader : TagColourBackground {
     idc = 23070;
-    text = "Цветовая Настройка Имени";
+    text = $STR_TABLETPROFILE_COLOUR_HEADER;
     colorBackground[] = {0, 0, 0, 1};
     SAFEZONE_Y(((UI_Y + UI_HEIGHT) - MARGIN_Y) - (UI_HEIGHT / 4));
     SAFEZONE_H(0.022);
