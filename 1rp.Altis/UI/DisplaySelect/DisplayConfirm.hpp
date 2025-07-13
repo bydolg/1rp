@@ -31,7 +31,7 @@ class DisplayConfirm {
 		class Header : Life_RscText {
 			idc = 4301;
 			colorBackground[] = HEADER_COLOUR;
-			text = "Обработка";
+                        text = $STR_DISPLAYCONFIRM_HEADER;
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -71,7 +71,7 @@ class DisplayConfirm {
 
 		class No : Life_RscButtonCenter {
 			idc = 4303;
-			text = "<t align='center'>Нет</t>";
+                        text = $STR_DISPLAYCONFIRM_NO;
 			onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 2;";
 			SAFEZONE_X(((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - (UI_WIDTH / 4)) - (MARGIN_X * 2));
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);
@@ -81,7 +81,7 @@ class DisplayConfirm {
 
 		class Yes : Life_RscButtonCenter {
 			idc = 4304;
-			text = "<t align='center'>Да</t>";
+                        text = $STR_DISPLAYCONFIRM_YES;
 			onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 1;";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);

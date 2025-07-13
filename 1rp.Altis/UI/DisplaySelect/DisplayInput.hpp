@@ -31,7 +31,7 @@ class DisplayInput {
 		class Header : Life_RscText {
 			idc = 4401;
 			colorBackground[] = HEADER_COLOUR;
-			text = "Обработка";
+                        text = $STR_DISPLAYINPUT_HEADER;
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -73,7 +73,7 @@ class DisplayInput {
 		class Placeholder : Life_RscText {
 			style = "0x10";
 			idc = 4407;
-			text = "Введите ваш текст здесь...";
+                        text = $STR_DISPLAYINPUT_PLACEHOLDER;
 			colorText[] = {1, 1, 1, 0.4};
 			SAFEZONE_X(UI_X + MARGIN_X);
 			SAFEZONE_Y(BODY_Y + MARGIN_Y);
@@ -83,7 +83,7 @@ class DisplayInput {
 
 		class No : Life_RscButtonCenter {
 			idc = 4403;
-			text = "<t align = 'center'>Отмена</t>";
+                        text = $STR_DISPLAYINPUT_NO;
 			onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 2;";
 			SAFEZONE_X(((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - (UI_WIDTH / 4)) - (MARGIN_X * 2));
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);
@@ -93,7 +93,7 @@ class DisplayInput {
 
 		class Yes : Life_RscButtonCenter {
 			idc = 4404;
-			text = "<t align = 'center'>Ввод</t>";
+                        text = $STR_DISPLAYINPUT_YES;
 			onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 1;";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);

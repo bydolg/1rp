@@ -13,7 +13,7 @@ class DialogVirtualStore {
         class Header : Life_RscText {
             idc = 3301;
             colorBackground[] = HEADER_COLOUR;
-            text = "Магазин одежды";
+            text = $STR_DIALOGVIRTUALSTORE_HEADER;
             SAFEZONE_X(UI_X);
             SAFEZONE_Y(0.269);
             SAFEZONE_W(UI_WIDTH);
@@ -78,17 +78,17 @@ class DialogVirtualStore {
 
             class Items {
                 class DisplayName {
-                    text = "Предмет";
+                    text = $STR_DIALOGVIRTUALSTORE_ITEM;
                     value = 0;
                 };
                 class Buy {
-                    text = "Купить";
+                    text = $STR_DIALOGVIRTUALSTORE_BUY;
                 };
                 class Sell {
-                    text = "Продать";
+                    text = $STR_DIALOGVIRTUALSTORE_SELL;
                 };
-                class Amount { 
-                    text = "Количество";
+                class Amount {
+                    text = $STR_DIALOGVIRTUALSTORE_AMOUNT;
                     value = -1;
                     data = "data";
                 };
@@ -123,7 +123,7 @@ class DialogVirtualStore {
 
         class BuyButton : Life_RscButtonCenter {
             idc = 3305;
-            text = "<t align = 'center'>Купить</t>";
+            text = $STR_DIALOGVIRTUALSTORE_BUY_BTN;
             onButtonClick = "[_this] call ULP_fnc_handleVItems;";
             SAFEZONE_X(0.5790625);
             SAFEZONE_Y(0.698 + BUTTON_MARGIN_Y);
@@ -133,7 +133,7 @@ class DialogVirtualStore {
 
         class SellButton : Life_RscButtonCenter {
             idc = 3306;
-            text = "<t align = 'center'>Продать</t>";
+            text = $STR_DIALOGVIRTUALSTORE_SELL_BTN;
             onButtonClick = "[_this, true] call ULP_fnc_handleVItems;";
             SAFEZONE_X(0.64265625);
             SAFEZONE_Y(0.698 + BUTTON_MARGIN_Y);
