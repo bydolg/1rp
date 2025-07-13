@@ -22,7 +22,7 @@ class DisplayGroupCreation {
 		class Header : Life_RscText {
 			idc = -1;
 			colorBackground[] = HEADER_COLOUR;
-			text = "Создание Группы";
+                        text = $STR_DISPLAYGROUPCREATION_HEADER;
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -69,7 +69,7 @@ class DisplayGroupCreation {
 		class TagPlaceholder : Life_RscText {
 			style = "0x10";
 			idc = 3706;
-			text = "Введите тэг группы...";
+                        text = $STR_DISPLAYGROUPCREATION_TAG;
 			colorText[] = {1, 1, 1, 0.4};
 			SAFEZONE_X(UI_X + MARGIN_X);
 			SAFEZONE_Y(VERTICAL_GRID_Y((BODY_Y + MARGIN_Y), ITEM_HEIGHTS, 0, (MARGIN_Y / 2)));
@@ -79,7 +79,7 @@ class DisplayGroupCreation {
 
 		class NamePlaceholder : TagPlaceholder {
 			idc = 3707;
-			text = "Введите имя группы...";
+                        text = $STR_DISPLAYGROUPCREATION_NAME;
 			SAFEZONE_Y(VERTICAL_GRID_Y((BODY_Y + MARGIN_Y), ITEM_HEIGHTS, 1, (MARGIN_Y / 2)));
 		};
 
@@ -110,7 +110,7 @@ class DisplayGroupCreation {
 
 		class No : Life_RscButtonCenter {
 			idc = 3704;
-			text = "<t align='center'>Отмена</t>";
+                        text = $STR_DISPLAYGROUPCREATION_CANCEL;
 			onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 2;";
 			SAFEZONE_X(((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - (UI_WIDTH / 4)) - (MARGIN_X * 2));
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);
@@ -120,7 +120,7 @@ class DisplayGroupCreation {
 
 		class Yes : Life_RscButtonCenter {
 			idc = 3705;
-			text = "<t align='center'>Создать</t>";
+                        text = $STR_DISPLAYGROUPCREATION_CREATE;
 			onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 1;";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);
