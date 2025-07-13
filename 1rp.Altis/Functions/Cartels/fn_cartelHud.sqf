@@ -171,7 +171,7 @@ switch (_mode) do {
 		private _isDefending = ((progressPosition _ctrlProgress) >= 1);
 
 		// Update Status Text...
-		(_hud controlsGroupCtrl 103) ctrlSetStructuredText parseText format ["<t align='center' size='1.25'>%1</t>", (["АТАКА", "ЗАЩИТА"] select _isDefending)];
+                (_hud controlsGroupCtrl 103) ctrlSetStructuredText parseText format ["<t align='center' size='1.25'>%1</t>", ([LSTRING(ULP_CARTEL_ATTACK), LSTRING(ULP_CARTEL_DEFEND)] select _isDefending)];
 
 		// Update Status Colouring...
 		private _colour = ([ATTACKING, DEFENDING] select _isDefending);

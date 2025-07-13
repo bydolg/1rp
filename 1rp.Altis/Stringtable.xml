@@ -253,5 +253,21 @@
             <Original>Ла Тринитэ</Original>
             <English>La Trinite</English>
         </Key>
+        <Key ID="STR_ULP_CARTEL_ATTACK">
+            <Original>АТАКА</Original>
+            <English>ATTACK</English>
+        </Key>
+        <Key ID="STR_ULP_CARTEL_DEFEND">
+            <Original>ЗАЩИТА</Original>
+            <English>DEFEND</English>
+        </Key>
+        <Key ID="STR_ULP_NOTIFICATION_HEADER">
+            <Original>Header</Original>
+            <English>Header</English>
+        </Key>
+        <Key ID="STR_ULP_NOTIFICATION_BODY">
+            <Original>This is a notification</Original>
+            <English>This is a notification</English>
+        </Key>
     </Package>
 </Project>
