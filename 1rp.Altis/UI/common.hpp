@@ -1742,7 +1742,7 @@ class ULP_CartelHud : Life_RscControlsGroupNoScrollbars {
 
         class StatusText : Life_RscStructuredText {
             idc = 103;
-            text = "<t align='center' size='1.25'>АТАКА</t>";
+            text = "<t align='center' size='1.25'>$STR_ULP_CARTEL_ATTACK</t>";
             colorBackground[] = {0, 0, 0, 0};
             y = 0.15 * GUI_GRID_CENTER_H;
             w = 11.75 * GUI_GRID_CENTER_W;
@@ -1793,7 +1793,7 @@ class ULP_Notification : Life_RscControlsGroupNoScrollbars {
     class Controls {
         class Header : Life_RscStructuredText {
             idc = 101;
-            text = "<t size='0.75'>Header</t>";
+            text = "<t size='0.75'>$STR_ULP_NOTIFICATION_HEADER</t>";
             colorBackground[] = HEADER_COLOUR_SOLID;
             w = 11 * GUI_GRID_CENTER_W;
             h = 0.75 * GUI_GRID_CENTER_H;
@@ -1807,7 +1807,7 @@ class ULP_Notification : Life_RscControlsGroupNoScrollbars {
         class Body : Header {
             idc = 102;
             style = "0x10";
-            text = "This is a notification";
+            text = $STR_ULP_NOTIFICATION_BODY;
             colorBackground[] = {0.1, 0.1, 0.1, 0.8};
             x = 1 * GUI_GRID_CENTER_W;
             y = 0.75 * GUI_GRID_CENTER_H;
@@ -1829,7 +1829,7 @@ class ULP_NotificationNoHeader : ULP_Notification {
         class Body : Life_RscStructuredText {
             idc = 102;
             style = "0x10";
-            text = "This is a notification";
+            text = $STR_ULP_NOTIFICATION_BODY;
             colorBackground[] = {0.1, 0.1, 0.1, 0.8};
             x = 1 * GUI_GRID_CENTER_W;
             w = 10 * GUI_GRID_CENTER_W;
