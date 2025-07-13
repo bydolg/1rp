@@ -10,16 +10,16 @@ class GroupPages : Life_RscToolbox {
 	SAFEZONE_H(MARGIN_Y * 3);
 	columns = 3;
 	fade = 0;
-	strings[] = {
-		"Обзор",
-		"Прогресс",
-		"Настройки"
-	};
-	tooltips[] = {
-		"Обзор",
-		"Прогресс",
-		"Настройки"
-	};
+        strings[] = {
+                "$STR_TABLETGROUP_OVERVIEW",
+                "$STR_TABLETGROUP_PROGRESS",
+                "$STR_TABLETGROUP_SETTINGS"
+        };
+        tooltips[] = {
+                "$STR_TABLETGROUP_OVERVIEW",
+                "$STR_TABLETGROUP_PROGRESS",
+                "$STR_TABLETGROUP_SETTINGS"
+        };
 };
 
 class GroupMemberBackground : Life_RscText {
@@ -58,15 +58,15 @@ class GroupMemberListHeader: Life_RscListNBox {
 	disableOverflow = 1;
 
 	class Items {
-		class Member {
-			text = "Участник";
-			value = 0;
-		};
-		class Rank {
-			text = "Звание";
-			value = -1;
-			data = "data";
-		};
+                class Member {
+                        text = $STR_TABLETGROUP_MEMBER;
+                        value = 0;
+                };
+                class Rank {
+                        text = $STR_TABLETGROUP_RANK;
+                        value = -1;
+                        data = "data";
+                };
 	};
 };
 
@@ -86,20 +86,20 @@ class GroupMemberList: Life_RscListNBox {
 	idcRight = -1;
 };
 
-class GroupFunds : Life_RscStructuredText {
-	idc = 23066;
-	text = "<t align='left'>$1,000,000</t><t align='right'>1.5%</t><br/><t size='0.9'>Баланс<t align='right'>Налог</t></t>";
-	colorBackground[] = INNER_BODY_COLOUR;
+        class GroupFunds : Life_RscStructuredText {
+                idc = 23066;
+                text = $STR_TABLETGROUP_FUNDS;
+                colorBackground[] = INNER_BODY_COLOUR;
 	SAFEZONE_X(UI_X);
 	SAFEZONE_Y((UI_Y + UI_HEIGHT) - (0.022 * 2));
 	SAFEZONE_W(((UI_WIDTH - 0.01) / 2) - (MARGIN_X / 2));
 	SAFEZONE_H((0.022 * 2));
 };
 
-class ChangeRank : ULP_RscButtonClean {
-	idc = 23067;
-	text = "<t align = 'center'>Изменить Звание</t>";
-	onButtonClick = "_this call ULP_fnc_changeRank;";
+        class ChangeRank : ULP_RscButtonClean {
+                idc = 23067;
+                text = $STR_TABLETGROUP_CHANGERANK;
+                onButtonClick = "_this call ULP_fnc_changeRank;";
 	SAFEZONE_X((UI_X + ((UI_WIDTH - 0.01) / 2) - (MARGIN_X / 2)) + MARGIN_X);
 	SAFEZONE_Y((UI_Y + 0.022) + (MARGIN_Y * 3));
 	SAFEZONE_W((((UI_WIDTH - 0.01) / 2) - (MARGIN_X / 2)) / 2);
@@ -115,30 +115,30 @@ class GroupRankSelectList : Life_RscCombo {
 	SAFEZONE_H(0.022);
 };
 
-class TransferOwnership : ChangeRank {
-	idc = 23079;
-	text = "<t align = 'center'>Передать Владение</t>";
+        class TransferOwnership : ChangeRank {
+                idc = 23079;
+                text = $STR_TABLETGROUP_TRANSFER;
 	onButtonClick = "_this call ULP_fnc_transferOwner;";
 	SAFEZONE_Y((UI_Y + (0.022 * 2)) + (MARGIN_Y * 3) + ((MARGIN_Y / 2)));
 };
 
-class Kick : ChangeRank {
-	idc = 23080;
-	text = "<t align = 'center'>Выгнать</t>";
+        class Kick : ChangeRank {
+                idc = 23080;
+                text = $STR_TABLETGROUP_KICK;
 	onButtonClick = "_this call ULP_fnc_kickMember;";
 	SAFEZONE_Y((UI_Y + (0.022 * 3)) + (MARGIN_Y * 3) + ((MARGIN_Y / 2) * 2));
 };
 
-class Invite : ChangeRank {
-	idc = 23089;
-	text = "<t align = 'center'>Пригласить</t>";
+        class Invite : ChangeRank {
+                idc = 23089;
+                text = $STR_TABLETGROUP_INVITE;
 	onButtonClick = "_this call ULP_fnc_inviteMember;";
 	SAFEZONE_Y((UI_Y + (0.022 * 4)) + (MARGIN_Y * 4) + ((MARGIN_Y / 2) * 3));
 };
 
-class LeaveGroup : ULP_RscButtonClean {
-	idc = 23081;
-	text = "<t align = 'center'>Покинуть Группу</t>";
+        class LeaveGroup : ULP_RscButtonClean {
+                idc = 23081;
+                text = $STR_TABLETGROUP_LEAVE;
 	onButtonClick = "[] call ULP_fnc_leaveGroup;";
 	SAFEZONE_X((UI_X + UI_WIDTH) - ((((UI_WIDTH - 0.01) / 2) - (MARGIN_X / 2)) / 2));
 	SAFEZONE_Y(UI_Y + (MARGIN_Y * 3));
@@ -146,9 +146,9 @@ class LeaveGroup : ULP_RscButtonClean {
 	SAFEZONE_H(0.022);
 };
 
-class DisbandGroup : LeaveGroup {
-	idc = 23076;
-	text = "<t align = 'center'>Распустить Группу</t>";
+        class DisbandGroup : LeaveGroup {
+                idc = 23076;
+                text = $STR_TABLETGROUP_DISBAND;
 	onButtonClick = "[] call ULP_fnc_disbandGroup;";
 	SAFEZONE_Y((UI_Y + 0.022) + (MARGIN_Y * 3) + (MARGIN_Y / 2));
 };
@@ -204,8 +204,8 @@ class RightView : Life_RscControlsGroup {
 };
 
 class ChangeTax : ULP_RscButtonClean {
-	idc = 23087;
-	text = "<t align = 'center'>Изменить Налог</t>";
+        idc = 23087;
+        text = $STR_TABLETGROUP_CHANGETAX;
 	onButtonClick = "_this call ULP_fnc_changeTax;";
 	SAFEZONE_X(UI_X);
 	SAFEZONE_Y((UI_Y + 0.022) + (MARGIN_Y * 3));
@@ -214,8 +214,8 @@ class ChangeTax : ULP_RscButtonClean {
 };
 
 class GroupTaxText : Life_RscStructuredText {
-	idc = 23088;
-	text = "Групповой Налог (5%)";
+        idc = 23088;
+        text = $STR_TABLETGROUP_TAXTEXT;
 	SAFEZONE_X(UI_X);
 	SAFEZONE_Y(UI_Y + (MARGIN_Y * 3));
 	SAFEZONE_W((((UI_WIDTH - 0.01) / 2) - (MARGIN_X / 2)) / 2);

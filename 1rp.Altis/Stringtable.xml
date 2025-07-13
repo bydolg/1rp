@@ -645,5 +645,374 @@
             <Original>&lt;t align='center' size='1'&gt;Нажмите &lt;t color='#8A2BE2'&gt;Пробел&lt;/t&gt; для вызова медика&lt;/t&gt;</Original>
             <English>&lt;t align='center' size='1'&gt;Press &lt;t color='#8A2BE2'&gt;Space&lt;/t&gt; to request medic&lt;/t&gt;</English>
         </Key>
+        <!-- Tablet Market Screen -->
+        <Key ID="STR_TABLETMARKET_ITEM">
+            <Original>Предмет</Original>
+            <English>Item</English>
+        </Key>
+        <Key ID="STR_TABLETMARKET_WEIGHT">
+            <Original>Вес</Original>
+            <English>Weight</English>
+        </Key>
+        <Key ID="STR_TABLETMARKET_LEGAL">
+            <Original>Легальность</Original>
+            <English>Legal</English>
+        </Key>
+        <Key ID="STR_TABLETMARKET_SELLPRICE">
+            <Original>Цена продажи</Original>
+            <English>Sell Price</English>
+        </Key>
+
+        <!-- Tablet Group Screen -->
+        <Key ID="STR_TABLETGROUP_OVERVIEW">
+            <Original>Обзор</Original>
+            <English>Overview</English>
+        </Key>
+        <Key ID="STR_TABLETGROUP_PROGRESS">
+            <Original>Прогресс</Original>
+            <English>Progress</English>
+        </Key>
+        <Key ID="STR_TABLETGROUP_SETTINGS">
+            <Original>Настройки</Original>
+            <English>Settings</English>
+        </Key>
+        <Key ID="STR_TABLETGROUP_MEMBER">
+            <Original>Участник</Original>
+            <English>Member</English>
+        </Key>
+        <Key ID="STR_TABLETGROUP_RANK">
+            <Original>Звание</Original>
+            <English>Rank</English>
+        </Key>
+        <Key ID="STR_TABLETGROUP_FUNDS">
+            <Original>&lt;t align='left'&gt;$1,000,000&lt;/t&gt;&lt;t align='right'&gt;1.5%&lt;/t&gt;&lt;br/&gt;&lt;t size='0.9'&gt;Баланс&lt;t align='right'&gt;Налог&lt;/t&gt;&lt;/t&gt;</Original>
+            <English>&lt;t align='left'&gt;$1,000,000&lt;/t&gt;&lt;t align='right'&gt;1.5%&lt;/t&gt;&lt;br/&gt;&lt;t size='0.9'&gt;Balance&lt;t align='right'&gt;Tax&lt;/t&gt;&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETGROUP_CHANGERANK">
+            <Original>&lt;t align = 'center'&gt;Изменить Звание&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Change Rank&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETGROUP_TRANSFER">
+            <Original>&lt;t align = 'center'&gt;Передать Владение&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Transfer Ownership&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETGROUP_KICK">
+            <Original>&lt;t align = 'center'&gt;Выгнать&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Kick&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETGROUP_INVITE">
+            <Original>&lt;t align = 'center'&gt;Пригласить&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Invite&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETGROUP_LEAVE">
+            <Original>&lt;t align = 'center'&gt;Покинуть Группу&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Leave Group&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETGROUP_DISBAND">
+            <Original>&lt;t align = 'center'&gt;Распустить Группу&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Disband Group&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETGROUP_CHANGETAX">
+            <Original>&lt;t align = 'center'&gt;Изменить Налог&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Change Tax&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETGROUP_TAXTEXT">
+            <Original>Групповой Налог (5%)</Original>
+            <English>Group Tax (5%)</English>
+        </Key>
+
+        <!-- Tablet Inventory Screen -->
+        <Key ID="STR_TABLETINVENTORY_ITEMS">
+            <Original>Виртуальные предметы</Original>
+            <English>Virtual Items</English>
+        </Key>
+        <Key ID="STR_TABLETINVENTORY_LICENSES">
+            <Original>Лицензии</Original>
+            <English>Licenses</English>
+        </Key>
+        <Key ID="STR_TABLETINVENTORY_CRAFTING">
+            <Original>Крафтинг</Original>
+            <English>Crafting</English>
+        </Key>
+        <Key ID="STR_TABLETINVENTORY_USE">
+            <Original>&lt;t align = 'center'&gt;Использовать&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Use&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETINVENTORY_DELETE">
+            <Original>&lt;t align = 'center'&gt;Удалить&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Delete&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETINVENTORY_DECONSTRUCT">
+            <Original>&lt;t align = 'center'&gt;Разобрать&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Deconstruct&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETINVENTORY_CREATE">
+            <Original>&lt;t align = 'center'&gt;Создать&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Craft&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETINVENTORY_SELECT_ITEM">
+            <Original>Сначала выберите предмет!</Original>
+            <English>Select an item first!</English>
+        </Key>
+
+        <!-- Tablet Keys Screen -->
+        <Key ID="STR_TABLETKEYS_VEHICLES">
+            <Original>Транспорт</Original>
+            <English>Vehicles</English>
+        </Key>
+        <Key ID="STR_TABLETKEYS_PROPERTIES">
+            <Original>Собственность</Original>
+            <English>Property</English>
+        </Key>
+        <Key ID="STR_TABLETKEYS_VEHICLE_TT">
+            <Original>Управление транспортом</Original>
+            <English>Vehicle management</English>
+        </Key>
+        <Key ID="STR_TABLETKEYS_PROPERTY_TT">
+            <Original>Управление собственностью</Original>
+            <English>Property management</English>
+        </Key>
+        <Key ID="STR_TABLETKEYS_OPTIONS">
+            <Original>Опции дома</Original>
+            <English>House Options</English>
+        </Key>
+        <Key ID="STR_TABLETKEYS_RENAME">
+            <Original>Переименовать дом</Original>
+            <English>Rename House</English>
+        </Key>
+        <Key ID="STR_TABLETKEYS_RENAME_BTN">
+            <Original>&lt;t align = 'center'&gt;Переименовать&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Rename&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETKEYS_SHARE">
+            <Original>Поделиться домом</Original>
+            <English>Share House</English>
+        </Key>
+        <Key ID="STR_TABLETKEYS_SHARE_BTN">
+            <Original>&lt;t align = 'center'&gt;Поделиться&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Share&lt;/t&gt;</English>
+        </Key>
+
+        <!-- Tablet Messages Screen -->
+        <Key ID="STR_TABLETMESSAGES_CONTACTS">
+            <Original>Контакты</Original>
+            <English>Contacts</English>
+        </Key>
+        <Key ID="STR_TABLETMESSAGES_INBOX">
+            <Original>Входящие</Original>
+            <English>Inbox</English>
+        </Key>
+        <Key ID="STR_TABLETMESSAGES_REPLY_PH">
+            <Original>Введите ваш ответ здесь...</Original>
+            <English>Enter your reply here...</English>
+        </Key>
+        <Key ID="STR_TABLETMESSAGES_MSG_PH">
+            <Original>Введите ваше сообщение здесь...</Original>
+            <English>Enter your message here...</English>
+        </Key>
+        <Key ID="STR_TABLETMESSAGES_SEND">
+            <Original>&lt;t align='center'&gt;Отправить сообщение&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Send Message&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETMESSAGES_TYPE">
+            <Original>Тип сообщения</Original>
+            <English>Type</English>
+        </Key>
+        <Key ID="STR_TABLETMESSAGES_SENDER">
+            <Original>Отправитель</Original>
+            <English>Sender</English>
+        </Key>
+        <Key ID="STR_TABLETMESSAGES_READ">
+            <Original>Прочитано</Original>
+            <English>Read</English>
+        </Key>
+        <Key ID="STR_TABLETMESSAGES_DELETE">
+            <Original>&lt;t align='center'&gt;Удалить&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Delete&lt;/t&gt;</English>
+        </Key>
+
+        <!-- Tablet Profile Screen -->
+        <Key ID="STR_TABLETPROFILE_BANNER">
+            <Original>&lt;t size='1.25'&gt;Scarso&lt;br/&gt;&lt;t size ='1'&gt;Разработчик&lt;/t&gt;&lt;/t&gt;</Original>
+            <English>&lt;t size='1.25'&gt;Scarso&lt;br/&gt;&lt;t size ='1'&gt;Developer&lt;/t&gt;&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETPROFILE_PRESTIGE">
+            <Original>&lt;t size ='1' align='center'&gt;&lt;t size ='1.25'&gt;10&lt;/t&gt;&lt;br/&gt;Престиж&lt;/t&gt;</Original>
+            <English>&lt;t size ='1' align='center'&gt;&lt;t size ='1.25'&gt;10&lt;/t&gt;&lt;br/&gt;Prestige&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETPROFILE_LEVEL">
+            <Original>&lt;t size ='1' align='center'&gt;&lt;t size ='1.25'&gt;50&lt;/t&gt;&lt;br/&gt;Уровень&lt;/t&gt;</Original>
+            <English>&lt;t size ='1' align='center'&gt;&lt;t size ='1.25'&gt;50&lt;/t&gt;&lt;br/&gt;Level&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETPROFILE_REP">
+            <Original>&lt;t size ='1' align='center'&gt;&lt;t size ='1.25'&gt;2000&lt;/t&gt;&lt;br/&gt;Репутация&lt;/t&gt;</Original>
+            <English>&lt;t size ='1' align='center'&gt;&lt;t size ='1.25'&gt;2000&lt;/t&gt;&lt;br/&gt;Reputation&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETPROFILE_JOBS">
+            <Original>Профессии</Original>
+            <English>Jobs</English>
+        </Key>
+        <Key ID="STR_TABLETPROFILE_ACHIEVEMENTS">
+            <Original>Достижения</Original>
+            <English>Achievements</English>
+        </Key>
+        <Key ID="STR_TABLETPROFILE_GOALS">
+            <Original>Личные Цели</Original>
+            <English>Personal Goals</English>
+        </Key>
+        <Key ID="STR_TABLETPROFILE_TAG">
+            <Original>Тег Игрока</Original>
+            <English>Player Tag</English>
+        </Key>
+        <Key ID="STR_TABLETPROFILE_PREVIEW">
+            <Original>&lt;t align='center' color='#75ffffff'&gt;Просмотр&lt;/t&gt;</Original>
+            <English>&lt;t align='center' color='#75ffffff'&gt;Preview&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETPROFILE_NAME">
+            <Original>&lt;t align='center'&gt;Имя Игрока&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Player Name&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETPROFILE_SUBTITLE">
+            <Original>&lt;t align='center'&gt;Подзаголовок&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Subtitle&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETPROFILE_TITLE">
+            <Original>&lt;t align='center'&gt;Заголовок&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Title&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_TABLETPROFILE_COLOUR_HEADER">
+            <Original>Цветовая Настройка Имени</Original>
+            <English>Name Colour Settings</English>
+        </Key>
+
+        <!-- Tablet Main Buttons -->
+        <Key ID="STR_DIALOGTABLET_PROFILE">
+            <Original>Профиль</Original>
+            <English>Profile</English>
+        </Key>
+        <Key ID="STR_DIALOGTABLET_INVENTORY">
+            <Original>Инвентарь</Original>
+            <English>Inventory</English>
+        </Key>
+        <Key ID="STR_DIALOGTABLET_MESSAGES">
+            <Original>Сообщения</Original>
+            <English>Messages</English>
+        </Key>
+        <Key ID="STR_DIALOGTABLET_GROUP">
+            <Original>Группа</Original>
+            <English>Group</English>
+        </Key>
+        <Key ID="STR_DIALOGTABLET_KEYS">
+            <Original>Ключи</Original>
+            <English>Keys</English>
+        </Key>
+        <Key ID="STR_DIALOGTABLET_DISPUTE">
+            <Original>Спор</Original>
+            <English>Dispute</English>
+        </Key>
+        <Key ID="STR_DIALOGTABLET_MARKET">
+            <Original>Рынок</Original>
+            <English>Market</English>
+        </Key>
+        <Key ID="STR_DIALOGTABLET_GOALS">
+            <Original>Цели сообщества</Original>
+            <English>Community Goals</English>
+        </Key>
+        <Key ID="STR_DIALOGTABLET_PERKS">
+            <Original>Перки</Original>
+            <English>Perks</English>
+        </Key>
+        <Key ID="STR_DIALOGTABLET_SETTINGS">
+            <Original>Настройки</Original>
+            <English>Settings</English>
+        </Key>
+
+        <!-- Generic Store Tooltips -->
+        <Key ID="STR_DIALOGGENERICSTORE_UNIFORMS">
+            <Original>Униформы</Original>
+            <English>Uniforms</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_HEADGEAR">
+            <Original>Головные уборы</Original>
+            <English>Headgear</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_GLASSES">
+            <Original>Очки</Original>
+            <English>Glasses</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_VESTS">
+            <Original>Бронежилеты</Original>
+            <English>Vests</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_BACKPACKS">
+            <Original>Рюкзаки</Original>
+            <English>Backpacks</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_PRIMARY">
+            <Original>Основное оружие</Original>
+            <English>Primary Weapon</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_SECONDARY">
+            <Original>Вторичное оружие</Original>
+            <English>Secondary Weapon</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_ATTACHMENTS">
+            <Original>Аксессуары</Original>
+            <English>Attachments</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_MAGAZINES">
+            <Original>Магазины</Original>
+            <English>Magazines</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_ITEMS_LABEL">
+            <Original>Предметы</Original>
+            <English>Items</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_SAVE_NEW_TOOLTIP">
+            <Original>Сохранить новую корзину</Original>
+            <English>Save new cart</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_OPEN_TOOLTIP">
+            <Original>Открыть сохраненную корзину</Original>
+            <English>Open saved cart</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_SAVE_TOOLTIP">
+            <Original>Сохранить текущую корзину</Original>
+            <English>Save current cart</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_DELETE_TOOLTIP">
+            <Original>Удалить текущую корзину</Original>
+            <English>Delete current cart</English>
+        </Key>
+
+        <!-- Medical Tooltips -->
+        <Key ID="STR_DIALOGMEDICAL_BANDAGE_FIELD">
+            <Original>Нанести перевязку</Original>
+            <English>Apply bandage</English>
+        </Key>
+        <Key ID="STR_DIALOGMEDICAL_BANDAGE_PACKING">
+            <Original>Нанести компрессионную повязку</Original>
+            <English>Apply packing bandage</English>
+        </Key>
+        <Key ID="STR_DIALOGMEDICAL_BANDAGE_QUICKCLOT">
+            <Original>Нанести кровоостанавливающую повязку</Original>
+            <English>Apply quick clot</English>
+        </Key>
+        <Key ID="STR_DIALOGMEDICAL_BANDAGE_ELASTIC">
+            <Original>Нанести эластичную повязку</Original>
+            <English>Apply elastic bandage</English>
+        </Key>
+
+        <!-- Money Dialog Messages -->
+        <Key ID="STR_DIALOGMONEY_NO_RECIPIENT">
+            <Original>Вы не выбрали получателя для перевода!</Original>
+            <English>You didn't select a recipient for transfer!</English>
+        </Key>
+
+        <!-- PNC Dialog -->
+        <Key ID="STR_DIALOGPNC_WARRANTS">
+            <Original>Ордеры</Original>
+            <English>Warrants</English>
+        </Key>
     </Package>
 </Project>

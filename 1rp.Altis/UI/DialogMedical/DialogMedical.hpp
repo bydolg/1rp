@@ -192,7 +192,7 @@ class DialogMedical {
 			idc = 4910;
 			style = ST_KEEP_ASPECT_RATIO  + ST_CENTER + ST_PICTURE;
 			text = "\dataM\Icons\FieldDressing.paa";
-			tooltip = "Нанести перевязку";
+                        tooltip = $STR_DIALOGMEDICAL_BANDAGE_FIELD;
 			onButtonClick = "[_this select 0, ""FieldDressing""] call ULP_fnc_applyBandage";
 			SAFEZONE_X(HORIZONTAL_GRID_X(0.494844, BUTTON_W, 0));
 			SAFEZONE_Y(0.687 - BUTTON_W);
@@ -203,7 +203,7 @@ class DialogMedical {
 		class Packing : FieldDressing {
 			idc = 4911;
 			text = "\dataM\Icons\packingBandage.paa";
-			tooltip = "Нанести компрессионную повязку";
+                        tooltip = $STR_DIALOGMEDICAL_BANDAGE_PACKING;
 			onButtonClick = "[_this select 0, ""Packing""] call ULP_fnc_applyBandage";
 			SAFEZONE_X(HORIZONTAL_GRID_X(0.494844, BUTTON_W, 1));
 		};
@@ -211,7 +211,7 @@ class DialogMedical {
 		class QuickClot : FieldDressing {
 			idc = 4912;
 			text = "\dataM\Icons\quikClot.paa";
-			tooltip = "Нанести кровоостанавливающую повязку";
+                        tooltip = $STR_DIALOGMEDICAL_BANDAGE_QUICKCLOT;
 			onButtonClick = "[_this select 0, ""QuickClot""] call ULP_fnc_applyBandage";
 			SAFEZONE_X(HORIZONTAL_GRID_X(0.494844, BUTTON_W, 2));
 		};
@@ -219,7 +219,7 @@ class DialogMedical {
 		class Elastic : FieldDressing {
 			idc = 4913;
 			text = "\dataM\Icons\elasticBandage.paa";
-			tooltip = "Нанести эластичную повязку";
+                        tooltip = $STR_DIALOGMEDICAL_BANDAGE_ELASTIC;
 			onButtonClick = "[_this select 0, ""Elastic""] call ULP_fnc_applyBandage";
 			SAFEZONE_X(HORIZONTAL_GRID_X(0.494844, BUTTON_W, 3));
 		};

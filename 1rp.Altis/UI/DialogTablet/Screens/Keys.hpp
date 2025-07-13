@@ -11,12 +11,12 @@ class KeyPages : Life_RscToolbox {
     columns = 2;
     fade = 0;
     strings[] = {
-        "Транспорт",
-        "Собственность"
+        "$STR_TABLETKEYS_VEHICLES",
+        "$STR_TABLETKEYS_PROPERTIES"
     };
     tooltips[] = {
-        "Управление транспортом",
-        "Управление собственностью"
+        "$STR_TABLETKEYS_VEHICLE_TT",
+        "$STR_TABLETKEYS_PROPERTY_TT"
     };
 };
 
@@ -54,7 +54,7 @@ class HouseView : Life_RscControlsGroup {
     class Controls {
         class Options : ULP_ctrlOptionsHeader {
             idc = 101;
-            text = "Опции дома";
+            text = $STR_TABLETKEYS_OPTIONS;
             w = 15.55 * GUI_GRID_CENTER_W;
         };
 
@@ -67,14 +67,14 @@ class HouseView : Life_RscControlsGroup {
             class Controls {
                 class OptionName: Life_RscText {
                     idc = 101;
-                    text = "Переименовать дом";
+                    text = $STR_TABLETKEYS_RENAME;
                     tooltip = "Вы можете переименовать свой дом, чтобы легче было его идентифицировать...";
                     w = (15.55 / 2) * GUI_GRID_CENTER_W;
                     h = SIZE_M * GUI_GRID_CENTER_H;
                 };
                 class OptionButton : ULP_RscButtonClean {
                     idc = 102;
-                    text = "<t align = 'center'>Переименовать</t>";
+                    text = $STR_TABLETKEYS_RENAME_BTN;
                     onButtonClick = "private _house = (ctrlParent (_this select 0)) getVariable [""house"", objNull]; [_house, { _this params [ ""_display"", ""_house"" ]; if (isNull _display || { isNull _house }) exitWith {}; private _list = _display displayCtrl 23051; _list lbSetText [(lbCurSel _list), (_house getVariable [""building_name"", ([typeOf _house] call ULP_fnc_vehicleCfg) param [3, ""House""]])]; }, [ctrlParent (_this select 0), _house]] call ULP_fnc_renameHouse;";
                     x = (15.55 - (15.55 / 2)) * GUI_GRID_CENTER_W;
                     w = (15.55 / 2) * GUI_GRID_CENTER_W;
@@ -92,14 +92,14 @@ class HouseView : Life_RscControlsGroup {
             class Controls {
                 class OptionName: Life_RscText {
                     idc = 101;
-                    text = "Поделиться домом";
+                    text = $STR_TABLETKEYS_SHARE;
                     tooltip = "Когда дом поделен, к нему может получить доступ член вашей группы...";
                     w = (15.55 / 2) * GUI_GRID_CENTER_W;
                     h = SIZE_M * GUI_GRID_CENTER_H;
                 };
                 class OptionButton : ULP_RscButtonClean {
                     idc = 102;
-                    text = "<t align = 'center'>Поделиться</t>";
+                    text = $STR_TABLETKEYS_SHARE_BTN;
                     onButtonClick = "private _house = (ctrlParent (_this select 0)) getVariable [""house"", objNull]; if ([_house] call ULP_fnc_shareHouse) then { (_this select 0) ctrlSetStructuredText parseText format[""<t align = 'center'>%1</t>"", [""Поделиться"",""Отменить""] select ([_house] call ULP_fnc_isHouseShared)] };";
                     x = (15.55 - (15.55 / 2)) * GUI_GRID_CENTER_W;
                     w = (15.55 / 2) * GUI_GRID_CENTER_W;
