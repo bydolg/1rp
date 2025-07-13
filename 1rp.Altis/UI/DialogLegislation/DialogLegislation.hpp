@@ -13,7 +13,7 @@ class DialogLegislation {
 		class Header : Life_RscText {
 			idc = -1;
 			colorBackground[] = HEADER_COLOUR;
-			text = "Законодательство";
+                        text = $STR_DIALOGLEGISLATION_HEADER;
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -55,7 +55,7 @@ class DialogLegislation {
 
 		class Select : Life_RscButtonCenter {
 			idc = 4802;
-			text = "<t align = 'center'>Изменить</t>";
+                        text = $STR_DIALOGLEGISLATION_SELECT;
 			onButtonClick = "_this call ULP_fnc_setLegislation";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);

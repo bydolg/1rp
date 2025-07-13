@@ -13,7 +13,7 @@ class DialogMailBox {
 		class Header : Life_RscText {
 			idc = 5301;
 			colorBackground[] = HEADER_COLOUR;
-			text = "Почтовый ящик";
+                        text = $STR_DIALOGMAILBOX_HEADER;
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -53,7 +53,7 @@ class DialogMailBox {
 
 		class Select : Life_RscButtonCenter {
 			idc = 5303;
-			text = "<t align = 'center'>Забрать</t>";
+                        text = $STR_DIALOGMAILBOX_CLAIM;
 			onButtonClick = "_this call ULP_fnc_claimMail";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);

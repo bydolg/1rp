@@ -15,7 +15,7 @@ class DialogGenericStore {
 		class Header : Life_RscText {
             idc = 3101;
             colorBackground[] = HEADER_COLOUR;
-            text = "Магазин одежды";
+            text = $STR_DIALOGGENERICSTORE_HEADER;
             SAFEZONE_X(UI_X);
             SAFEZONE_Y(0.269);
 			SAFEZONE_W(UI_WIDTH);
@@ -142,7 +142,7 @@ class DialogGenericStore {
 
         class AddCartButton : Life_RscButtonCenter {
             idc = 3108;
-            text = "<t align = 'center'>Добавить в корзину</t>";
+            text = $STR_DIALOGGENERICSTORE_ADD;
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X_INNER, CONTENT_W, 1));
             SAFEZONE_Y(((0.291 + MARGIN_Y + BODY_HEIGHT) - (MARGIN_Y * 2)) - BUTTON_H);
 			SAFEZONE_W(CONTENT_W);
@@ -163,7 +163,7 @@ class DialogGenericStore {
 
         class CartButton : Life_RscButtonCenter {
             idc = 3109;
-            text = "<t align = 'center'>Удалить из корзины</t>";
+            text = $STR_DIALOGGENERICSTORE_REMOVE;
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X_INNER, CONTENT_W, 2));
             SAFEZONE_Y(((0.291 + MARGIN_Y + BODY_HEIGHT) - (MARGIN_Y * 2)) - (BUTTON_H * 2) - BUTTON_MARGIN_Y);
 			SAFEZONE_W(CONTENT_W);
@@ -172,7 +172,7 @@ class DialogGenericStore {
 
         class OverrideText : Life_RscStructuredText {
             idc = -1;
-            text = "<t align = 'right'>Заменить снаряжение</t>";
+            text = $STR_DIALOGGENERICSTORE_OVERRIDE;
             colorBackground[] = INNER_BODY_COLOUR;
             SAFEZONE_X(HORIZONTAL_GRID_X(UI_X_INNER, CONTENT_W, 2));
             SAFEZONE_Y(((0.291 + MARGIN_Y + BODY_HEIGHT) - (MARGIN_Y * 2)) - BUTTON_H);
@@ -231,7 +231,7 @@ class DialogGenericStore {
 
         class BuyButton : Life_RscButtonCenter {
             idc = 3110;
-            text = "<t align = 'center'>Купить предметы</t>";
+            text = $STR_DIALOGGENERICSTORE_BUY;
             SAFEZONE_X((UI_X + UI_WIDTH) - CONTENT_W - MARGIN_X);
             SAFEZONE_Y(0.698 + BUTTON_MARGIN_Y);
 			SAFEZONE_W(CONTENT_W);

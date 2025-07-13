@@ -31,7 +31,7 @@ class DisplaySelectPlayer {
 		class Header : Life_RscText {
 			idc = 3801;
 			colorBackground[] = HEADER_COLOUR;
-			text = "Выберите игрока";
+                        text = $STR_DISPLAYSELECTPLAYER_HEADER;
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -70,7 +70,7 @@ class DisplaySelectPlayer {
 
 		class Select : Life_RscButtonCenter {
 			idc = 3806;
-			text = "<t align = 'center'>Выбор</t>";
+                        text = $STR_DISPLAYSELECTPLAYER_SELECT;
 			onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 1;";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);

@@ -269,5 +269,381 @@
             <Original>This is a notification</Original>
             <English>This is a notification</English>
         </Key>
+        <Key ID="STR_DIALOGSPAWN_HEADER">
+            <Original>Меню Возрождения</Original>
+            <English>Spawn Menu</English>
+        </Key>
+        <Key ID="STR_DIALOGSPAWN_SPAWN">
+            <Original>&lt;t align = 'center'&gt;Возродить&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Spawn&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGLICENSES_HEADER">
+            <Original>Лицензии</Original>
+            <English>Licenses</English>
+        </Key>
+        <Key ID="STR_DIALOGLICENSES_BUY">
+            <Original>&lt;t align = 'center'&gt;Купить&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Buy&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGLICENSES_SEIZE">
+            <Original>&lt;t align = 'center'&gt;Конфисковать&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Confiscate&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGMONEY_HEADER">
+            <Original>Банк</Original>
+            <English>Bank</English>
+        </Key>
+        <Key ID="STR_DIALOGMONEY_TYPE_PERSONAL">
+            <Original>Личный</Original>
+            <English>Personal</English>
+        </Key>
+        <Key ID="STR_DIALOGMONEY_TYPE_GROUP">
+            <Original>Группа</Original>
+            <English>Group</English>
+        </Key>
+        <Key ID="STR_DIALOGMONEY_BALANCE">
+            <Original>&lt;t align='left'&gt;$1,000,000&lt;/t&gt;&lt;t align='right'&gt;1.5%&lt;/t&gt;&lt;br/&gt;&lt;t size='0.9'&gt;Баланс&lt;t align='right'&gt;Налог&lt;/t&gt;&lt;/t&gt;</Original>
+            <English>&lt;t align='left'&gt;$1,000,000&lt;/t&gt;&lt;t align='right'&gt;1.5%&lt;/t&gt;&lt;br/&gt;&lt;t size='0.9'&gt;Balance&lt;t align='right'&gt;Tax&lt;/t&gt;&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGMONEY_TRANSACTION">
+            <Original>Транзакция</Original>
+            <English>Transaction</English>
+        </Key>
+        <Key ID="STR_DIALOGMONEY_IN">
+            <Original>Вход</Original>
+            <English>In</English>
+        </Key>
+        <Key ID="STR_DIALOGMONEY_OUT">
+            <Original>Выход</Original>
+            <English>Out</English>
+        </Key>
+        <Key ID="STR_DIALOGMONEY_WITHDRAW">
+            <Original>&lt;t align = 'center'&gt;Снять&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Withdraw&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGMONEY_DEPOSIT">
+            <Original>&lt;t align = 'center'&gt;Внести&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Deposit&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGMONEY_TRANSFER">
+            <Original>&lt;t align = 'center'&gt;Перевести&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Transfer&lt;/t&gt;</English>
+        </Key>
+    <Key ID="STR_DIALOGMONEY_TRANSFER_NO_TARGET">
+        <Original>Вы не выбрали получателя для перевода!</Original>
+        <English>You did not select a transfer recipient!</English>
+    </Key>
+        <Key ID="STR_DIALOGGARAGE_HEADER">
+            <Original>Гараж</Original>
+            <English>Garage</English>
+        </Key>
+        <Key ID="STR_DIALOGGARAGE_RETRIEVE">
+            <Original>&lt;t align = 'center'&gt;Получить&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Retrieve&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGGARAGE_DESTROY">
+            <Original>&lt;t align = 'center'&gt;Уничтожить&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Destroy&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGGARAGE_TRANSFER">
+            <Original>&lt;t align = 'center'&gt;Передать&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Transfer&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_HEADER">
+            <Original>Магазин одежды</Original>
+            <English>Clothing Store</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_ADD">
+            <Original>&lt;t align = 'center'&gt;Добавить в корзину&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Add to Cart&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_REMOVE">
+            <Original>&lt;t align = 'center'&gt;Удалить из корзины&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Remove from Cart&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_OVERRIDE">
+            <Original>&lt;t align = 'right'&gt;Заменить снаряжение&lt;/t&gt;</Original>
+            <English>&lt;t align = 'right'&gt;Override Gear&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGGENERICSTORE_BUY">
+            <Original>&lt;t align = 'center'&gt;Купить предметы&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Buy Items&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGINVENTORY_HEADER">
+            <Original>Инвентарь контейнера</Original>
+            <English>Container Inventory</English>
+        </Key>
+        <Key ID="STR_DIALOGINVENTORY_PERSONAL">
+            <Original>Персональный инвентарь&lt;t align='right'&gt;0/0&lt;/t&gt;</Original>
+            <English>Personal Inventory&lt;t align='right'&gt;0/0&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGINVENTORY_CONTAINER">
+            <Original>Инвентарь контейнера&lt;t align='right'&gt;0/0&lt;/t&gt;</Original>
+            <English>Container Inventory&lt;t align='right'&gt;0/0&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGINVENTORY_ITEM">
+            <Original>Предмет</Original>
+            <English>Item</English>
+        </Key>
+        <Key ID="STR_DIALOGINVENTORY_TOTAL">
+            <Original>Всего</Original>
+            <English>Total</English>
+        </Key>
+        <Key ID="STR_DIALOGINVENTORY_TO_CONTAINER">
+            <Original>Передать в контейнер</Original>
+            <English>Transfer to Container</English>
+        </Key>
+        <Key ID="STR_DIALOGINVENTORY_TO_PERSONAL">
+            <Original>Передать себе</Original>
+            <English>Transfer to Self</English>
+        </Key>
+        <Key ID="STR_DIALOGINTERACTIONS_HEADER">
+            <Original>Действуй</Original>
+            <English>Act</English>
+        </Key>
+        <Key ID="STR_DIALOGINTERACTIONS_CLOSE">
+            <Original>&lt;t align = 'center'&gt;Закрыть&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Close&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGLEGISLATION_HEADER">
+            <Original>Законодательство</Original>
+            <English>Legislation</English>
+        </Key>
+        <Key ID="STR_DIALOGLEGISLATION_SELECT">
+            <Original>&lt;t align = 'center'&gt;Изменить&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Change&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGMAILBOX_HEADER">
+            <Original>Почтовый ящик</Original>
+            <English>Mailbox</English>
+        </Key>
+        <Key ID="STR_DIALOGMAILBOX_CLAIM">
+            <Original>&lt;t align = 'center'&gt;Забрать&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Claim&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGMOVES_HEADER">
+            <Original>Движения</Original>
+            <English>Moves</English>
+        </Key>
+        <Key ID="STR_DIALOGMOVES_PERFORM">
+            <Original>&lt;t align = 'center'&gt;Выполнить&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Perform&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGPROCESSING_HEADER">
+            <Original>Обработка</Original>
+            <English>Processing</English>
+        </Key>
+        <Key ID="STR_DIALOGPROCESSING_PROCESS">
+            <Original>&lt;t align = 'center'&gt;Переработать&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Process&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGVIRTUALSTORE_HEADER">
+            <Original>Магазин одежды</Original>
+            <English>Clothing Store</English>
+        </Key>
+        <Key ID="STR_DIALOGVIRTUALSTORE_ITEM">
+            <Original>Предмет</Original>
+            <English>Item</English>
+        </Key>
+        <Key ID="STR_DIALOGVIRTUALSTORE_BUY">
+            <Original>Купить</Original>
+            <English>Buy</English>
+        </Key>
+        <Key ID="STR_DIALOGVIRTUALSTORE_SELL">
+            <Original>Продать</Original>
+            <English>Sell</English>
+        </Key>
+        <Key ID="STR_DIALOGVIRTUALSTORE_AMOUNT">
+            <Original>Количество</Original>
+            <English>Amount</English>
+        </Key>
+        <Key ID="STR_DIALOGVIRTUALSTORE_BUY_BTN">
+            <Original>&lt;t align = 'center'&gt;Купить&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Buy&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGVIRTUALSTORE_SELL_BTN">
+            <Original>&lt;t align = 'center'&gt;Продать&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Sell&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGVEHICLESTORE_HEADER">
+            <Original>Автомагазин</Original>
+            <English>Vehicle Shop</English>
+        </Key>
+        <Key ID="STR_DIALOGVEHICLESTORE_BUY">
+            <Original>&lt;t align='center'&gt;Купить&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Buy&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGVEHICLESTORE_RENT">
+            <Original>&lt;t align='center'&gt;Аренда&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Rent&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGPOLLINGSTATION_HEADER">
+            <Original>Избирательный участок</Original>
+            <English>Polling Station</English>
+        </Key>
+        <Key ID="STR_DIALOGPOLLINGSTATION_VOTE">
+            <Original>&lt;t align = 'center'&gt;Проголосовать&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Vote&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DISPLAYCONFIRM_HEADER">
+            <Original>Обработка</Original>
+            <English>Processing</English>
+        </Key>
+        <Key ID="STR_DISPLAYCONFIRM_NO">
+            <Original>&lt;t align='center'&gt;Нет&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;No&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DISPLAYCONFIRM_YES">
+            <Original>&lt;t align='center'&gt;Да&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Yes&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DISPLAYINPUT_HEADER">
+            <Original>Обработка</Original>
+            <English>Processing</English>
+        </Key>
+        <Key ID="STR_DISPLAYINPUT_PLACEHOLDER">
+            <Original>Введите ваш текст здесь...</Original>
+            <English>Enter your text here...</English>
+        </Key>
+        <Key ID="STR_DISPLAYINPUT_NO">
+            <Original>&lt;t align = 'center'&gt;Отмена&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Cancel&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DISPLAYINPUT_YES">
+            <Original>&lt;t align = 'center'&gt;Ввод&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Submit&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DISPLAYSELECTPLAYER_HEADER">
+            <Original>Выберите игрока</Original>
+            <English>Select Player</English>
+        </Key>
+        <Key ID="STR_DISPLAYSELECTPLAYER_SELECT">
+            <Original>&lt;t align = 'center'&gt;Выбор&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Select&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DISPLAYSELECTNUMBER_HEADER">
+            <Original>Выберите количество</Original>
+            <English>Select Quantity</English>
+        </Key>
+        <Key ID="STR_DISPLAYSELECTNUMBER_SELECT">
+            <Original>&lt;t align = 'center'&gt;Выбор&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Select&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DISPLAYSELECTOBJECT_HEADER">
+            <Original>Выберите</Original>
+            <English>Select</English>
+        </Key>
+        <Key ID="STR_DISPLAYSELECTOBJECT_SELECT">
+            <Original>&lt;t align = 'center'&gt;Выбор&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Select&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DISPLAYGROUPCREATION_HEADER">
+            <Original>Создание Группы</Original>
+            <English>Create Group</English>
+        </Key>
+        <Key ID="STR_DISPLAYGROUPCREATION_TAG">
+            <Original>Введите тэг группы...</Original>
+            <English>Enter group tag...</English>
+        </Key>
+        <Key ID="STR_DISPLAYGROUPCREATION_NAME">
+            <Original>Введите имя группы...</Original>
+            <English>Enter group name...</English>
+        </Key>
+        <Key ID="STR_DISPLAYGROUPCREATION_CANCEL">
+            <Original>&lt;t align='center'&gt;Отмена&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Cancel&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DISPLAYGROUPCREATION_CREATE">
+            <Original>&lt;t align='center'&gt;Создать&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Create&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DISPLAYWARRANTCREATION_HEADER">
+            <Original>Создание ордера</Original>
+            <English>Create Warrant</English>
+        </Key>
+        <Key ID="STR_DISPLAYWARRANTCREATION_NOTE">
+            <Original>Введите описание преступления здесь...</Original>
+            <English>Enter crime description here...</English>
+        </Key>
+        <Key ID="STR_DISPLAYWARRANTCREATION_CANCEL">
+            <Original>&lt;t align='center'&gt;Отмена&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Cancel&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DISPLAYWARRANTCREATION_CREATE">
+            <Original>&lt;t align='center'&gt;Создать&lt;/t&gt;</Original>
+            <English>&lt;t align='center'&gt;Create&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGMEDICAL_HEADER">
+            <Original>Показатели состояния пациента</Original>
+            <English>Patient Status</English>
+        </Key>
+        <Key ID="STR_DIALOGMEDICAL_PARTHEADER">
+            <Original>Состояние конечностей</Original>
+            <English>Limb Condition</English>
+        </Key>
+        <Key ID="STR_DIALOGMEDICAL_TRAUMA">
+            <Original>Травма</Original>
+            <English>Injury</English>
+        </Key>
+        <Key ID="STR_DIALOGMEDICAL_COUNT">
+            <Original>Количество</Original>
+            <English>Amount</English>
+        </Key>
+        <Key ID="STR_DIALOGMEDICAL_REVIVE">
+            <Original>&lt;t align = 'center'&gt;Оживить&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Revive&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGPNC_HEADER">
+            <Original>Полицейский национальный компьютер&lt;t align='right'&gt;Счастлив&lt;/t&gt;</Original>
+            <English>Police National Computer&lt;t align='right'&gt;Happy&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGPNC_USER_PLACEHOLDER">
+            <Original>Введите имя пользователя</Original>
+            <English>Enter username</English>
+        </Key>
+        <Key ID="STR_DIALOGPNC_PASS_PLACEHOLDER">
+            <Original>Введите пароль</Original>
+            <English>Enter password</English>
+        </Key>
+        <Key ID="STR_DIALOGPNC_DELETE_CRIME">
+            <Original>&lt;t align = 'center'&gt;Удалить преступление&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Delete Crime&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGPNC_ISSUE_WARRANT">
+            <Original>&lt;t align = 'center'&gt;Оформить ордер&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Issue Warrant&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGPNC_CLEAR_WARRANTS">
+            <Original>&lt;t align = 'center'&gt;Очистить ордеры&lt;/t&gt;</Original>
+            <English>&lt;t align = 'center'&gt;Clear Warrants&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_DIALOGPNC_ISSUER">
+            <Original>Инициатор</Original>
+            <English>Issuer</English>
+        </Key>
+        <Key ID="STR_DIALOGPNC_ISSUED">
+            <Original>Выдан</Original>
+            <English>Issued</English>
+        </Key>
+        <Key ID="STR_RSCPROGRESS_WAIT">
+            <Original>Пожалуйста, подождите</Original>
+            <English>Please wait</English>
+        </Key>
+        <Key ID="STR_RSCPROGRESS_CANCEL">
+            <Original>Нажмите &lt;t color = '#8A2BE2'&gt;[ESCAPE]&lt;/t&gt; для отмены</Original>
+            <English>Press &lt;t color = '#8A2BE2'&gt;[ESCAPE]&lt;/t&gt; to cancel</English>
+        </Key>
+        <Key ID="STR_RSCINCAP_WAIT">
+            <Original>&lt;t align='left' size='1'&gt;Ожидание возрождения...&lt;/t&gt;&lt;t align='right' size='1'&gt;Ближайший медик: ##м&lt;/t&gt;</Original>
+            <English>&lt;t align='left' size='1'&gt;Waiting to respawn...&lt;/t&gt;&lt;t align='right' size='1'&gt;Closest medic: ##m&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_RSCINCAP_BLEED">
+            <Original>&lt;t align='center' size='1'&gt;Вы кровоточите...&lt;/t&gt;</Original>
+            <English>&lt;t align='center' size='1'&gt;You are bleeding...&lt;/t&gt;</English>
+        </Key>
+        <Key ID="STR_RSCINCAP_REQUEST">
+            <Original>&lt;t align='center' size='1'&gt;Нажмите &lt;t color='#8A2BE2'&gt;Пробел&lt;/t&gt; для вызова медика&lt;/t&gt;</Original>
+            <English>&lt;t align='center' size='1'&gt;Press &lt;t color='#8A2BE2'&gt;Space&lt;/t&gt; to request medic&lt;/t&gt;</English>
+        </Key>
     </Package>
 </Project>
