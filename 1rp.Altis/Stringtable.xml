@@ -262,11 +262,11 @@
             <English>DEFEND</English>
         </Key>
         <Key ID="STR_ULP_NOTIFICATION_HEADER">
-            <Original>Header</Original>
+            <Original>Заголовок</Original>
             <English>Header</English>
         </Key>
         <Key ID="STR_ULP_NOTIFICATION_BODY">
-            <Original>This is a notification</Original>
+            <Original>Это уведомление</Original>
             <English>This is a notification</English>
         </Key>
         <Key ID="STR_DIALOGSPAWN_HEADER">
@@ -645,6 +645,7 @@
             <Original>&lt;t align='center' size='1'&gt;Нажмите &lt;t color='#8A2BE2'&gt;Пробел&lt;/t&gt; для вызова медика&lt;/t&gt;</Original>
             <English>&lt;t align='center' size='1'&gt;Press &lt;t color='#8A2BE2'&gt;Space&lt;/t&gt; to request medic&lt;/t&gt;</English>
         </Key>
+
         <!-- Tablet Market Screen -->
         <Key ID="STR_TABLETMARKET_ITEM">
             <Original>Предмет</Original>
@@ -1014,5 +1015,6 @@
             <Original>Ордеры</Original>
             <English>Warrants</English>
         </Key>
+
     </Package>
 </Project>
