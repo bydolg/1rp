@@ -13,7 +13,7 @@ class DialogPollingStation {
 		class Header : Life_RscText {
 			idc = 5201;
 			colorBackground[] = HEADER_COLOUR;
-                        text = $STR_DIALOGPOLLINGSTATION_HEADER;
+			text = "Избирательный участок";
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -53,7 +53,7 @@ class DialogPollingStation {
 
 		class Select : Life_RscButtonCenter {
 			idc = 5203;
-                        text = $STR_DIALOGPOLLINGSTATION_VOTE;
+			text = "<t align = 'center'>Проголосовать</t>";
 			onButtonClick = "_this call ULP_fnc_vote";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);

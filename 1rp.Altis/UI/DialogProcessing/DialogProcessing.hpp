@@ -12,7 +12,7 @@ class DialogProcessing {
 		class Header : Life_RscText {
 			idc = 4001;
 			colorBackground[] = HEADER_COLOUR;
-                        text = $STR_DIALOGPROCESSING_HEADER;
+			text = "Обработка";
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -54,7 +54,7 @@ class DialogProcessing {
 
 		class Select : Life_RscButtonCenter {
 			idc = 4002;
-                        text = $STR_DIALOGPROCESSING_PROCESS;
+			text = "<t align = 'center'>Переработать</t>";
 			onButtonClick = "_this call ULP_fnc_selectProcess;";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 2)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);

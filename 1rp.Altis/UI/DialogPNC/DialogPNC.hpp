@@ -13,7 +13,7 @@ class DialogPNC {
 		class Header : Life_RscStructuredText {
 			idc = 4701;
 			colorBackground[] = HEADER_COLOUR;
-                        text = $STR_DIALOGPNC_HEADER;
+			text = "Полицейский национальный компьютер<t align='right'>Счастлив</t>";
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -61,7 +61,7 @@ class DialogPNC {
 				class UserInput: Life_RscEdit {
 					style = "0x10 + 0x200";
 					idc = 101;
-                                        text = $STR_DIALOGPNC_USER_PLACEHOLDER;
+					text = "Введите имя пользователя";
 					colorFrame[] = {0,0,0,0};
 					colorBackground[] = {0,0,0,0.8};
 					x = 9.5 * GUI_GRID_CENTER_W;
@@ -72,7 +72,7 @@ class DialogPNC {
 
 				class PassInput: UserInput {
 					idc = 102;
-                                        text = $STR_DIALOGPNC_PASS_PLACEHOLDER;
+					text = "Введите пароль";
 					y = 13.25 * GUI_GRID_CENTER_H;
 				};
 			};
@@ -147,11 +147,11 @@ class DialogPNC {
 
 					class Items {
 						class Issuer {
-                                                        text = $STR_DIALOGPNC_ISSUER;
+							text = "Инициатор";
 							value = 0;
 						};
 						class Issued {
-                                                        text = $STR_DIALOGPNC_ISSUED;
+							text = "Выдан";
 							value = -1;
 							data = "data";
 						};
@@ -186,7 +186,7 @@ class DialogPNC {
 
 				class ClearCrime : Life_RscButtonCenter {
 					idc = 108;
-                                        text = $STR_DIALOGPNC_DELETE_CRIME;
+					text = "<t align = 'center'>Удалить преступление</t>";
 					onButtonClick = "_this call ULP_fnc_deleteCrime;";
 					x = 14 * GUI_GRID_CENTER_W;
 					y = 16 * GUI_GRID_CENTER_H;
@@ -198,7 +198,7 @@ class DialogPNC {
 
 		class IssueWarrant : Life_RscButtonCenter {
 			idc = 4704;
-                        text = $STR_DIALOGPNC_ISSUE_WARRANT;
+			text = "<t align = 'center'>Оформить ордер</t>";
 			onButtonClick = "_this call ULP_fnc_issueWarrant;";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);
@@ -208,7 +208,7 @@ class DialogPNC {
 
 		class ClearWarrants : IssueWarrant {
 			idc = 4705;
-                        text = $STR_DIALOGPNC_CLEAR_WARRANTS;
+			text = "<t align = 'center'>Очистить ордеры</t>";
 			onButtonClick = "_this call ULP_fnc_clearWarrants;";
 			SAFEZONE_X((UI_X + UI_WIDTH - ((UI_WIDTH / 4) * 2)) - (MARGIN_X * 2));
 		};

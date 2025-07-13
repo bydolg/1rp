@@ -31,7 +31,7 @@ class DisplaySelectNumber {
 		class Header : Life_RscText {
 			idc = 3201;
 			colorBackground[] = HEADER_COLOUR;
-                        text = $STR_DISPLAYSELECTNUMBER_HEADER;
+			text = "Выберите количество";
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -89,7 +89,7 @@ class DisplaySelectNumber {
 
 		class Select : Life_RscButtonCenter {
 			idc = 3206;
-                        text = $STR_DISPLAYSELECTNUMBER_SELECT;
+			text = "<t align = 'center'>Выбор</t>";
 			onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 1;";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);

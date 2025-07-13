@@ -22,7 +22,7 @@ class DisplayWarrantCreation {
         class Header : Life_RscText {
             idc = -1;
             colorBackground[] = HEADER_COLOUR;
-            text = $STR_DISPLAYWARRANTCREATION_HEADER;
+            text = "Создание ордера";
             SAFEZONE_X(UI_X);
             SAFEZONE_Y(BODY_Y - 0.022);
             SAFEZONE_W(UI_WIDTH);
@@ -63,7 +63,7 @@ class DisplayWarrantCreation {
         class NotePlaceholder : Life_RscText {
             style = "0x10";
             idc = 5002;
-            text = $STR_DISPLAYWARRANTCREATION_NOTE;
+            text = "Введите описание преступления здесь...";
             colorText[] = {1, 1, 1, 0.4};
             SAFEZONE_X(UI_X + MARGIN_X);
             SAFEZONE_Y(VERTICAL_GRID_Y((BODY_Y + MARGIN_Y), ITEM_HEIGHTS, 0, (MARGIN_Y / 2)));
@@ -93,7 +93,7 @@ class DisplayWarrantCreation {
 
         class No : Life_RscButtonCenter {
             idc = 5004;
-            text = $STR_DISPLAYWARRANTCREATION_CANCEL;
+            text = "<t align='center'>Отмена</t>";
             onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 2;";
             SAFEZONE_X(((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - (UI_WIDTH / 4)) - (MARGIN_X * 2));
             SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);
@@ -103,7 +103,7 @@ class DisplayWarrantCreation {
 
         class Yes : Life_RscButtonCenter {
             idc = 5005;
-            text = $STR_DISPLAYWARRANTCREATION_CREATE;
+            text = "<t align='center'>Создать</t>";
             onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 1;";
             SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
             SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);

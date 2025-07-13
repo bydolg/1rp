@@ -12,7 +12,7 @@ class DialogLicenses {
 		class Header : Life_RscText {
 			idc = 3901;
 			colorBackground[] = HEADER_COLOUR;
-			text = $STR_DIALOGLICENSES_HEADER;
+			text = "Лицензии";
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -66,7 +66,7 @@ class DialogLicenses {
 
 		class Select : Life_RscButtonCenter {
 			idc = 3902;
-			text = $STR_DIALOGLICENSES_BUY;
+			text = "<t align = 'center'>Купить</t>";
 			onButtonClick = "_this call ULP_fnc_buyLicense";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);
@@ -84,7 +84,7 @@ class DialogSeizeLicenses : DialogLicenses {
     class ControlsBackground : ControlsBackground {
 		class Header : Header {
 			idc = 5101;
-			text = $STR_DIALOGLICENSES_HEADER;
+			text = "Лицензии";
 		};
 
 		class Body : Body {};
@@ -100,7 +100,7 @@ class DialogSeizeLicenses : DialogLicenses {
 
 		class Select : Select {
 			idc = 5103;
-			text = $STR_DIALOGLICENSES_SEIZE;
+			text = "<t align = 'center'>Конфисковать</t>";
 			onButtonClick = "_this call ULP_fnc_seizeLicense;";
 		};
 	};

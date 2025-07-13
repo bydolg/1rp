@@ -13,7 +13,7 @@ class DialogMedical {
 		class Header : Life_RscStructuredText {
 			idc = -1;
 			colorBackground[] = HEADER_COLOUR;
-                        text = $STR_DIALOGMEDICAL_HEADER;
+			text = "Показатели состояния пациента";
 			SAFEZONE_X(UI_X);
 			SAFEZONE_Y(BODY_Y - 0.022);
 			SAFEZONE_W(UI_WIDTH);
@@ -137,7 +137,7 @@ class DialogMedical {
 
 		class PartHeader : Life_RscStructuredText {
 			idc = 4907;
-                        text = $STR_DIALOGMEDICAL_PARTHEADER;
+			text = "Состояние конечностей";
 			colorBackground[] = { 0, 0, 0, 1 };
 			SAFEZONE_X(0.494844);
 			SAFEZONE_Y(0.313);
@@ -163,11 +163,11 @@ class DialogMedical {
 
 			class Items {
 				class DisplayName {
-                                        text = $STR_DIALOGMEDICAL_TRAUMA;
+					text = "Травма";
 					value = 0;
 				};
 				class Count {
-                                        text = $STR_DIALOGMEDICAL_COUNT;
+					text = "Количество";
 					value = 0;
 				};
 			};
@@ -226,7 +226,7 @@ class DialogMedical {
 
 		class Revive : Life_RscButtonCenter {
 			idc = 4914;
-                        text = $STR_DIALOGMEDICAL_REVIVE;
+			text = "<t align = 'center'>Оживить</t>";
 			onButtonClick = "_this call ULP_fnc_revivePatient";
 			SAFEZONE_X((UI_X + UI_WIDTH - (UI_WIDTH / 4)) - MARGIN_X);
 			SAFEZONE_Y((BODY_Y + BODY_HEIGHT) + BUTTON_MARGIN_Y);
