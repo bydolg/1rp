@@ -93,12 +93,12 @@ class DialogPNC {
 					h = 1 * GUI_GRID_CENTER_H;
 					columns = 1;
 					fade = 0;
-					strings[] = {
-						"Ордеры"
-					};
-					tooltips[] = {
-						"Ордеры"
-					};
+                                        strings[] = {
+                                                "$STR_DIALOGPNC_WARRANTS"
+                                        };
+                                        tooltips[] = {
+                                                "$STR_DIALOGPNC_WARRANTS"
+                                        };
 				};
 
 				class WarrantList : Life_RscTree {

@@ -10,16 +10,16 @@ class InventoryPages : Life_RscToolbox {
 	SAFEZONE_H(MARGIN_Y * 3);
 	columns = 3;
 	fade = 0;
-	strings[] = {
-		"Виртуальные предметы",
-		"Лицензии",
-		"Крафтинг"
-	};
-	tooltips[] = {
-		"Виртуальные предметы",
-		"Лицензии",
-		"Крафтинг"
-	};
+        strings[] = {
+                "$STR_TABLETINVENTORY_ITEMS",
+                "$STR_TABLETINVENTORY_LICENSES",
+                "$STR_TABLETINVENTORY_CRAFTING"
+        };
+        tooltips[] = {
+                "$STR_TABLETINVENTORY_ITEMS",
+                "$STR_TABLETINVENTORY_LICENSES",
+                "$STR_TABLETINVENTORY_CRAFTING"
+        };
 };
 
 #define INV_SECTION_H HORIZONTAL_GRID_W((UI_WIDTH - (MARGIN_X / 2)), 2)
@@ -47,8 +47,8 @@ class ItemInformation : Life_RscStructuredText {
 };
 
 class Use : ULP_RscButtonClean {
-	idc = 23018;
-	text = "<t align = 'center'>Использовать</t>";
+        idc = 23018;
+        text = $STR_TABLETINVENTORY_USE;
 	onButtonClick = "_this call ULP_fnc_useItem;";
 	SAFEZONE_X(UI_X);
 	SAFEZONE_Y((UI_Y + UI_HEIGHT) - (MARGIN_Y * 2));
@@ -57,8 +57,8 @@ class Use : ULP_RscButtonClean {
 };
 
 class Remove : ULP_RscButtonClean {
-	idc = 23019;
-	text = "<t align = 'center'>Удалить</t>";
+        idc = 23019;
+        text = $STR_TABLETINVENTORY_DELETE;
 	onButtonClick = "_this call ULP_fnc_removeItem;";
 	SAFEZONE_X((UI_X + UI_WIDTH) - (UI_WIDTH / 2) / 3);
 	SAFEZONE_Y((UI_Y + UI_HEIGHT) - (MARGIN_Y * 2));
@@ -67,9 +67,9 @@ class Remove : ULP_RscButtonClean {
 };
 
 class Deconstruct : ULP_RscButtonClean {
-	idc = 23015;
-	text = "<t align = 'center'>Разобрать</t>";
-	onButtonClick = "private _display = ctrlParent (_this select 0); private _list = _display displayCtrl 23016; if (isNull _display || { isNull _list }) exitWith {}; private _item = (_list lbData (lbCurSel _list)); if (_item isEqualTo """") exitWith { [""Сначала выберите предмет!""] call ULP_fnc_hint; }; [_item] call ULP_fnc_deconstruct;";
+        idc = 23015;
+        text = $STR_TABLETINVENTORY_DECONSTRUCT;
+        onButtonClick = "private _display = ctrlParent (_this select 0); private _list = _display displayCtrl 23016; if (isNull _display || { isNull _list }) exitWith {}; private _item = (_list lbData (lbCurSel _list)); if (_item isEqualTo \"\") exitWith { [localize 'STR_TABLETINVENTORY_SELECT_ITEM'] call ULP_fnc_hint; }; [_item] call ULP_fnc_deconstruct;";
 	SAFEZONE_X((UI_X + UI_WIDTH) - (((UI_WIDTH / 2) / 3) * 2) - MARGIN_X);
 	SAFEZONE_Y((UI_Y + UI_HEIGHT) - (MARGIN_Y * 2));
 	SAFEZONE_W((UI_WIDTH / 2) / 3);
@@ -87,7 +87,7 @@ class BlueprintList : Life_RscTree {
 };
 
 class Craft : Remove {
-	idc = 23078;
-	text = "<t align = 'center'>Создать</t>";
+        idc = 23078;
+        text = $STR_TABLETINVENTORY_CREATE;
 	onButtonClick = "_this call ULP_fnc_craft;";
 };
